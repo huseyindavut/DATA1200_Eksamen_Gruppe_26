@@ -37,3 +37,25 @@ nav ul li a:hover {
 h1 {
     text-align: center;
 }
+
+.footer {
+    background-color: #000000;
+    color: #f5fcc5;
+   display: flex;
+   justify-content: space-around;
+   padding: 20px 0;
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+.column {
+    flex:1;
+    padding: 0 20px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.column h3{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+
+}
