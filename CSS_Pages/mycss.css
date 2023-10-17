@@ -1,0 +1,39 @@
+.body_class {
+    background-color: rgb(224, 248, 248);
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    background-color: #dcd9de;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    color: rgb(180, 3, 3);
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav ul li {
+    font-family:Arial, Helvetica, sans-serif;
+    display:inline;
+    margin: 0 15px;
+    padding: 20px;s
+}
+
+nav ul li a {
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
