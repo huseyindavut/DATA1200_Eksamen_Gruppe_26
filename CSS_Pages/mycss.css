@@ -1,5 +1,5 @@
 .body_class {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(255, 253, 233);
     color: black;
     margin: 10px;
     padding: 10px;
@@ -39,8 +39,8 @@ h1 {
 }
 
 .footer {
-    background-color: #000000;
-    color: #f5fcc5;
+   background-color: #fced99;
+   color: #000000;
    display: flex;
    justify-content: space-around;
    padding: 20px 0;
