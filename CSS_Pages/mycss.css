@@ -87,6 +87,7 @@ background: #f00;
 
 
 footer {
+    margin-top: 80px;
     border-top: 3px solid #fff; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -119,3 +120,67 @@ footer {
     transform: translateY(-3px) translateX(-5px);
 }
 
+
+.accordion-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+
+
+    
+    
+    
+}
+.accordionParag{
+    font-size: 25px;
+    line-height: 40px;
+    text-align: left;
+    color: #fff;
+}
+
+.accordion-title {
+   font-size: 25px;
+   font-weight: bolder;
+   margin-left: 5%;
+   font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 176, 6);
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+
+}
+
+.accordion-content {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 35%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+    background-color: rgb(141, 56, 56);
+   
+}
+
+input[type="checkbox"] {
+    display:none;
+    color: #fff;
+}
+
+input[type="checkbox"]:checked + .accordion-title + .accordion-content {
+    max-height: 1000px; 
+}
+
+.underline {
+    border-bottom: 1px solid rgb(255, 162, 81); 
+    margin-left: 5%;
+    width: 90%; /
+    margin-bottom: 10px;
+    left: 0;
+}
