@@ -17,7 +17,7 @@ section {
 
 section.sec1 {
     margin-top: 50px;
-    background: url(oslogris2.jpg);
+    background: url(../Images/oslogris2.jpg);
     background-size: cover;
   
 }
@@ -45,8 +45,9 @@ section.sec2 p{
 }
 
 section.sec3 {
-    background: url(oslogiris.jpg);
+    background: url(../Images/oslogiris.jpg);
     background-size: cover;
+    margin-bottom: 200px;
 }
 nav {
     width: 100%;
