@@ -8,7 +8,10 @@ body {
 header {
     padding: 10px 10px;
     box-sizing: border-box;
-    
+        
+}
+header.img{
+    margin-right: 100px;
 }
 section {
     width: 100%;
@@ -17,7 +20,7 @@ section {
 
 section.sec1 {
     margin-top: 50px;
-    background: url(../Images/oslogris2.jpg);
+    background: url(../webP/oslogiris_1.webp);
     background-size: cover;
   
 }
@@ -45,7 +48,7 @@ section.sec2 p{
 }
 
 section.sec3 {
-    background: url(../Images/oslogiris.jpg);
+    background: url(../webP/oslogiris_1.webp);
     background-size: cover;
     margin-bottom: 200px;
 }
@@ -88,7 +91,6 @@ background: #f00;
 
 footer {
     margin-top: 80px;
-    border-top: 3px solid #fff; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
@@ -121,66 +123,67 @@ footer {
 }
 
 
-.accordion-item {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
 
 
-    
+
+
+
+
+
+
+.row {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
     
 }
-.accordionParag{
-    font-size: 25px;
-    line-height: 40px;
-    text-align: left;
-    color: #fff;
-}
 
-.accordion-title {
-   font-size: 25px;
-   font-weight: bolder;
-   margin-left: 5%;
-   font-family:Arial, Helvetica, sans-serif;
-    color: rgb(255, 176, 6);
-    background-color: rgb(255, 255, 255);
-    padding: 1px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: left;
-
-}
-
-.accordion-content {
-    margin-top: 40px;
-    margin-left: 10%;
-    margin-right: 35%;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
-    max-height: 0;
+.row .left {
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    
-    background-color: rgb(141, 56, 56);
-   
 }
 
-input[type="checkbox"] {
-    display:none;
-    color: #fff;
+.row .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-input[type="checkbox"]:checked + .accordion-title + .accordion-content {
-    max-height: 1000px; 
+.row .right {
+    display: flex;
+    align-items: center;
 }
 
-.underline {
-    border-bottom: 1px solid rgb(255, 162, 81); 
-    margin-left: 5%;
-    width: 90%; /
-    margin-bottom: 10px;
-    left: 0;
+.row .right .content {
+    padding-left: 20px;
 }
+
+.row .right .content p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+       
+}
+
+@media (max-width: 991px){
+    .row .right .content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .row {
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+
+
