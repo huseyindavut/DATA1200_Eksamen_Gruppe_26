@@ -4,63 +4,30 @@ body {
     font-family: sans-serif;
     background: #000;
 }
-
 header {
     padding: 10px 10px;
-    background-color: #FCDD06;    
-    box-sizing: border-box;    
+    box-sizing: border-box;
+        
 }
 header.img{
     margin-right: 100px;
 }
-nav {
-    width: 100%;
-    height: 50px;  
-    background-color: #FCDD06;
-}
-
-nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0 100px;
-    float: right;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-   display: block;
-   color: #000;
-   padding: 0 20px;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-weight: bold;
-   line-height: 50px;  
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-background: #fff;
-border-radius: 40px ;
-}
-
 section {
     width: 100%;
     height:100vh ;
 }
-
 section.sec1 {
     margin-top: 50px;
     background: url(../webP/oslogiris_1.webp);
     background-size: cover;
+
 }
 
 section.sec2 {
     padding: 100px;
     box-sizing: border-box;
     height: auto;
+
 }
 
 section.sec2 h2{
@@ -69,7 +36,6 @@ section.sec2 h2{
     padding: 0 0 20px;
     color: #fff;
 }
-
 section.sec2 p{
     font-size: 1.4em;
     margin: 0;
@@ -77,11 +43,41 @@ section.sec2 p{
     color: #fff;
     margin-bottom: 50px;
 }
-
 section.sec3 {
     background: url(../webP/oslogiris_1.webp);
     background-size: cover;
     margin-bottom: 200px;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0px;
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+   display: block;
+   color: #fff;
+   padding: 0 20px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   line-height: 50px;  
+}
+nav ul li a:hover,
+nav ul li a.active {
+background: #f00;
 }
 footer {
     margin-top: 80px;
@@ -92,6 +88,7 @@ footer {
     color: #fff;
     font-family: sans-serif;
     font-size: 20px;
+
 }
 
 .footer-column {
@@ -100,7 +97,6 @@ footer {
     margin-bottom: 1.5em;
     font-size: 20px;
 }
-
 .footer-column li {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 16px;
@@ -109,10 +105,21 @@ footer {
     font-size: 15px;
     font-weight: 400;
     transition:all .50s ease;
+
 }
 .footer-column li:hover {
     transform: translateY(-3px) translateX(-5px);
 }
+
+
+
+
+
+
+
+
+
+
 .row {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -120,30 +127,30 @@ footer {
     max-width: 1170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+
 }
 
 .row .left {
     overflow: hidden;
 }
-
 .row .left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .row .right {
     display: flex;
     align-items: center;
 }
-
 .row .right .content {
     padding-left: 20px;
 }
-
 .row .right .content p{
     font-size: 16px;
     line-height: 26px;
+    padding-bottom: 15px;
+
     padding-bottom: 15px;     
 }
 
@@ -152,17 +159,9 @@ footer {
         padding-left: 0;
     }
 }
-
 @media (max-width: 768px){
     .row {
         width: 90%;
         grid-template-columns: repeat(2,1fr);
     }
 }
-
-
-
-
-
-
-
