@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+   
   
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(oslomet2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/oslogiris.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -29,7 +30,7 @@
 }
 
 .menu-icon {
-    width: 30px;
+    width: 300px;
     cursor: pointer;
     margin-left: 40px;
 }
@@ -110,20 +111,20 @@ button {
 }
 
 .card1 {
-    background-image:url(oslo3.jpg) ;
+    background-image:url(../Images/oslogiris.jpg) ;
 }
 
 .card2 {
-    background-image:url(oslo4.jpg) ;
+    background-image:url(../Images/oslogiris.jpg) ;
 
 }
 
 .card3 {
-    background-image:url(oslo5.jpg) ;
+    background-image:url(../Images/oslogiris.jpg) ;
 }
 
 .card4 {
-    background-image:url(oslo7.jpg) ;
+    background-image:url(../Images/oslogiris.jpg) ;
 }
 .card:hover{
     transform: translateY(-10px);
@@ -160,7 +161,9 @@ footer {
 }
 
 .footer-column {
+    margin-left: 100px;
     margin-top: 100px;
+
     color: rgb(248, 199, 52);
     margin-bottom: 1.5em;
     font-size: 20px;
