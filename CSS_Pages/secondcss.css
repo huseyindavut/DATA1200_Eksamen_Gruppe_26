@@ -82,9 +82,9 @@ h1 {
 .col p {
 
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 20px;
@@ -109,7 +109,7 @@ button {
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 300px;
 }
 
 .card {
