@@ -5,8 +5,9 @@ body {
     background: #000;
 }
 header {
-    padding: 20px 20px;
-    box-sizing: border-box;   
+    padding: 5px 5px;
+    box-sizing: border-box;  
+    
     
 }
 
@@ -86,6 +87,7 @@ nav ul li a:hover,
 nav ul li a.active {
 background: rgb(248, 52, 52)
 }
+
 footer {
     margin-top: 80px;
     display: grid;
