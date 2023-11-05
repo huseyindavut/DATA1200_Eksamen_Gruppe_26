@@ -5,15 +5,15 @@ body {
     background: #000;
 }
 header {
-    padding: 40px 40px;
+    padding: 20px 20px;
     box-sizing: border-box;   
     
 }
-header .img {
-    margin-top: 0;
-    width: 40px;
-    height: 40px;
-}
+
+
+    
+
+
 
 section {
     width: 100%;
@@ -84,7 +84,7 @@ nav ul li a {
 }
 nav ul li a:hover,
 nav ul li a.active {
-background: #f00;
+background: rgb(248, 52, 52)
 }
 footer {
     margin-top: 80px;
@@ -94,22 +94,25 @@ footer {
     background: #000000;
     color: #fff;
     font-family: sans-serif;
-    font-size: 20px;
+    
 
 }
 
 .footer-column {
+    border-color: rgb(255, 255, 255);
+    border-bottom: 5px;
+    margin-left: 90px;
     margin-top: 100px;
     color: rgb(248, 199, 52);
     margin-bottom: 1.5em;
-    font-size: 20px;
+    font-size: 40px;
 }
 .footer-column li {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 16px;
     display: block;
-    color: #fff;
-    font-size: 15px;
+    color:  rgb(248, 199, 52);
+    font-size:24px;
     font-weight: 400;
     transition:all .50s ease;
 
@@ -118,6 +121,12 @@ footer {
     transform: translateY(-3px) translateX(-5px);
 }
 
+.h4class{
+    color: #f00;
+    text-decoration: underline;
+    
+
+}
 
 
 
@@ -173,3 +182,13 @@ footer {
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
+
+
+  
+  
+  
+  
+  
+  
