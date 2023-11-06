@@ -2,24 +2,36 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Serif', serif;
-   
-  
 }
 
-@media screen and (max-width:700px) {}
-.container {
+
+.container1 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/p32_byg.webp);
+    background-position: center;
+    background-size:cover;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing:border-box;
+    margin-bottom: 0px;
+ 
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/p32_byg.webp);
     background-position: center;
     background-size: cover;
     padding-left: 0;
     padding-right: 0;
     box-sizing:border-box;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 0px;
  
 }
+
 
 .navbar {
     margin-top: 0px;
@@ -35,14 +47,16 @@
 }
 
 .menu-icon {
-    width:350px;
+    width:270px;
     cursor: pointer;
     margin-left: 20px;
+    margin-top: 30px;
 }
 
 nav {
     flex: 1;
-    text-align: left;
+    text-align: right;
+    margin-right: 30px;
 }
 
 nav ul li {
@@ -59,8 +73,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    font-size: 30px;
+    color:#fff8d7;
+    font-size: 25px;
     
 }
 
@@ -84,13 +98,13 @@ nav ul li a {
 h1 {
     margin-left: 30px;
     color: #fff;
-    font-size:50px;
+    font-size:30px;
 }
 
 .col p {
 
-    color: #ffffff;
-    font-size: 25px;
+    color: #fff8d7;
+    font-size: 17px;
     text-align: justify;
     margin-top: 30px;
     margin-left: 40px;
@@ -108,11 +122,11 @@ h1 {
 
 button {
     width: 180px;
-    color: rgb(235, 229, 63);
+    color: rgb(0, 0, 0);
     font-size:20px;
     font-weight: bold;
     padding: 12px 0;
-    background: rgb(221, 86, 86);
+    background: rgb(255, 255, 255);
     border: 0;
     border-radius: 20px;
     outline: none;
@@ -168,34 +182,26 @@ button {
 
 
 h5 {
+ 
    text-align: center;
-   color:rgb(251, 255, 0);
-   text-shadow: 0 0 15px #999 ; 
-   font-size: 30px;
+   color:rgb(0, 0, 0);
+   text-shadow: 0 0 15px #6a6969 ; 
+   font-size: 25px;
+   background-color: rgb(255, 255, 255) ;
+   background-position: bottom;
    margin-top: 15px;
 }
 
-.card p {
-    text-align:justify;
-
-    color: rgb(235, 229, 63);
-    text-shadow: 0px 0px 0px rgba(50,50,50,150) ; 
-    line-height: 1.5;
-    font-size: 20px;  
-    padding: 10px;
-}
-
-
-
 
 footer {
-    margin-top: 80px;
+    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
-    background: #000000;
+    background: #401010;
     color: #fff;
     font-family: sans-serif;
+    
     
 
 }
@@ -203,18 +209,19 @@ footer {
 .footer-column {
     border-color: rgb(255, 255, 255);
     border-bottom: 5px;
-    margin-left: 90px;
+    margin-left: 50px;
+    margin-right: 200px;
     margin-top: 100px;
-    color: rgb(248, 199, 52);
     margin-bottom: 1.5em;
-    font-size: 40px;
+    font-size: 20px;
 }
 .footer-column li {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 16px;
     display: block;
-    color:  rgb(248, 199, 52);
-    font-size:24px;
+    color:  #FFD500;
+    line-height: 1.5;
+    font-size:17px;
     font-weight: 400;
     transition:all .50s ease;
 
@@ -224,9 +231,11 @@ footer {
 }
 
 .h4class{
-    color: #f00;
+    margin-top: 0;
+    margin-bottom: 60px;
+    color:rgb(53, 238, 238);
     text-decoration: underline;
-    
+   
 
 }
 
