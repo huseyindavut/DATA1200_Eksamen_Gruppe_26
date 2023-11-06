@@ -71,6 +71,18 @@ nav ul li {
     font-size: 13px;
 
 }
+.navbarlinks{
+   text-align: center;
+   color:rgb(0, 0, 0);
+   text-shadow: 0 0 15px #6a6969 ; 
+   font-size: 23px;
+   background-color: rgb(255, 255, 255) ;
+   background-position: bottom;
+   margin-top: 15px;
+   border-radius: 20px;
+   padding:20px 13px;
+
+}
 
 nav ul li a {
     color:#fff8d7;
@@ -190,6 +202,8 @@ h5 {
    background-color: rgb(255, 255, 255) ;
    background-position: bottom;
    margin-top: 15px;
+   border-radius: 20px;
+   padding:10px 0;
 }
 
 
@@ -231,6 +245,7 @@ footer {
 }
 
 .h4class{
+    text-align: center;
     margin-top: 0;
     margin-bottom: 60px;
     color:rgb(53, 238, 238);
