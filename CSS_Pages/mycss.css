@@ -26,7 +26,7 @@ section {
 }
 section.sec1 {
     margin-top: 50px;
-    background: url(../webP/oslogiris_1.webp);
+    background: url(../Images/p32_byg.jpg);
     background-size: cover;
 
 }
@@ -43,6 +43,7 @@ section.sec2 h2{
     margin: 0;
     padding: 0 0 20px;
     color: #fff;
+    margin-left: 100px;
 }
 section.sec2 p{
     font-size: 1.4em;
@@ -52,7 +53,7 @@ section.sec2 p{
     margin-bottom: 50px;
 }
 section.sec3 {
-    background: url(../webP/oslogiris_1.webp);
+    background: url(../Images/p32_byg2.jpg);
     background-size: cover;
     margin-bottom: 200px;
 }
@@ -133,7 +134,7 @@ footer {
     transform: translateY(-3px) translateX(-5px);
 }
 
-.h4class{
+.h3class{
     text-align: center;
     margin-top: 0;
     margin-bottom: 60px;
@@ -142,7 +143,6 @@ footer {
    
 
 }
-
 
 
 
@@ -184,7 +184,9 @@ footer {
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 15px;
-
+    text-align: justify;
+    margin-left: 100px;
+ 
     padding-bottom: 15px;     
 }
 
