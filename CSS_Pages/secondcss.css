@@ -15,13 +15,13 @@
     padding-left: 0;
     padding-right: 0;
     box-sizing:border-box;
-    margin-bottom: 0px; 
+    margin-bottom:0; 
 }
 
 .container2 {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(201, 197, 62, 0.7),rgba(163, 40, 40, 0.91));
+    background-image: linear-gradient(rgba(149, 208, 240, 0.7),rgba(222, 95, 95, 0.91));
     background-position: center;
     background-size:cover;
     padding-left: 0;
@@ -33,7 +33,7 @@
 .container3 {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(163, 40, 40, 0.91),rgba(201, 197, 62, 0.7));
+    background-image: linear-gradient(rgba(40, 126, 163, 0.91),rgba(151, 218, 49, 0.7));
     background-position: center;
     background-size:cover;
     padding-left: 0;
@@ -46,7 +46,7 @@
 .container4 {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(201, 197, 62, 0.7),rgba(163, 40, 40, 0.91));
+    background-image: linear-gradient(rgba(147, 237, 183, 0.7),rgba(228, 200, 239, 0.91));
     background-position: center;
     background-size:cover;
     padding-left: 0;
@@ -71,7 +71,7 @@
 }
 
 .menu-icon {
-    width:270px;
+    width:200px;
     cursor: pointer;
     margin-left: 20px;
     margin-top: 30px;
@@ -115,7 +115,7 @@ nav ul li a {
 
 
 .row {
-    margin-top: 10px;
+    margin-top: 0px;
     display:flex;
     height: 88%;
     align-items:center;
@@ -131,9 +131,10 @@ nav ul li a {
 
 
 h1 {
-    margin-top: 40%;
+    margin-top: 15%;
+    margin-bottom: 50px;
     margin-left: 30px;
-    color: #921111;
+    color: #060000;
     font-size:30px;
 }
 
@@ -142,8 +143,8 @@ h1 {
     color: rgb(21, 164, 200), 187, 14;
     font-size: 17px;
     text-align: justify;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
     margin-right: 40px;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -152,9 +153,9 @@ h1 {
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
     margin-left: 0px;
-    margin-right: 0px;
-    
+    margin-right: 0px; 
 }
+
 
 
 
@@ -178,30 +179,178 @@ h1 {
 
 .card1 {
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p32_spis.webp);
-    
-   
+    background-image: url(../Images/p32_byg2.jpg);
+    margin-top: 300px;
     
 }
+.card1 .Foto {
+    margin-top: 220px;
+     color: #000000;
+     text-align:center;
+     border-radius: 20px;
+     display:inline-flexbox;
+     background-color: #ffdc52; 
+ }
 
 
 .card2 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p32_stud1.webp);
-
+    margin-top: 300px;
 }
+.card2 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
 
 .card3 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p32_stud3.webp);
+    margin-top: 300px;
+
 }
+.card3 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
 
 .card4 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/P32_stud2.webp);
-   
+    margin-top: 300px;
 
 }
+.card4 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+.card5 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p35_byg.webp);
+    margin-top: 300px;
+}
+.card5 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+
+.card6 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p35_stud3.webp);
+    margin-top: 300px;
+}
+.card6 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+.card7 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p35_stud1.webp);
+    margin-top: 300px;
+}
+.card7 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+.card8 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p35_spis.webp);
+    margin-top: 300px;
+
+}
+.card8 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+.card9 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p46_byg.webp);
+    margin-top: 300px;
+}
+.card9 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+
+.card10 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p46_stud.webp);
+    margin-top: 300px;
+}
+.card10 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+.card11 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p46_akt.webp);
+    margin-top: 400px;
+}
+.card11 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
+
+.card12 {
+    background-color: rgb(118, 115, 104) ;
+    background-image: url(../Images/p46_spis.webp);
+    margin-top: 300px;
+
+}
+.card12 .Foto {
+    margin-top: 220px;
+    color: #000000;
+    text-align:center;
+    border-radius: 20px;
+    display:inline-flexbox;
+    background-color: #ffdc52; 
+ }
 .card:hover{
     transform: translateY(-10px);
     
@@ -260,7 +409,7 @@ footer {
 }
 
 .h4class{
-    text-align: center;
+    text-align: left;
     margin-top: 0;
     margin-bottom: 60px;
     color:rgb(255, 208, 0);

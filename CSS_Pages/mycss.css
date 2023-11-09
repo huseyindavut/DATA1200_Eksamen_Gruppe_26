@@ -16,7 +16,7 @@ header {
 .logooslomet {
     margin-top: 0px;
     margin-left: 39px;
-    width: 100px;
+    width: 130px;
     height: 20%;
    
 }
@@ -208,7 +208,7 @@ footer {
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .menu-icon {
         display: block;
     }
