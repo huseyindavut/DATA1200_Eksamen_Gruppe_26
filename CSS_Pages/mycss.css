@@ -145,11 +145,11 @@ footer {
     padding-left: 20px;
 }
 .row .right .content p{
-    font-size: 16px;
+    font-size: 1.4em;
     line-height: 26px;
     padding-bottom: 15px;
-    text-align: justify;
-    margin-left: 100px;
+    text-align: left;
+    margin-left: 50px;
  
     padding-bottom: 15px;     
 }
@@ -245,9 +245,10 @@ footer {
 }
 .menu-items a:hover,
 .menu-items a.active {
-    background: rgb(248, 52, 52);
-    border-radius: 30px;
-    margin:-5px -15px ;
+    background: rgb(255, 213, 5);
+    color: brown;
+    border-radius: 7px;
+    margin:-10px -10px ;
     padding: 5px 20px;
     
 }
