@@ -1,43 +1,36 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: #000;
+body {                       /*It is the place where the rules of the body are determined.*/
+    margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
+    padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
+    font-family: sans-serif; /*Defines the font family for the entire page, specifying a sans-serif typeface.*/
+    background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
 }
 header {
     padding: 5px 5px;
-    box-sizing: border-box;  
-    
-    
+    box-sizing: border-box;    
 }
-
-
-    
+   
 .logooslomet {
     margin-top: 0px;
     margin-left: 39px;
     width: 130px;
-    height: 20%;
-   
+    height: 20%; 
 }
-
 
 section {
     width: 100%;
     height:100vh ;
 }
+
 section.sec1 {
     margin-top: 10px;
-    background: url(../Images/p32_byg.jpg);
+    background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  */
     background-size: cover;
-
 }
 
 section.sec2 {
     padding: 100px;
     box-sizing: border-box;
     height: auto;
-
 }
 
 section.sec2 h2{
@@ -47,6 +40,7 @@ section.sec2 h2{
     color: #fff;
     margin-left: 100px;
 }
+
 section.sec2 p{
     font-size: 1.4em;
     margin: 0;
@@ -54,13 +48,12 @@ section.sec2 p{
     color: #fff;
     margin-bottom: 50px;
 }
+
 section.sec3 {
-    background: url(../Images/p32_byg2.jpg);
+    background: url(../Images/p32_byg.webp);  /*Foto: Huseyin Ozturk-2023  */
     background-size: cover;
     margin-bottom: 200px;
 }
-
-
 
 footer {
     margin-top: 0;
@@ -68,14 +61,9 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
     background: #401010;
-
-    
-    
-
 }
 
 .footer-column {
-    border-color: rgb(255, 255, 255);
     border-bottom: 5px;
     margin-left: 50px;
     margin-right: 100px;
@@ -83,6 +71,7 @@ footer {
     margin-bottom: 1.5em;
     font-size: 20px;
 }
+
 .footer-column li {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 16px;
@@ -92,31 +81,31 @@ footer {
     font-size:17px;
     font-weight: 400;
     transition:all .50s ease;
-
 }
+
 .footer-column li:hover {
     transform: translateY(-3px) translateX(-5px);
 }
 
 .h3class{
-    text-align: center;
-    margin-top: 0;
+    text-align: left;
+    margin-left: 40PX;
     margin-bottom: 60px;
     color:rgb(53, 238, 238);
     text-decoration: underline;
-   
-
 }
 
+ .Foto2 {
+    color: #fdd553;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-size: 15px;  
+}
 
-
-
-
-
-
-
-
-
+.link-color {
+    color: #fdd553;
+}
 
 .row {
     margin-top: 80px;
@@ -127,38 +116,41 @@ footer {
     grid-template-columns: repeat(2, 1fr);
 }
 
-
 .row .left img {
     width: 100%;
     height: 70%;
     object-fit: cover;
 }
+
 .row .left .Foto2 {
-    color: #fff;
+    color: #fdd553;
     margin-bottom: 0px;
+    font-size: 15px  
 }
+
 .row .right {
     display: flex;
     align-items: center;
 }
+
 .row .right .content {
     padding-left: 20px;
 }
+
 .row .right .content p{
     font-size: 1.4em;
     line-height: 26px;
     padding-bottom: 15px;
     text-align: left;
     margin-left: 50px;
- 
     padding-bottom: 15px;     
 }
 @media (min-width: 750px){
-    .row .left .content {
-        
+    .row .left .content {   
+        width: 750px; 
     }
 }
-@media (max-width: 991px){
+@media (max-width: 700px){
     .row .left img {
         width: 350px;
         height: 50%;
@@ -170,17 +162,6 @@ footer {
         grid-template-columns: repeat(2,1fr);
     }
 }
-
-
-
-
-  
-  
-  
-  
-  
-  
-
 
 .menu-bar {
     margin-top: 10px;
@@ -221,11 +202,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .logooslomet{
         margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 12px;
     }
+
     .menu-items {
         margin-left: 30px;
         display: none;
@@ -248,12 +231,12 @@ footer {
         display: flex;
     }
 }
+
 .menu-items a:hover,
 .menu-items a.active {
     background: rgb(255, 213, 5);
     color: brown;
     border-radius: 7px;
     margin:-10px -10px ;
-    padding: 5px 20px;
-    
+    padding: 5px 20px; 
 }

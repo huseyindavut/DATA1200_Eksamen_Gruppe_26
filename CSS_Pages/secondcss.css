@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto Serif', serif;
- 
 }
-
 
 .container1 {
     width: 100%;
@@ -42,7 +40,6 @@
     margin-bottom: 0px; 
 }
 
-
 .container4 {
     width: 100%;
     height: 100%;
@@ -55,7 +52,6 @@
     margin-bottom: 0px;
 }
     
-
 .navbar {
     margin-top: 0px;
     margin-right: 30px;
@@ -87,25 +83,21 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 60px;
-}
-
-nav ul li {
     text-decoration: none;
     color: #fff;
     font-size: 13px;
-
 }
+
 .navbarlinks{
    text-align: center;
-   color:rgb(0, 0, 0);
+   color:rgb(255, 247, 3);
    text-shadow: 0 0 15px #6a6969 ; 
    font-size: 23px;
-   background-color: rgb(255, 255, 255) ;
+   background-color: rgb(34, 168, 166) ;
    background-position: bottom;
    margin-top: 15px;
    border-radius: 20px;
    padding:20px 13px;
-
 }
 
 nav ul li a {
@@ -113,22 +105,16 @@ nav ul li a {
     font-size: 25px;
 }
 
-
 .row {
     margin-top: 0px;
     display:flex;
     height: 88%;
-    align-items:center;
-  
+    align-items:center; 
 }
-
-
 
 .col {
     flex-basis: 50%;
-   
 }
-
 
 h1 {
     margin-top: 15%;
@@ -156,11 +142,7 @@ h1 {
     margin-right: 0px; 
 }
 
-
-
-
-.card {
-    
+.card { 
     width: 400px;
     height: 300px;
     display:inline-block;
@@ -172,17 +154,14 @@ h1 {
     background-position:center ;
     background-size:cover;
     transition: transform 0.2s;
-    
-    
-
 }
 
 .card1 {
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p32_byg2.jpg);
-    margin-top: 300px;
-    
+    background-image: url(../Images/p32_byg.webp);
+    margin-top: 300px;    
 }
+
 .card1 .Foto {
     margin-top: 220px;
      color: #000000;
@@ -190,14 +169,14 @@ h1 {
      border-radius: 20px;
      display:inline-flexbox;
      background-color: #ffdc52; 
- }
-
+}
 
 .card2 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p32_stud1.webp);
     margin-top: 300px;
 }
+
 .card2 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -207,13 +186,12 @@ h1 {
     background-color: #ffdc52; 
  }
 
-
 .card3 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p32_stud3.webp);
     margin-top: 300px;
-
 }
+
 .card3 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -227,8 +205,8 @@ h1 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/P32_stud2.webp);
     margin-top: 300px;
-
 }
+
 .card4 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -237,11 +215,13 @@ h1 {
     display:inline-flexbox;
     background-color: #ffdc52; 
  }
+
 .card5 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p35_byg.webp);
     margin-top: 300px;
 }
+
 .card5 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -251,12 +231,12 @@ h1 {
     background-color: #ffdc52; 
  }
 
-
 .card6 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p35_stud3.webp);
     margin-top: 300px;
 }
+
 .card6 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -271,6 +251,7 @@ h1 {
     background-image: url(../Images/p35_stud1.webp);
     margin-top: 300px;
 }
+
 .card7 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -284,8 +265,8 @@ h1 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p35_spis.webp);
     margin-top: 300px;
-
 }
+
 .card8 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -294,11 +275,13 @@ h1 {
     display:inline-flexbox;
     background-color: #ffdc52; 
  }
+
 .card9 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p46_byg.webp);
     margin-top: 300px;
 }
+
 .card9 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -308,12 +291,12 @@ h1 {
     background-color: #ffdc52; 
  }
 
-
 .card10 {
     background-color: rgb(118, 115, 104) ;
     background-image: url(../Images/p46_stud.webp);
     margin-top: 300px;
 }
+
 .card10 .Foto {
     margin-top: 220px;
     color: #000000;
@@ -356,9 +339,7 @@ h1 {
     
 }
 
-
 h5 {
- 
    text-align: center;
    color:rgb(0, 0, 0);
    text-shadow: 0 0 15px #6a6969 ; 
@@ -370,7 +351,6 @@ h5 {
    padding:10px 0;
 }
 
-
 footer {
     margin-top: 0;
     display: grid;
@@ -379,9 +359,6 @@ footer {
     background: #087f96;
     color: #fff;
     font-family: sans-serif;
-    
-    
-
 }
 
 .footer-column {
@@ -393,17 +370,19 @@ footer {
     margin-bottom: 1.5em;
     font-size: 20px;
 }
+
 .footer-column li {
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     display: block;
-    color:  rgb(244, 236, 199);
+    color: rgb(255, 208, 0);
     line-height: 1.5;
     font-size:17px;
     font-weight: 400;
     transition:all .50s ease;
-
 }
+
+
 .footer-column li:hover {
     transform: translateY(-3px) translateX(-5px);
 }
@@ -414,8 +393,17 @@ footer {
     margin-bottom: 60px;
     color:rgb(255, 208, 0);
     text-decoration: underline;
-   
+}
 
+.h3class{
+    text-align: left;
+    margin-bottom: 60px;
+    color:rgb(250, 245, 116);
+    text-decoration: underline;
+}
+
+.link-color {
+    color: #fdd553;
 }
 
 
