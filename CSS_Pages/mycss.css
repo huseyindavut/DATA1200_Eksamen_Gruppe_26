@@ -54,7 +54,7 @@ section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' *
 
 /* Styling for elements with the class 'sec3' */
 section.sec3 {
-    background: url(../Images/p32_byg.webp);  /* Sets the background image for elements with the class 'sec3' */
+    background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023 /* Sets the background image for elements with the class 'sec3' */
     background-size: cover;                    /* Ensures that the background image covers the entire container */
     margin-bottom: 200px;                      /* Adds a bottom margin of 200 pixels to create space below elements with the class 'sec3' */
 }
