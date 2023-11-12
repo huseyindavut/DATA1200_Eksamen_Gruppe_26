@@ -151,8 +151,8 @@ footer {/* Styling for the footer */
     margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
     padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragraph (15 pixels) */    
 }
-x
-@media (min-width: 750px) {/* Media Query 1: Applies styles when the viewport width is 750 pixels or wider */
+
+@media (min-width: 750px) { /* Media Query 1: Applies styles when the viewport width is 750 pixels or wider */
     .row .left .content {   
         width: 750px;  /* Sets the width of content in the left column to 750 pixels */
     }
@@ -193,7 +193,7 @@ x
     gap: 60px;
 }
 
-.menu-items a {/* Styling for menu item links */
+.menu-items a { /* Styling for menu item links */
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 140%;
