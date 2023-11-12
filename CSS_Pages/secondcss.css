@@ -161,11 +161,11 @@ h1 {/* Styling for 'h1' elements */
 
 .card1 {/* Styling for the first card with the class 'card1' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p32_byg.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p32_byg.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;    
 }
 
-.card1 .Foto {/* Styling for the content within the card1 with the class 'Foto' */
+.card1 .Foto {    /* Styling for the content within the card1 with the class 'Foto' */
     margin-top: 220px;
      color: #000000;
      text-align:center;
@@ -174,13 +174,13 @@ h1 {/* Styling for 'h1' elements */
      background-color: #ffdc52; 
 }
 
-.card2 {/* Styling for the first card with the class 'card2' */
+.card2 {         /* Styling for the first card with the class 'card2' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p32_stud1.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p32_stud1.webp); /*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
-.card2 .Foto {/* Styling for the content within the card2 with the class 'Foto' */
+.card2 .Foto { /* Styling for the content within the card2 with the class 'Foto' */
     margin-top: 220px;
     color: #000000;
     text-align:center;
@@ -191,7 +191,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card3 {/* Styling for the first card with the class 'card3' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p32_stud3.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p32_stud3.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
@@ -206,11 +206,11 @@ h1 {/* Styling for 'h1' elements */
 
 .card4 {/*Styling for the first card with the class 'card4' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/P32_stud2.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/P32_stud2.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
-.card4 .Foto {/* Styling for the content within the card4 with the class 'Foto' */
+.card4 .Foto {    /* Styling for the content within the card4 with the class 'Foto' */
     margin-top: 220px;
     color: #000000;
     text-align:center;
@@ -219,24 +219,24 @@ h1 {/* Styling for 'h1' elements */
     background-color: #ffdc52; 
  }
 
-.card5 {/*Styling for the first card with the class 'card5 */
+.card5 {       /*Styling for the first card with the class 'card5 */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p35_byg.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p35_byg.webp);   /*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
-.card5 .Foto {/* Styling for the content within the card5 with the class 'Foto' */
+.card5 .Foto {  /* Styling for the content within the card5 with the class 'Foto' */
     margin-top: 220px;
     color: #000000;
     text-align:center;
     border-radius: 20px;
     display:inline-flexbox;
-    background-color: #ffdc52; 
+    background-color: #ffdc52;  
  }
 
 .card6 {/*Styling for the first card with the class 'card6' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p35_stud3.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p35_stud3.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
@@ -251,7 +251,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card7 {/*Styling for the first card with the class 'card7' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p35_stud1.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p35_stud1.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
@@ -266,7 +266,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card8 {/*Styling for the first card with the class 'card8' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p35_spis.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p35_spis.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
@@ -296,7 +296,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card10 {/*Styling for the first card with the class 'card10' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_stud.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p46_stud.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 }
 
@@ -311,7 +311,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card11 {/*Styling for the first card with the class 'card11' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_akt.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p46_akt.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 400px;
 }
 .card11 .Foto {/* Styling for the content within the card11 with the class 'Foto' */
@@ -325,7 +325,7 @@ h1 {/* Styling for 'h1' elements */
 
 .card12 {/*Styling for the first card with the class 'card12' */
     background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_spis.webp);/*Foto: Huseyin Ozturk-2023
+    background-image: url(../Images/p46_spis.webp);/*Foto: Huseyin Ozturk-2023*/
     margin-top: 300px;
 
 }
