@@ -4,44 +4,47 @@ body {                       /*It is the place where the rules of the body are d
     font-family: sans-serif; /*Defines the font family for the entire page, specifying a sans-serif typeface.*/
     background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
 }
-header {
+
+header { /* Styling for the header */
     padding: 5px 5px;
     box-sizing: border-box;    
 }
    
-.logooslomet {
+.logooslomet { /* Styling for the logo with the class "logo oslomet" */
     margin-top: 0px;
     margin-left: 39px;
     width: 130px;
     height: 20%; 
 }
 
-section {
+section {/* Styling for the sections */
     width: 100%;
-    height:100vh ;
+    height:100vh ; /* 100% of the viewport height */
 }
 
-section.sec1 {
+section.sec1 {/* Styling for a specific section with the class "sec1" */
     margin-top: 10px;
-    background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  */
-    background-size: cover;
+    background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  *//* Background image with a URL */
+    background-size: cover;/* Cover the entire background with the image */
 }
 
+/* Styling for elements with the class 'sec2' within the 'section' */
 section.sec2 {
-    padding: 100px;
-    box-sizing: border-box;
-    height: auto;
+    padding: 100px;       /* Adds padding of 100 pixels to all sides of elements with the class 'sec2' */
+    box-sizing: border-box; /* Applies the border-box sizing model, including padding and border in the element's total width and height */
+    height: auto;         /* Sets the height of elements with the class 'sec2' to be automatically determined by their content */
+}
+/* Styling for 'h2' elements within '.sec2' section */
+section.sec2 h2 {
+    font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
+    margin: 0;           /* Resets the margin to zero to remove any default margin */
+    padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
+    color: #fff;         /* Sets the text color of 'h2' elements to white (#fff) */
+    margin-left: 100px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
 }
 
-section.sec2 h2{
-    font-size: 3em;
-    margin: 0;
-    padding: 0 0 20px;
-    color: #fff;
-    margin-left: 100px;
-}
 
-section.sec2 p{
+section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' */
     font-size: 1.4em;
     margin: 0;
     padding: 0;
@@ -49,13 +52,13 @@ section.sec2 p{
     margin-bottom: 50px;
 }
 
+/* Styling for elements with the class 'sec3' */
 section.sec3 {
-    background: url(../Images/p32_byg.webp);  /*Foto: Huseyin Ozturk-2023  */
-    background-size: cover;
-    margin-bottom: 200px;
+    background: url(../Images/p32_byg.webp);  /* Sets the background image for elements with the class 'sec3' */
+    background-size: cover;                    /* Ensures that the background image covers the entire container */
+    margin-bottom: 200px;                      /* Adds a bottom margin of 200 pixels to create space below elements with the class 'sec3' */
 }
-
-footer {
+footer {/* Styling for the footer */
     margin-top: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -63,31 +66,34 @@ footer {
     background: #401010;
 }
 
-.footer-column {
-    border-bottom: 5px;
-    margin-left: 50px;
-    margin-right: 100px;
-    margin-top: 100px;
-    margin-bottom: 1.5em;
-    font-size: 20px;
+
+.footer-column {/* Styling for elements with the class 'footer-column' */
+    border-bottom: 5px;   /* Adds a bottom border with a default color and style, but the width is missing a unit (e.g., px) */
+    margin-left: 50px;    /* Adds a left margin of 50 pixels to the elements with the class 'footer-column' */
+    margin-right: 100px;  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
+    margin-top: 100px;    /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
+    margin-bottom: 1.5em; /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
+    font-size: 20px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
 }
 
-.footer-column li {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 16px;
-    display: block;
-    color:  #FFD500;
-    line-height: 1.5;
-    font-size:17px;
-    font-weight: 400;
-    transition:all .50s ease;
+
+
+.footer-column li {/* Styling for List Items within '.footer-column' */
+    font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
+    margin-bottom: 16px;  /* Adds bottom margin of 16 pixels to each list item */
+    display: block;  /* Specifies that list items should be displayed as block-level elements */
+    color: #FFD500;  /* Sets the text color of list items to a shade of yellow */
+    line-height: 1.5;  /* Sets the line height to 1.5 times the font size */
+    font-size: 17px;  /* Sets the font size to 17 pixels */
+    font-weight: 400;  /* Sets the font weight to 400 (normal) */
+    transition: all .50s ease;  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
 }
 
-.footer-column li:hover {
+.footer-column li:hover { /* Hover Effect for Footer Column List Items */
     transform: translateY(-3px) translateX(-5px);
 }
 
-.h3class{
+.h3class{/* Styling for Heading with Class 'h3class' */
     text-align: left;
     margin-left: 40PX;
     margin-bottom: 60px;
@@ -95,7 +101,7 @@ footer {
     text-decoration: underline;
 }
 
- .Foto2 {
+ .Foto2 {/* Styling for Element with Class 'Foto2' */
     color: #fdd553;
     text-align: right;
     margin-right: 20px;
@@ -103,77 +109,77 @@ footer {
     font-size: 15px;  
 }
 
-.link-color {
+.link-color {/* Styling for Links with Class 'link-color' */
     color: #fdd553;
 }
 
-.row {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    width: 80%;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.row {/* Styling for Grid Layout with Class 'row' */
+    margin-top: 80px;/* Adds a top margin of 80 pixels to the 'row' class */
+    margin-bottom: 80px;/* Adds a bottom margin of 80 pixels to the 'row' class */
+    width: 80%; /* Sets the width of the 'row' class to 80% of its containing element */
+    max-width: 1170px;/* Sets the maximum width of the 'row' class to 1170 pixels */
+    display: grid; /* Sets the display property to 'grid' for the 'row' class */
+    grid-template-columns: repeat(2, 1fr);/* Creates a grid with two columns of equal width */
 }
 
-.row .left img {
+.row .left img {/* Styling for Image in Left Column of Grid */
     width: 100%;
     height: 70%;
     object-fit: cover;
 }
 
-.row .left .Foto2 {
+.row .left .Foto2 {/* Styling for Text in Left Column of Grid */
     color: #fdd553;
     margin-bottom: 0px;
     font-size: 15px  
 }
 
-.row .right {
+.row .right {/* Styling for Right Column of Grid */
     display: flex;
     align-items: center;
 }
 
-.row .right .content {
+.row .right .content {/* Styling for Content in Right Column of Grid */
     padding-left: 20px;
 }
 
-.row .right .content p{
-    font-size: 1.4em;
-    line-height: 26px;
-    padding-bottom: 15px;
-    text-align: left;
-    margin-left: 50px;
-    padding-bottom: 15px;     
+.row .right .content p {
+    font-size: 1.4em;       /* Sets the font size to 1.4 times the default font size */
+    line-height: 26px;      /* Defines the line height between lines of text as 26 pixels */
+    padding-bottom: 15px;   /* Adds padding to the bottom of each paragraph (15 pixels) */
+    text-align: left;       /* Aligns the text to the left within the paragraph */
+    margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
+    padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragraph (15 pixels) */    
 }
-@media (min-width: 750px){
+x
+@media (min-width: 750px) {/* Media Query 1: Applies styles when the viewport width is 750 pixels or wider */
     .row .left .content {   
-        width: 750px; 
+        width: 750px;  /* Sets the width of content in the left column to 750 pixels */
     }
 }
-@media (max-width: 700px){
+@media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
     .row .left img {
-        width: 350px;
-        height: 50%;
+        width: 350px;  /* Sets the width of images in the left column to 350 pixels */
+        height: 50%;   /* Sets the height of images to 50% of the parent element's height */
     }
 }
-@media (max-width: 768px){
+@media (max-width: 768px){/* Media Query 3: Applies styles when the viewport width is 768 pixels or narrower */
     .row {
-        width: 90%;
-        grid-template-columns: repeat(2,1fr);
+        width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
+        grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
     }
 }
 
-.menu-bar {
-    margin-top: 10px;
-  
-    background-color: #7a6e6e57;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu-bar {/* Styling for the menu bar */
+    margin-top: 10px; /* Adds a top margin of 10 pixels to the menu bar */
+    background-color: #7a6e6e57;  /* Sets the background color with a slight transparency */
+    padding: 10px 30px; /* Adds padding of 10 pixels on the top and bottom, and 30 pixels on the left and right */
+    display: flex;/* Turns the menu bar into a flex container */
+    justify-content: space-between;   /* Positions the child elements with space between them horizontally */
+    align-items: center;/* Centers the child elements vertically */
 }
 
-.menu-icon {
+.menu-icon {/* Styling for the menu icon */
     margin-left: 30px;
     display: none;
     cursor: pointer;
@@ -181,58 +187,57 @@ footer {
     color: rgb(125, 212, 232);
 }
 
-.menu-items {
+.menu-items {/* Styling for the menu items */
     margin-top: 12px;
     display:flex;
     gap: 60px;
 }
 
-.menu-items a {
+.menu-items a {/* Styling for menu item links */
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 140%;
     
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {/* Media query for responsive design */
     .menu-icon {
         display: block;
     }
-    .menu-bar{
-        flex-direction: column;
-        align-items: flex-start;
+    .menu-bar {
+        flex-direction: column;  /* Sets the flex container to have a column layout (vertical stacking) */
+        align-items: flex-start; /* Aligns flex items to the start (left) of the cross axis */
     }
-
-    .logooslomet{
+    
+    .logooslomet{/* Styling for the logo with the class "logooslomet" */
         margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 12px;
     }
-
     .menu-items {
-        margin-left: 30px;
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
+        margin-left: 30px;        /* Adds left margin of 30 pixels to the menu items */
+        display: none;            /* Initially hides the menu items */
+        flex-direction: column;    /* Sets the layout of the menu items to be a vertical column */
+        width: 100%;              /* Makes the menu items span the full width of the container */
+        background-color: #333;   /* Sets the background color of the menu items to dark gray */
+        position: absolute;       /* Positions the menu items absolutely within its containing element */
+        top: 60px;                /* Positions the top edge of the menu items 60 pixels down from the top */
+        left: 0;                  /* Positions the left edge of the menu items at the left edge of its containing element */
     }
-
+    
     .menu-items a {
-        padding: 15px 20px;
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
+        padding: 15px 20px;        /* Adds padding to the menu item links (15 pixels top and bottom, 20 pixels left and right) */
+        width: 100%;              /* Makes the menu item links span the full width of the container */
+        box-sizing: border-box;   /* Includes padding and border in the total width and height of the menu item links */
+        text-align: center;       /* Centers the text within the menu item links */
     }
-
+    
     input[type="checkbox"]:checked + .menu-items {
-        display: flex;
+        display: flex;            /* Displays the menu items as a flex container when the associated checkbox is checked */
     }
+    
 }
-
-.menu-items a:hover,
+.menu-items a:hover,/* Styling for menu item links on hover and when active */
 .menu-items a.active {
     background: rgb(255, 213, 5);
     color: brown;
