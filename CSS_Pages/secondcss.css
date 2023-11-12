@@ -1,10 +1,10 @@
-* 
+*{
 margin: 0;/* Resetting margins to zero for all elements */
 
 padding: 0;/* Resetting padding to zero for all elements */
 
 font-family: 'Roboto Serif', serif;/* Setting the preferred font family for all text, with a fallback to a generic serif font */
-
+}
 
 .container1 {/* Styling for an element with the class 'container1' */
     width: 100%;  /* Sets the width of the container to 100% of its parent element's width */
