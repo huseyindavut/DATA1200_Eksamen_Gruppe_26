@@ -39,7 +39,7 @@ section.sec2 h2 {
     font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
     margin: 0;           /* Resets the margin to zero to remove any default margin */
     padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
-    color: #fff;         /* Sets the text color of 'h2' elements to white (#fff) */
+    color: #FFD500;         /* Sets the text color of 'h2' elements to white (#fff) */
     margin-left: 100px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
 }
 
@@ -102,7 +102,7 @@ footer {/* Styling for the footer */
 }
 
  .Foto2 {/* Styling for Element with Class 'Foto2' */
-    color: #fdd553;
+    color: #FFD500;
     text-align: right;
     margin-right: 20px;
     margin-bottom: 0px;
@@ -110,7 +110,7 @@ footer {/* Styling for the footer */
 }
 
 .link-color {/* Styling for Links with Class 'link-color' */
-    color: #fdd553;
+    color: #FFD500;
 }
 
 .row {/* Styling for Grid Layout with Class 'row' */
@@ -129,7 +129,7 @@ footer {/* Styling for the footer */
 }
 
 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
-    color: #fdd553;
+    color: #FFD500;
     margin-bottom: 0px;
     font-size: 15px  
 }
