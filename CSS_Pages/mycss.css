@@ -200,7 +200,7 @@ footer {/* Styling for the footer */
     
 }
 
-@media screen and (max-width: 750px) {/* Media query for responsive design */
+@media screen and (max-width: 750px) {  /* Media query for responsive design */
     .menu-icon {
         display: block;
     }

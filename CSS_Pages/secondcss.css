@@ -102,6 +102,11 @@ nav ul li {/* Styling for the list items within the 'nav' element */
    border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
    padding:20px 13px;
 }
+@media screen and (max-width: 750px) {  /* Media query for responsive design */
+    .navbarlinks {
+        display: block;
+    }
+}    
 
 nav ul li a {/* Styling for the links within list items in the 'nav' element */
     color:#fff8d7;
