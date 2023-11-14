@@ -122,6 +122,15 @@ nav ul li a {/* Styling for the links within list items in the 'nav' element */
 
 .col {/* Styling for elements with the class 'col' */
     flex-basis: 50%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+}
+.col img{
+    height: 550px;
+    width: 100%;
+    cursor: zoom-in;
+    
 }
 
 h1 {/* Styling for 'h1' elements */
