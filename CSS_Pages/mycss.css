@@ -3,6 +3,7 @@ body {                       /*It is the place where the rules of the body are d
     padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
     font-family: sans-serif; /*Defines the font family for the entire page, specifying a sans-serif typeface.*/
     background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
+   
 }
 
 header { /* Styling for the header */
@@ -23,7 +24,7 @@ section {/* Styling for the sections */
 }
 
 section.sec1 {/* Styling for a specific section with the class "sec1" */
-    margin-top: 10px;
+    margin-top: -10px;
     background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  */  /* Background image with a URL */
     background-size: cover;/* Cover the entire background with the image */
 }
@@ -169,79 +170,186 @@ footer {/* Styling for the footer */
         grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
     }
 }
+  
+  header {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .nav-toggle {
+    
+    position: absolute !important;
+    top: -999px !important;
+    left: -9999px !important;
+    
+  }
+  
+  .nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(rgb(239, 65, 65), 0.75);
+    
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+   
+    display: block;
+    background: rgb(252, 205, 18);
+    height: 4px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .nav-toggle-label span::before {
+    bottom: 9px;
+  }
+  
+  .nav-toggle-label span::after {
+  
+    top: 7px;
+  }
+  
+  nav {
+   margin-top: 50px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    transform: scale(1, 0);
+    transition: transform 500ms ease-in-out;
+   
+  }
+  
+  nav ul {
 
-.menu-bar {/* Styling for the menu bar */
-    margin-top: 10px; /* Adds a top margin of 10 pixels to the menu bar */
-    background-color: #7a6e6e57;  /* Sets the background color with a slight transparency */
-    padding: 10px 30px; /* Adds padding of 10 pixels on the top and bottom, and 30 pixels on the left and right */
-    display: flex;/* Turns the menu bar into a flex container */
-    justify-content: space-between;   /* Positions the child elements with space between them horizontally */
-    align-items: center;/* Centers the child elements vertically */
-}
-
-.menu-icon {/* Styling for the menu icon */
-    margin-left: 30px;
-    display: none;
-    cursor: pointer;
-    font-size: 60px;
-    color: rgb(125, 212, 232);
-}
-
-.menu-items {/* Styling for the menu items */
-    margin-top: 12px;
-    display:flex;
-    gap: 60px;
-}
-
-.menu-items a { /* Styling for menu item links */
-    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-top: 40px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    
+    color: rgb(252, 205, 18);
     text-decoration: none;
-    font-size: 140%;
-    
-}
+    font-size: 22px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  nav a:hover {
+    color: rgb(54, 40, 40);
+  }
+  
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .nav-toggle-label {
+      display: none;
+    }
+    header {
+      
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+    .logo {
+        
+      grid-column: 2 / 3;
+    }
+    nav {
+      all: unset;
+      margin-top: 10px; 
+      margin-bottom: 10px;
+      position: relative;
+      text-align: left;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+  
+      grid-column: 3 / 4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    nav ul {
+        
+      display: flex;
+    }
+    nav li {
+        
+      margin-left: 3em;
+      margin-bottom: 15px;
+    }
+    nav a {
+        
+      opacity: 1;
+      position: relative;
+    }
+    nav a::after {   
+      content: "";
+      display: block;
+      height: 2px;
+      background: rgb(253, 26, 26);
+      /* position: absolute; */
+      left: 0;
+      right: 0;
+      transform: scale(0, 2);
+      transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::after {
+        
+      transform: scale(1, 1);
+    }
+  }
 
-@media screen and (max-width: 750px) {  /* Media query for responsive design */
-    .menu-icon {
-        display: block;
-    }
-    .menu-bar {
-        flex-direction: column;  /* Sets the flex container to have a column layout (vertical stacking) */
-        align-items: flex-start; /* Aligns flex items to the start (left) of the cross axis */
-    }
-    
-    .logooslomet{/* Styling for the logo with the class "logooslomet" */
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: 12px;
-    }
-    .menu-items {
-        margin-left: 30px;        /* Adds left margin of 30 pixels to the menu items */
-        display: none;            /* Initially hides the menu items */
-        flex-direction: column;    /* Sets the layout of the menu items to be a vertical column */
-        width: 100%;              /* Makes the menu items span the full width of the container */
-        background-color: #333;   /* Sets the background color of the menu items to dark gray */
-        position: absolute;       /* Positions the menu items absolutely within its containing element */
-        top: 60px;                /* Positions the top edge of the menu items 60 pixels down from the top */
-        left: 0;                  /* Positions the left edge of the menu items at the left edge of its containing element */
-    }
-    
-    .menu-items a {
-        padding: 15px 20px;        /* Adds padding to the menu item links (15 pixels top and bottom, 20 pixels left and right) */
-        width: 100%;              /* Makes the menu item links span the full width of the container */
-        box-sizing: border-box;   /* Includes padding and border in the total width and height of the menu item links */
-        text-align: center;       /* Centers the text within the menu item links */
-    }
-    
-    input[type="checkbox"]:checked + .menu-items {
-        display: flex;            /* Displays the menu items as a flex container when the associated checkbox is checked */
-    }
-    
-}
-.menu-items a:hover,/* Styling for menu item links on hover and when active */
-.menu-items a.active {
-    background: rgb(255, 213, 5);
-    color: brown;
-    border-radius: 7px;
-    margin:-10px -10px ;
-    padding: 5px 20px; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
