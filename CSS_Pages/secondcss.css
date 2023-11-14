@@ -96,7 +96,7 @@
        color:rgb(255, 247, 3);
        text-shadow: 0 0 15px #6a6969 ; 
        font-size: 23px;
-       background-color: rgb(34, 168, 166) ;
+       background-color: rgb(7, 49, 48) ;
        background-position: bottom;
        margin-top: 15px;
        border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
@@ -109,7 +109,7 @@
     }    
     
     nav ul li a {/* Styling for the links within list items in the 'nav' element */
-        color:#fff8d7;
+        color:#f3c705;
         font-size: 25px;
     }
     
@@ -364,7 +364,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Creates a responsive grid layout */
         gap: 3.5rem; /* Sets the gap between grid items to 3.5rem */
-        background: #087f96; /* Sets the background color of the footer */
+        background: #0a4f5c; /* Sets the background color of the footer */
         color: #fff;
         font-family: sans-serif;
     }
@@ -406,12 +406,12 @@
     .h3class{/* Styling for h3class elements */
         text-align: left;
         margin-bottom: 60px;
-        color:rgb(250, 245, 116);
+        color:rgb(250, 244, 244);
         text-decoration: underline;
     }
     
     .link-color {/* Styling for elements with the class 'link-color' */
-        color: #fdd553;
+        color: #ecddaa;
     }
     
     
