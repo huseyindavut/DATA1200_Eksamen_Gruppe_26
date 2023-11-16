@@ -49,11 +49,11 @@
         background-image: linear-gradient(rgba(147, 237, 183, 0.7),rgba(228, 200, 239, 0.91));
         background-position: center;
         background-size:cover;
-        padding-left: 15%;
+        padding-left: 0;
         padding-right: 0;
         box-sizing:border-box;
         margin-bottom: 0px;
-        margin-left: 15%;
+        margin-left: 0;
     }
     .container5 row img{
         height: 500px;
