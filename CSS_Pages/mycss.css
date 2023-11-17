@@ -171,7 +171,7 @@ footer {/* Styling for the footer */
     }
 }
   
-  header {
+  header {/* Header design */
     background: rgb(0, 0, 0);
     text-align: center;
     position: fixed;
@@ -179,7 +179,7 @@ footer {/* Styling for the footer */
     width: 100%;
   }
   
-  .nav-toggle {
+  .nav-toggle {/* Styles for the navigation toggle */
     
     position: absolute !important;
     top: -999px !important;
@@ -187,12 +187,12 @@ footer {/* Styling for the footer */
     
   }
   
-  .nav-toggle:focus ~ .nav-toggle-label {
+  .nav-toggle:focus ~ .nav-toggle-label {/* Highlighting the label when the navigation toggle is focused */
     outline: 3px solid rgba(rgb(239, 65, 65), 0.75);
     
   }
   
-  .nav-toggle-label {
+  .nav-toggle-label {/* Styles for the navigation toggle label */
     position: absolute;
     margin-top: 50px;
     top: 0;
@@ -202,7 +202,7 @@ footer {/* Styling for the footer */
     display: flex;
     align-items: center;
   }
-  
+  /* Styles for the lines in the navigation toggle icon */
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
@@ -214,23 +214,23 @@ footer {/* Styling for the footer */
     border-radius: 2px;
     position: relative;
   }
-  
+  /* Positions of the lines in the navigation toggle icon */
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     content: "";
     position: absolute;
   }
   
-  .nav-toggle-label span::before {
+  .nav-toggle-label span::before {/* Position of the first line in the navigation toggle icon */
     bottom: 9px;
   }
   
-  .nav-toggle-label span::after {
+  .nav-toggle-label span::after {/* Position of the second line in the navigation toggle icon */
   
     top: 7px;
   }
   
-  nav {
+  nav {/* Styles for the navigation menu */
    margin-top: 50px;
     position: absolute;
     text-align: left;
@@ -243,20 +243,20 @@ footer {/* Styling for the footer */
    
   }
   
-  nav ul {
+  nav ul {/* Styles for the list inside the navigation menu */
 
     margin: 0;
     padding: 0;
     list-style: none;
   }
   
-  nav li {
+  nav li {/* Styles for the list items inside the navigation menu */
     margin-top: 40px;
     margin-bottom: 1em;
     margin-left: 1em;
   }
   
-  nav a {
+  nav a {/* Styles for the links inside the navigation menu */
     
     color: rgb(252, 205, 18);
     text-decoration: none;
@@ -266,33 +266,33 @@ footer {/* Styling for the footer */
     transition: opacity 150ms ease-in-out;
   }
   
-  nav a:hover {
+  nav a:hover {/* Styling for link hover effect */
     color: rgb(54, 40, 40);
   }
   
-  .nav-toggle:checked ~ nav {
+  .nav-toggle:checked ~ nav {/* Displaying the full navigation menu when the toggle is checked */
     transform: scale(1, 1);
   }
   
-  .nav-toggle:checked ~ nav a {
+  .nav-toggle:checked ~ nav a {/* Adjusting opacity for navigation links when the toggle is checked */
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
   }
   
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 800px) {/* Media query for screens wider than 800px */
     .nav-toggle-label {
       display: none;
     }
-    header {
+    header {/* Header layout for wider screens using grid */
       
       display: grid;
       grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
     }
-    .logo {
+    .logo {/* Logo positioning in the header for wider screens */
         
       grid-column: 2 / 3;
     }
-    nav {
+    nav { /* Navigation menu styling for wider screens */
       all: unset;
       margin-top: 10px; 
       margin-bottom: 10px;
@@ -309,21 +309,21 @@ footer {/* Styling for the footer */
       justify-content: flex-end;
       align-items: center;
     }
-    nav ul {
+    nav ul {/* Styling for the list inside the navigation menu on wider screens */
         
       display: flex;
     }
-    nav li {
+    nav li {/* Adjustments for list items inside the navigation menu on wider screens */
         
       margin-left: 3em;
       margin-bottom: 15px;
     }
-    nav a {
+    nav a { /* Styling for links inside the navigation menu on wider screens */
         
       opacity: 1;
       position: relative;
     }
-    nav a::after {   
+    nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
       content: "";
       display: block;
       height: 2px;
@@ -334,7 +334,7 @@ footer {/* Styling for the footer */
       transform: scale(0, 2);
       transition: transform ease-in-out 250ms;
     }
-    nav a:hover::after {
+    nav a:hover::after {/* Underline effect when hovering over links on wider screens */
         
       transform: scale(1, 1);
     }

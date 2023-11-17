@@ -55,30 +55,30 @@
         margin-bottom: 0px;
         margin-left: 0;
     }
-    .container5 row img{
+    .container5 row img{/* Styling for images in the container5 */
         height: 500px;
         width: 500px;
         margin-bottom: 0;
 
     }
-    article{
+    article{/* Styling for the article section */
         margin-top: 0;
         padding: 0;
     }
- #contant {
+ #contant {/* Styling for the contant section */
         width:960px;
         margin: 25%;
         margin-top: 1rem;
     }
 
-#contant h{
+#contant h{/* Styling for the main heading */
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:38px;
 	color:#3a3a3a;
 	font-weight:normal;
 	margin-bottom:20px;
 }
-#contant h span{
+#contant h span{/* Styling for the subheading within the main heading */
 	display:block;
 	font-size:10px;
 	color:#808080;
@@ -88,21 +88,22 @@
     margin-bottom: 10px;
 }
 .contant_1_left {
+    /* Styling for the left contant section */
     width:710px;
 	float:inline-start;
 }
-.contant_1_left img{
+.contant_1_left img{/* Styling for images within the left content section */
 	float: left;
 	margin-right:10px;
 }
-.contant_1_left p{
+.contant_1_left p{/* Styling for paragraphs within the left content section */
 	font-size:14px;
 	color:#3a3a3a;
 	font-weight:normal;
 	line-height:20px;
     margin-bottom: 5px;
 }
-p.quoteBar {
+p.quoteBar {/* Styling for a quoted bar section */
 	background:#F0F0F0;
 	padding:5px;
 	font-size:11px;
@@ -114,12 +115,12 @@ p.quoteBar {
 	margin-bottom:20px;
 	font-style:italic;
 }
-figcaption{
+figcaption{/* Styling for the figure caption */
 
     font-size: small;
 }
 
-.contant_1_left h3{
+.contant_1_left h3{/* Styling for subheadings within the left content section */
 	font-size:24px;
 	background:#757575;
 	color:#FFFFFF;
@@ -144,7 +145,8 @@ figcaption{
         margin-bottom: 0px;
     }
         
-    .navbar {/* Styling for the navigation bar with the class 'navbar' */
+    .navbar {/* Styling for the navigation bar 
+        ith the class 'navbar' */
         margin-top: 0px;/* Sets the top margin of the navigation bar to 0 pixels */
         margin-right: 30px;/* Sets the right margin of the navigation bar to 30 pixels */
         height: 20%;/* Sets the height of the navigation bar to 20% of its containing element's height */
