@@ -125,9 +125,11 @@ footer {/* Styling for the footer */
 
 .row .left img {/* Styling for Image in Left Column of Grid */
     width: 100%;
-    height: 70%;
+    height: 90%;
     object-fit: cover;
 }
+
+
 
 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
     color: #FFD500;
