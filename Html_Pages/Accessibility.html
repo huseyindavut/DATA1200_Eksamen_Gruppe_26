@@ -30,12 +30,12 @@
                 <div class="contant_1_left">
                   <h>  <!-- Main heading and subheading -->
                     Accessibility
-                   <span>November, 2023 | Huseyin Davutoglu, Meral Aydogan, Recep Ozdemir, Huseyin Ozturk, Coskun Aydogan</span>
+                   <span>November, 2023 |  Meral Aydogan,Coskun Aydogan, Huseyin Davutoglu, Recep Ozdemir, Huseyin Ozturk, </span>
                   </h>
                     <img src="../Images/Accessibility-in-HTML5 (1).webp" width="277" height="266" alt="Accessibility" />
                   
                   <br/>
-                  <p>Accessibility refers to the fact that the web is available to everyone and 
+                  <pp class="topic">Accessibility refers to the fact that the web is available to everyone and 
                     provides equal access to people of different abilities. In the UN Convention
                      on the Rights of Persons with Disabilities, it is emphasized that access to 
                      information and communication technologies is a fundamental human right. 
@@ -43,30 +43,30 @@
                      areas such as education, work, health, and shopping <a 
                      href="https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_Persons_with_
                      Disabilities">(Wikipedia, 2023)</a>. </p>
-                    <p> Accessibility is not only for people with disabilities, 
+                    <p class="topic"> Accessibility is not only for people with disabilities, 
                         but also for a wide range of people, such as the elderly, 
                         those living in rural areas, and people in developing countries. 
                         Thanks to the accessibility of websites, you can reach these different 
                         groups and make their lives easier.</p>
-                    <p>For this reason, while building our site, we tried to design a website 
+                    <p class="topic">For this reason, while building our site, we tried to design a website 
                         where the user can easily access the site, download the content of the 
                         site in the right format and at the best download speed, and easily 
                         understand the data or information on the site. This plugin checked 
                         our site and evaluated it in terms of performance and accessibility, 
                         and told us how to improve. Below we have described some of the factors 
                         that affect the most review scores.</p>
-                        <h2>Image</h2>
-                  <p>During this study, first of all, we saw that the data in image format 
+                        <h2 class="h2Access">Image</h2>
+                  <p class="topic">During this study, first of all, we saw that the data in image format 
                     is very important. We have seen that both the extension format of the 
                     image (i.e. the extension) and the data size of the image file are very 
                     important. For example, we first uploaded the images in .jpeg format and 
                     in the accessibility test, the performance was 89% and the accessibility 
                     was 88% (Figure 1). </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim1.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" text-align="center" >Figure 1</figcaption>
                     </figure>
-                    <p>
+                    <p class="topic">
                         This was a figure below what it should have been. 
                     Later, the «lighthouse» plugin showed us that we could potentially save 
                     1,279.2 KiB by changing the extension of image formats (Figure 1). 
@@ -74,40 +74,40 @@
                     by converting them to .webP format. Thus, we saw that the performance 
                     increased by 7% (Figure 2). 
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim2.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 2</figcaption>
                     </figure>
-                    <h2>Specifies an alternate text for the image</h2>
-                    <p>In cases where pictures cannot be shown, it is important to have 
+                    <h2 class="h2Access">Specifies an alternate text for the image</h2>
+                    <p class="topic">In cases where pictures cannot be shown, it is important to have 
                         an alternative text (bottom)  in the area covered by the image as 
                         a solution. When creating the Pilestredet 32 page, we did not annotate 
                         the image first. As such, we got a value of 84% from the accessibility 
                         test (Figure 3). </p>
-                        <figure>
+                        <figure class="figurePics">
                             <img src="../Images/Resim3.webp" height="400px" width="100%" alt="">
                             <figcaption font-size="10px" >Figure 3</figcaption>
                         </figure>
-                    <p>
+                    <p class="topic">
                         We then fixed this problem and added an alternative text (alt="Menu") 
                         and tested it again, and the result value increased by 12% (Figure 4). 
                         This showed us how important the explanations made to the pictures are. 
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim4.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 4</figcaption>
                     </figure>
-                    <h2>Filexibility</h2>
-                    <p>In the Flexibility section, we had to make adjustments to make the page 
+                    <h2 class="h2Access">Filexibility</h2>
+                    <p class="topic">In the Flexibility section, we had to make adjustments to make the page 
                         larger or smaller or mobile-friendly. When we wrote the images or text 
                         on the page on fixed pixels, we experienced distortions in dynamic 
                         movements (Figure 5). 
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim5.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 5</figcaption>
                     </figure>
-                    <p>
+                    <p class="topic">
                         Since there was no flexibility in our first design, when we tested 
                         the «lighthouse» plugin again, the desktop values were normal, while 
                         the mobile performance value was 76% and the accessibility value was 92%. 
@@ -115,16 +115,16 @@
                         «@media screen» codes. In this new case, we have seen that the performance 
                         value of the «lighthouse» plugin has increased by 95% from the test (Figure 5).
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim6.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 6</figcaption>
                     </figure>
-                    <h2>Colour</h2>
-                    <figure>
+                    <h2 class="h2Access">Colour</h2>
+                    <figure class="figurePics">
                         <img src="../Images/Resim7.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 7</figcaption>
                     </figure>
-                    <p>
+                    <p class="topic">
                         We wrote the navigation bar of the page in yellow. We also planned 
                         the background in another shade of yellow. Later, when we put it to the 
                         test, we found that the accessibility rating was 84% (Figure 7). 
@@ -133,12 +133,12 @@
                         the background to be black and contrasted it. In this new case, 
                         the accessibility value increased by 6% (Figure 8). <a href="https://dequeuniversity.com/rules/axe/4.8/color-contrast">(Deque University, 2023)</a>
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim8.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 8</figcaption>
                     </figure>
-                    <h2>Headlines</h2>
-                    <p>
+                    <h2 class="h2Access">Headlines</h2>
+                    <p class="topic">
                         When designing the web, the order of the titles given to the articles 
                         is important. For example, a text that starts with the h1 tag, which has 
                         the largest font value, should continue as h2, h3, h4. Disruption of this
@@ -151,11 +151,11 @@
                           While we were designing our own web, we tried to act in accordance 
                           with this order (Figure 9).
                     </p>
-                    <figure>
+                    <figure class="figurePics">
                         <img src="../Images/Resim9.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 9</figcaption>
                     </figure>
-                    <p>
+                    <p class="topic">
                         Finally, as a result of the improvements on our site, it has received a 
                         score of over 90% of the performance and acccesibility values 
                         in mobile and web browser tests. As a result of the interim tests 
@@ -163,7 +163,7 @@
                         are many issues that will increase performance and accessibility values, 
                         and as we correct them, our site can serve users better.
                     </p>
-                    <h2>Referencer</h2>
+                    <h2 class="h2Access">Referencer</h2>
                     <ul>
                         <li>Deque University. (2023, 11 17). Hentet fra Elements must meet minimum color contrast ratio thresholds: https://dequeuniversity.com/rules/axe/4.8/color-contrast
                         </li>

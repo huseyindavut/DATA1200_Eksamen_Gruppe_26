@@ -509,3 +509,18 @@ footer {/* Styling for the footer section */
     font-size: 20px;
     line-height: 1.5;
 }    
+
+.figurePics{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.h2Access{
+font-size: 20px;
+color: white;
+background-color: #000000;
+text-align: center;
+padding: 20px 15px;
+margin:40px 40px;
+border-radius: 100px;
+letter-spacing: 1.5px;
+}
