@@ -98,8 +98,8 @@ footer {/* Styling for the footer */
     text-align: left;
     margin-left: 40PX;
     margin-bottom: 60px;
-    color:rgb(53, 238, 238);
-    text-decoration: underline;
+    color:rgb(141, 243, 243);
+    
 }
 
  .Foto2 {/* Styling for Element with Class 'Foto2' */
@@ -112,6 +112,7 @@ footer {/* Styling for the footer */
 
 .link-color {/* Styling for Links with Class 'link-color' */
     color: #FFD500;
+    text-decoration: none;
 }
 
 .row {/* Styling for Grid Layout with Class 'row' */

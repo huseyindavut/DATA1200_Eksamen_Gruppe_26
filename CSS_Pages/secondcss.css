@@ -474,7 +474,7 @@ footer {/* Styling for the footer section */
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
     display: block;
-    color: rgb(255, 208, 0);
+    color:#E6D9A8;
     line-height: 1.5;
     font-size:17px;
     font-weight: 400;
@@ -495,10 +495,10 @@ footer {/* Styling for the footer section */
 }
 
 .h3class{/* Styling for h3class elements */
-    text-align: left;
+    text-align:left;
     margin-bottom: 60px;
     color:rgb(250, 244, 244);
-    text-decoration: underline;
+    
 }
 
 .link-color {/* Styling for elements with the class 'link-color' */
