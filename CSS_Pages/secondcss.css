@@ -136,7 +136,7 @@ figcaption{/* Styling for the figure caption */
 .container5 {/* Styling for an element with the class 'container5' */
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(147, 237, 183, 0.7),rgba(228, 200, 239, 0.91));
+    background-image: linear-gradient(rgba(180, 233, 233, 0.7),rgba(208, 185, 217, 0.91));
     background-position: center;
     background-size:cover;
     padding-left: 0;
@@ -525,3 +525,8 @@ margin:40px 40px;
 border-radius: 100px;
 letter-spacing: 1.5px;
 }
+
+.accesibilityBack{
+    background-image: linear-gradient(rgba(180, 233, 233, 0.7),rgba(208, 185, 217, 0.91));
+}
+
