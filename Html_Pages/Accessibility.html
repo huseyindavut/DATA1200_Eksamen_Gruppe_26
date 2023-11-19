@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a student projekt for Oslomet">
-    
-    
     <title>HEADER</title>  <!-- Title of the webpage -->
     <link rel ="stylesheet" type="text/css" href="../CSS_Pages/secondcss.css">  <!-- Link to the external stylesheet for styling -->
-    
      <!-- Preconnect links for fetching fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,79 +13,86 @@
 </head>
 <body class="accesibilityBack">
     <!-- Container 1 -->
-        <div class = "navbar">
-            <img src="../Images/logoLast.png" class = "menu-icon" alt="Menu">
-            <nav>
-                <ul>
-                    <li><a href="../Html_Pages/index.html" class="navbarlinks">OsloMet MainPage</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class = "row">
-            <div id="contant">
-                <div class="contant_1">
+    <div class = "navbar">
+        <img src="../Images/logoLast.png" class = "menu-icon" alt="Menu">
+        <nav>
+            <ul>
+                <li><a href="../Html_Pages/index.html" class="navbarlinks">OsloMet MainPage</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class = "row">
+        <div id="contant">
+            <div class="contant_1">
                 <div class="contant_1_left">
-                  <h>  <!-- Main heading and subheading -->
-                    Accessibility
-                   <span>November, 2023 |  Meral Aydogan,Coskun Aydogan, Huseyin Davutoglu, Recep Ozdemir, Huseyin Ozturk, </span>
-                  </h>
+                    <h>  <!-- Main heading and subheading -->
+                        Accessibility
+                        <span>
+                            November, 2023 |  Meral Aydogan,Coskun Aydogan, Huseyin Davutoglu, Recep Ozdemir, Huseyin Ozturk
+                        </span>
+                    </h>
                     <img src="../Images/Accessibility-in-HTML5 (1).webp" width="277" height="266" alt="Accessibility" />
-                  
-                  <br/>
-                  <p class="topic">Accessibility refers to the fact that the web is available to everyone and 
-                    provides equal access to people of different abilities. In the UN Convention
-                     on the Rights of Persons with Disabilities, it is emphasized that access to 
-                     information and communication technologies is a fundamental human right. 
-                     This aims to enable individuals to use the web effectively in many vital 
-                     areas such as education, work, health, and shopping <a 
-                     href="https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_Persons_with_
-                     Disabilities">(Wikipedia, 2023)</a>. </p>
+                    <br/>
+                    <p class="topic">
+                        Accessibility refers to the fact that the web is available to everyone and 
+                        provides equal access to people of different abilities. In the UN Convention
+                        on the Rights of Persons with Disabilities, it is emphasized that access to 
+                        information and communication technologies is a fundamental human right. 
+                        This aims to enable individuals to use the web effectively in many vital 
+                        areas such as education, work, health, and shopping <a 
+                        href="https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_Persons_with_
+                        Disabilities">(Wikipedia, 2023)</a>. 
+                    </p>
                     <p class="topic"> Accessibility is not only for people with disabilities, 
                         but also for a wide range of people, such as the elderly, 
                         those living in rural areas, and people in developing countries. 
                         Thanks to the accessibility of websites, you can reach these different 
-                        groups and make their lives easier.</p>
+                        groups and make their lives easier.
+                    </p>
                     <p class="topic">For this reason, while building our site, we tried to design a website 
                         where the user can easily access the site, download the content of the 
                         site in the right format and at the best download speed, and easily 
                         understand the data or information on the site. This plugin checked 
                         our site and evaluated it in terms of performance and accessibility, 
                         and told us how to improve. Below we have described some of the factors 
-                        that affect the most review scores.</p>
-                        <h2 class="h2Access">Image</h2>
-                  <p class="topic">During this study, first of all, we saw that the data in image format 
-                    is very important. We have seen that both the extension format of the 
-                    image (i.e. the extension) and the data size of the image file are very 
-                    important. For example, we first uploaded the images in .jpeg format and 
-                    in the accessibility test, the performance was 89% and the accessibility 
-                    was 88% (Figure 1). </p>
+                        that affect the most review scores.
+                    </p>
+                    <h2 class="h2Access">Image</h2>
+                    <p class="topic">During this study, first of all, we saw that the data in image format 
+                        is very important. We have seen that both the extension format of the 
+                        image (i.e. the extension) and the data size of the image file are very 
+                        important. For example, we first uploaded the images in .jpeg format and 
+                        in the accessibility test, the performance was 89% and the accessibility 
+                        was 88% (Figure 1). 
+                    </p>
                     <figure class="figurePics">
                         <img src="../Images/Resim1.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" text-align="center" >Figure 1</figcaption>
                     </figure>
                     <p class="topic">
                         This was a figure below what it should have been. 
-                    Later, the «lighthouse» plugin showed us that we could potentially save 
-                    1,279.2 KiB by changing the extension of image formats (Figure 1). 
-                    As we learned from the Webutvitling lessons, we re-uploaded our images 
-                    by converting them to .webP format. Thus, we saw that the performance 
-                    increased by 7% (Figure 2). 
+                        Later, the «lighthouse» plugin showed us that we could potentially save 
+                        1,279.2 KiB by changing the extension of image formats (Figure 1). 
+                        As we learned from the Webutvitling lessons, we re-uploaded our images 
+                        by converting them to .webP format. Thus, we saw that the performance 
+                        increased by 7% (Figure 2). 
                     </p>
                     <figure class="figurePics">
                         <img src="../Images/Resim2.webp" height="400px" width="100%" alt="">
                         <figcaption font-size="10px" >Figure 2</figcaption>
                     </figure>
                     <h2 class="h2Access">Specifies an alternate text for the image</h2>
-                    <p class="topic">In cases where pictures cannot be shown, it is important to have 
+                    <p class="topic">
+                        In cases where pictures cannot be shown, it is important to have 
                         an alternative text (bottom)  in the area covered by the image as 
                         a solution. When creating the Pilestredet 32 page, we did not annotate 
                         the image first. As such, we got a value of 84% from the accessibility 
-                        test (Figure 3). </p>
-                        <figure class="figurePics">
-                            <img src="../Images/Resim3.webp" height="400px" width="100%" alt="">
-                            <figcaption font-size="10px" >Figure 3</figcaption>
-                        </figure>
+                        test (Figure 3). 
+                    </p>
+                    <figure class="figurePics">
+                        <img src="../Images/Resim3.webp" height="400px" width="100%" alt="">
+                        <figcaption font-size="10px" >Figure 3</figcaption>
+                    </figure>
                     <p class="topic">
                         We then fixed this problem and added an alternative text (alt="Menu") 
                         and tested it again, and the result value increased by 12% (Figure 4). 
@@ -143,14 +147,14 @@
                         When designing the web, the order of the titles given to the articles 
                         is important. For example, a text that starts with the h1 tag, which has 
                         the largest font value, should continue as h2, h3, h4. Disruption of this
-                         hierarchical ranking negatively affects the accesibility value. 
-                         In this way, the structure of the page becomes confused and it becomes 
-                         difficult for the reader to read and understand the written information. 
-                         It may cause the user to skip some information while navigating the page.
-                          It also becomes more difficult for web browsers to view the page. 
-                          For this reason, this hierarchical order must be followed. 
-                          While we were designing our own web, we tried to act in accordance 
-                          with this order (Figure 9).
+                        hierarchical ranking negatively affects the accesibility value. 
+                        In this way, the structure of the page becomes confused and it becomes 
+                        difficult for the reader to read and understand the written information. 
+                        It may cause the user to skip some information while navigating the page.
+                        It also becomes more difficult for web browsers to view the page. 
+                        For this reason, this hierarchical order must be followed. 
+                        While we were designing our own web, we tried to act in accordance 
+                        with this order (Figure 9).
                     </p>
                     <figure class="figurePics">
                         <img src="../Images/Resim9.webp" height="400px" width="100%" alt="">
@@ -166,16 +170,13 @@
                     </p>
                     <h2 class="h2Access">Referencer</h2>
                     <ul>
-                        <li>Deque University. (2023, 11 17). Hentet fra Elements must meet minimum color contrast ratio thresholds: https://dequeuniversity.com/rules/axe/4.8/color-contrast
-                        </li>
+                        <li>Deque University. (2023, 11 17). Hentet fra Elements must meet minimum color contrast ratio thresholds: https://dequeuniversity.com/rules/axe/4.8/color-contrast</li>
                         <li>Wikipedia. (2023, October 13). Hentet fra https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_Persons_with_Disabilities</li>
-                    </ul>
-                    
+                    </ul>    
                 </div>
             </div>                               
         </div>
-    </div>      
-    </div> 
+    </div>       
     <footer>
         <div class = "footer-column">
             <h3 class ="h3class">Kontakt Oss</h3>
