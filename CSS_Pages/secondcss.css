@@ -61,10 +61,6 @@
         margin-bottom: 0;
 
     }
-    article{/* Styling for the article section */
-        margin-top: 0;
-        padding: 0;
-    }
  #contant {/* Styling for the contant section */
         width:960px;
         margin: 25%;
@@ -154,11 +150,7 @@ figcaption{/* Styling for the figure caption */
     align-items: center; /* Aligns items along the cross axis (vertical centering) */
 }
 
-.logo {/* Styling for the logo within the navigation bar */
-    margin-top: 10px;
-    width: 50px;
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the logo, indicating interactivity */
-}
+
 
 .menu-icon {/* Styling for a menu icon */
     width:200px;
@@ -234,12 +226,7 @@ h1 {/* Styling for 'h1' elements */
     margin-bottom: 20px;
     line-height: 1.5;
 }
-.col .col_paragraph {/* Styling for elements with the class 'col_paragraph' within elements with the class 'col' */
-    color: rgb(255, 255, 255);
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px; 
-}
+
 
 .card { /* Styling for the common styles of all cards with the class 'card' */
     width: 400px;
@@ -375,64 +362,7 @@ h1 {/* Styling for 'h1' elements */
     background-color: #ffdc52; 
  }
 
-.card9 {/*Styling for the first card with the class 'card9' */
-    background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_byg.webp);/*Foto: Huseyin Ozturk-2023*/
-    margin-top: 300px;
-}
 
-.card9 .Foto {/* Styling for the content within the card9 with the class 'Foto' */
-    margin-top: 220px;
-    color: #000000;
-    text-align:center;
-    border-radius: 20px;
-    display:inline-flexbox;
-    background-color: #ffdc52; 
- }
-
-.card10 {/*Styling for the first card with the class 'card10' */
-    background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_stud.webp);/*Foto: Huseyin Ozturk-2023*/
-    margin-top: 300px;
-}
-
-.card10 .Foto {/* Styling for the content within the card10 with the class 'Foto' */
-    margin-top: 220px;
-    color: #000000;
-    text-align:center;
-    border-radius: 20px;
-    display:inline-flexbox;
-    background-color: #ffdc52; 
- }
-
-.card11 {/*Styling for the first card with the class 'card11' */
-    background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_akt.webp);/*Foto: Huseyin Ozturk-2023*/
-    margin-top: 400px;
-}
-.card11 .Foto {/* Styling for the content within the card11 with the class 'Foto' */
-    margin-top: 220px;
-    color: #000000;
-    text-align:center;
-    border-radius: 20px;
-    display:inline-flexbox;
-    background-color: #ffdc52; 
- }
-
-.card12 {/*Styling for the first card with the class 'card12' */
-    background-color: rgb(118, 115, 104) ;
-    background-image: url(../Images/p46_spis.webp);/*Foto: Huseyin Ozturk-2023*/
-    margin-top: 300px;
-
-}
-.card12 .Foto {/* Styling for the content within the card12 with the class 'Foto' */
-    margin-top: 220px;
-    color: #000000;
-    text-align:center;
-    border-radius: 20px;
-    display:inline-flexbox;
-    background-color: #ffdc52; 
- }
 .card:hover{/* Styling for card hover effect */
     transform: translateY(-10px); /* Moves the card 10 pixels upward when hovered */
     
@@ -486,13 +416,7 @@ footer {/* Styling for the footer section */
     transform: translateY(-3px) translateX(-5px); /* Moves list items 3 pixels up and 5 pixels left when hovered */
 }
 
-.h4class{/* Styling for h4class elements */
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 60px;
-    color:rgb(255, 208, 0);
-    text-decoration: underline;
-}
+
 
 .h3class{/* Styling for h3class elements */
     text-align:left;
