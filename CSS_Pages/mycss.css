@@ -1,7 +1,7 @@
 body {                       /*It is the place where the rules of the body are determined.*/
   margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
   padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
-  font-family: sans-serif; /*Defines the font family for the entire page, specifying a sans-serif typeface.*/
+  font-family: 'Roboto Serif', serif; /*Defines the font family for the entire page, specifying a Roboto Serif typeface.*/
   background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
  
 }
