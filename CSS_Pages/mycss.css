@@ -125,6 +125,90 @@ opacity: 1;
 transition: opacity 250ms ease-in-out 250ms;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.navbar {/* Styling for the navigation bar 
+  ith the class 'navbar' */
+  margin-top: 0px;/* Sets the top margin of the navigation bar to 0 pixels */
+  margin-right: 30px;/* Sets the right margin of the navigation bar to 30 pixels */
+  height: 20%;/* Sets the height of the navigation bar to 20% of its containing element's height */
+  display: flex; /* Turns the navigation bar into a flex container */
+  align-items: center; /* Aligns items along the cross axis (vertical centering) */
+}
+
+
+
+.navbar .menu-icon {/* Styling for a menu icon */
+  width:200px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.navigation {/* Styling for the 'nav' element */
+  flex: 1;/* Allows the 'nav' element to grow and take available space */
+  text-align: right;/* Aligns text to the right within the 'nav' element */
+  margin-right: 60px;
+}
+
+.navigation ul li {/* Styling for the list items within the 'nav' element */
+  list-style: none;/* Removes the default list-style (bullet points) */
+  display: inline-block;/* Displays list items as inline blocks */
+  margin-left: 60px;
+  text-decoration: none;/* Removes underlines from links */
+  color: #fff;
+  font-size: 13px;
+}
+
+.navbarlinks{/* Styling for the 'navbarlinks' class */
+  display: block;
+ text-align: center;/* Centers text within elements with the 'navbarlinks' class */
+ color:rgb(255, 247, 3);
+ text-shadow: 0 0 15px #6a6969 ; 
+ font-size: 23px;
+ background-color: rgb(7, 49, 48) ;
+ background-position: bottom;
+ margin-top: 15px;
+ border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
+ padding:20px 13px;
+}
+@media screen and (max-width: 750px) {  /* Media query for responsive design */
+  .navbarlinks {
+      display: block;
+  }
+}    
+
+.navigation ul li a {/* Styling for the links within list items in the 'nav' element */
+  color:#f3c705;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section {/* Styling for the sections */
   width: 100%;
   height:100vh ; /* 100% of the viewport height */
@@ -201,6 +285,33 @@ padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragra
 color: #FFD500;
 text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {/* Styling for the footer */
   margin-top: 0;
   display: grid;
@@ -237,6 +348,88 @@ footer {/* Styling for the footer */
   color:rgb(141, 243, 243);
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer2 {/* Styling for the footer section */
+  margin-top: 0;/* Centers the text within h5 elements horizontally */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Creates a responsive grid layout */
+  gap: 3.5rem; /* Sets the gap between grid items to 3.5rem */
+  background: #0a4f5c; /* Sets the background color of the footer */
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.footer-column {/* Styling for the footer columns */
+  border-color: rgb(255, 255, 255); /* Sets the border color for footer columns */
+  border-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 1.5em;
+  font-size: 20px;
+}
+
+.footer-column li {/* Styling for list items within footer columns */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  display: block;
+  color:#E6D9A8;
+  line-height: 1.5;
+  font-size:17px;
+  font-weight: 400;
+  transition:all .50s ease; /* Adds a smooth transition effect for all properties over 0.5 seconds */
+}
+
+
+.footer-column li:hover {/* Styling for list items within footer columns when hovered */
+  transform: translateY(-3px) translateX(-5px); /* Moves list items 3 pixels up and 5 pixels left when hovered */
+}
+
+
+
+.h3class{/* Styling for h3class elements */
+  text-align:left;
+  margin-bottom: 60px;
+  color:rgb(250, 244, 244);
+  
+}
+
+.link-color2 {/* Styling for elements with the class 'link-color' */
+  color: #ecddaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px) { /* Media query for screens tighter than 800px */
   .row .left .Foto2{
     font-size: 6px;
@@ -300,6 +493,385 @@ nav a:hover::after {/* Underline effect when hovering over links on wider screen
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container1 {/* Styling for an element with the class 'container1' */
+  width: 100%;  /* Sets the width of the container to 100% of its parent element's width */
+  height: 100%; /* Sets the height of the container to 100% of its parent element's height */
+  background-image: linear-gradient(rgba(163, 40, 40, 0.91), rgba(201, 197, 62, 0.7)); /* Applies a linear gradient background with two colors and opacity */
+  background-position: center;  /* Sets the position of the background image to the center */
+  background-size: cover;       /* Ensures that the background image covers the entire container */
+  padding-left: 0;              /* Sets the left padding of the container to zero */
+  padding-right: 0;             /* Sets the right padding of the container to zero */
+  box-sizing: border-box;       /* Includes padding and border in the total width and height of the container */
+  margin-bottom: 0;             /* Sets the bottom margin of the container to zero */
+}
+
+
+.container2 {/* Styling for an element with the class 'container2' */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(149, 208, 240, 0.7),rgba(222, 95, 95, 0.91));
+  background-position: center;
+  background-size:cover;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing:border-box;
+  margin-bottom: 0px;
+}
+
+.container3 {/* Styling for an element with the class 'container3' */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(40, 126, 163, 0.91),rgba(151, 218, 49, 0.7));
+  background-position: center;
+  background-size:cover;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing:border-box;
+  margin-bottom: 0px; 
+}
+
+.container4 {/* Styling for an element with the class 'container4' */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(147, 237, 183, 0.7),rgba(228, 200, 239, 0.91));
+  background-position: center;
+  background-size:cover;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing:border-box;
+  margin-bottom: 0px;
+  margin-left: 0;
+}
+.container5 {/* Styling for an element with the class 'container5' */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(180, 233, 233, 0.7),rgba(208, 185, 217, 0.91));
+  background-position: center;
+  background-size:cover;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing:border-box;
+  margin-bottom: 0px;
+}
+  
+.row2 {/* Styling for the 'row' class */
+  margin-top: 0px;
+  display:flex;/* Makes the 'row' class a flex container */
+  height: 88%;
+  align-items:center; 
+}
+.container5 row2 img{/* Styling for images in the container5 */
+  height: 500px;
+  width: 500px;
+  margin-bottom: 0;
+
+}
+
+#contant {/* Styling for the contant section */
+  width:960px;
+  margin: 25%;
+  margin-top: 1rem;
+}
+
+#contant h{/* Styling for the main heading */
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:38px;
+color:#3a3a3a;
+font-weight:normal;
+margin-bottom:20px;
+}
+#contant h span{/* Styling for the subheading within the main heading */
+display:block;
+font-size:10px;
+color:#808080;
+border-top:2px dotted #3a3a3a;
+font-family:tahoma, arial;
+padding-top:5px;
+margin-bottom: 10px;
+}
+.contant_1_left {
+/* Styling for the left contant section */
+width:710px;
+float:inline-start;
+}
+.contant_1_left img{/* Styling for images within the left content section */
+float: left;
+margin-right:10px;
+}
+.contant_1_left p{/* Styling for paragraphs within the left content section */
+font-size:14px;
+color:#3a3a3a;
+font-weight:normal;
+line-height:20px;
+margin-bottom: 5px;
+}
+.contant_1_left h3{/* Styling for subheadings within the left content section */
+font-size:24px;
+background:#757575;
+color:#FFFFFF;
+display:inline;
+padding-left:10px;
+padding-right:10px;
+font-weight:normal;
+line-height:32px;
+padding-top:4px;
+border-bottom:1px solid #C8C8C8;
+}
+p.quoteBar {/* Styling for a quoted bar section */
+background:#F0F0F0;
+padding:5px;
+font-size:20px;
+line-height:1.5;
+color:#3D3D3D;
+width:640px;
+margin:auto;
+margin-top:20px;
+margin-bottom:20px;
+font-style:italic;
+}
+figcaption{/* Styling for the figure caption */
+font-size: small;
+}
+.col {/* Styling for elements with the class 'col' */
+flex-basis: 50%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
+}
+.col h1 {/* Styling for 'h1' elements */
+margin-top: 15%;/* Sets the top margin of 'h1' elements to 15% */
+margin-bottom: 50px;/* Sets the bottom margin of 'h1' elements to 50 pixels */
+margin-left: 30px;/* Sets the left margin of 'h1' elements to 30 pixels */
+color: #060000;/* Sets the text color of 'h1' elements to a dark shade of green */
+font-size:30px;
+}
+
+.col p {/* Styling for 'p' elements within elements with the class 'col' */
+
+color: rgb(21, 164, 200), 187, 14;
+font-size: 17px;
+text-align: justify;
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 40px;
+margin-bottom: 20px;
+line-height: 1.5;
+}
+.col .card { /* Styling for the common styles of all cards with the class 'card' */
+width: 400px;
+height: 300px;
+display:inline-block;
+border-radius: 20px;
+padding: 15px 25px;
+box-sizing: border-box;/* Includes padding and border in the element's total width and height */
+cursor: pointer; /* Changes the cursor to a pointer, indicating interactivity */
+margin: 50px 45px;
+background-position:center ; /* Sets the background position to the center */
+background-size:cover;/* Sets the background size to cover the entire container */
+transition: transform 0.2s;/* Adds a smooth transition effect for the 'transform' property over 0.2 seconds */
+}
+
+.col .card1 {/* Styling for the first card with the class 'card1' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p32_byg.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;    
+}
+
+.col .card1 .Foto {    /* Styling for the content within the card1 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox; /* Displays the content as an inline flex container */
+background-color: #ffdc52; 
+}
+
+.col .card2 {         /* Styling for the first card with the class 'card2' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p32_stud1.webp); /*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card2 .Foto { /* Styling for the content within the card2 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+.col .card3 {/* Styling for the first card with the class 'card3' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p32_stud3.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card3 .Foto {/* Styling for the content within the card3 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+.col .card4 {/*Styling for the first card with the class 'card4' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/P32_stud2.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card4 .Foto {    /* Styling for the content within the card4 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+.col .card5 {       /*Styling for the first card with the class 'card5 */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p35_byg.webp);   /*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card5 .Foto {  /* Styling for the content within the card5 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52;  
+}
+
+.col .card6 {/*Styling for the first card with the class 'card6' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p35_stud3.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card6 .Foto {/* Styling for the content within the card6 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+.col .card7 {/*Styling for the first card with the class 'card7' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p35_stud1.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card7 .Foto {/* Styling for the content within the card7 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+.col .card8 {/*Styling for the first card with the class 'card8' */
+background-color: rgb(118, 115, 104) ;
+background-image: url(../Images/p35_spis.webp);/*Foto: Huseyin Ozturk-2023*/
+margin-top: 300px;
+}
+
+.col .card8 .Foto {/* Styling for the content within the card8 with the class 'Foto' */
+margin-top: 220px;
+color: #000000;
+text-align:center;
+border-radius: 20px;
+display:inline-flexbox;
+background-color: #ffdc52; 
+}
+
+
+.col .card:hover{/* Styling for card hover effect */
+transform: translateY(-10px); /* Moves the card 10 pixels upward when hovered */
+
+}
+
+.col h5 {/* Styling for h5 elements */
+text-align: center;
+color:rgb(0, 0, 0);
+text-shadow: 0 0 15px #6a6969 ; 
+font-size: 25px;
+background-color: rgb(255, 255, 255) ;
+background-position: bottom;
+margin-top: 15px;
+border-radius: 20px;
+padding:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contant_1_left .topic {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}    
+
+.figurePics{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.h2Access{
+font-size: 20px;
+color: white;
+background-color: #000000;
+text-align: center;
+padding: 20px 15px;
+margin:40px 40px;
+border-radius: 100px;
+letter-spacing: 1.5px;
+}
+
+.accesibilityBack{
+  background-image: linear-gradient(rgba(180, 233, 233, 0.7),rgba(208, 185, 217, 0.91));
+}
 
 
 
