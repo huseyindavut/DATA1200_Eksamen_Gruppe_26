@@ -55,26 +55,34 @@
         margin-bottom: 0px;
         margin-left: 0;
     }
-    .container5 row img{/* Styling for images in the container5 */
+    .row2 {/* Styling for the 'row' class */
+        margin-top: 0px;
+        display:flex;/* Makes the 'row' class a flex container */
+        height: 88%;
+        align-items:center; 
+    }
+    .container5 row2 img{/* Styling for images in the container5 */
         height: 500px;
         width: 500px;
         margin-bottom: 0;
 
     }
- #contant {/* Styling for the contant section */
+
+
+    #contant {/* Styling for the contant section */
         width:960px;
         margin: 25%;
         margin-top: 1rem;
     }
 
-#contant h{/* Styling for the main heading */
+    #contant h{/* Styling for the main heading */
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:38px;
 	color:#3a3a3a;
 	font-weight:normal;
 	margin-bottom:20px;
-}
-#contant h span{/* Styling for the subheading within the main heading */
+    }
+    #contant h span{/* Styling for the subheading within the main heading */
 	display:block;
 	font-size:10px;
 	color:#808080;
@@ -196,12 +204,7 @@ nav ul li a {/* Styling for the links within list items in the 'nav' element */
     font-size: 25px;
 }
 
-.row {/* Styling for the 'row' class */
-    margin-top: 0px;
-    display:flex;/* Makes the 'row' class a flex container */
-    height: 88%;
-    align-items:center; 
-}
+
 
 .col {/* Styling for elements with the class 'col' */
     flex-basis: 50%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
@@ -425,7 +428,7 @@ footer {/* Styling for the footer section */
     
 }
 
-.link-color {/* Styling for elements with the class 'link-color' */
+.link-color2 {/* Styling for elements with the class 'link-color' */
     color: #ecddaa;
 }
 
