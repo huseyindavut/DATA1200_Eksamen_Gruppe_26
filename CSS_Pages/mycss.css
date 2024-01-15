@@ -822,14 +822,17 @@ background-color: #ffdc52;
 
 .accessFotos{
 margin-top: 100px;
-height:70%;
-width: 70%;
+height:90%;
+width: 80%;
 border-radius: 20px;
 
 }
 figcaption{
-margin-bottom: 40px;
-color: #f7e9e9;
+  margin-bottom: 40px;
+  padding: 10px;
+  color: #000000;
+  border-radius: 2px;
+
 }
 
 
