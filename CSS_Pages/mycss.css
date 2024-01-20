@@ -5,6 +5,7 @@ body {                       /*It is the place where the rules of the body are d
   background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
  
 }
+
 @media (min-width: 701px) { /* Media Query 1: Applies styles when the viewport width is 750 pixels or wider */
 .row .left .content {   
     width: 750px;  /* Sets the width of content in the left column to 750 pixels */
