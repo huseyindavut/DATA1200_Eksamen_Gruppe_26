@@ -1,7 +1,7 @@
 body {                       /*It is the place where the rules of the body are determined.*/
   margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
   padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
-  font-family: 'Roboto Serif', serif; /*Defines the font family for the entire page, specifying a Roboto Serif typeface.*/
+  font-family: 'Roboto Serif',sans-serif; /*Defines the font family for the entire page, specifying a Roboto Serif typeface.*/
   background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
  
 }
@@ -46,7 +46,7 @@ left: -9999px !important;
 
 }  
 .nav-toggle:focus ~ .nav-toggle-label {/* Highlighting the label when the navigation toggle is focused */
-outline: 3px solid rgba(rgb(239, 65, 65), 0.75);
+outline: 3px solid rgba(rgb(239, 140, 65), 0.75);
 
 } 
 .nav-toggle-label {/* Styles for the navigation toggle label */
@@ -115,7 +115,7 @@ opacity: 0;
 transition: opacity 150ms ease-in-out;
 }
 nav a:hover {/* Styling for link hover effect */
-color: rgb(54, 40, 40);
+color: rgb(255, 255, 255);
 }
 .nav-toggle:checked ~ nav {/* Displaying the full navigation menu when the toggle is checked */
 transform: scale(1, 1);
