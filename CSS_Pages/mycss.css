@@ -115,7 +115,7 @@ opacity: 0;
 transition: opacity 150ms ease-in-out;
 }
 nav a:hover {/* Styling for link hover effect */
-color: rgb(255, 255, 255);
+color: rgb(245, 178, 178);
 }
 .nav-toggle:checked ~ nav {/* Displaying the full navigation menu when the toggle is checked */
 transform: scale(1, 1);
