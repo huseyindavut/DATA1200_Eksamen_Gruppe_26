@@ -1,34 +1,11 @@
 body {                       /*It is the place where the rules of the body are determined.*/
   margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
   padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
-  font-family: 'Roboto Serif',sans-serif; /*Defines the font family for the entire page, specifying a Roboto Serif typeface.*/
+  font-family: 'Montserrat', sans-serif;/*Defines the font family for the entire page, specifying a Montserrat typeface.*/
   background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
  
 }
 
-@media (min-width: 701px) { /* Media Query 1: Applies styles when the viewport width is 750 pixels or wider */
-.row .left .content {   
-    width: 750px;  /* Sets the width of content in the left column to 750 pixels */
-}
-.row {
-  width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
-  grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
-}
-}
-@media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
-.row .left  {
-    width: 150px;  /* Sets the width of images in the left column to 350 pixels */
-    height: 15%;   /* Sets the height of images to 50% of the parent element's height */
-}
-.row .right{
-  font-size: 7px;
-}
-.sec2{
-  font-size: 7px;
-}
-
-
-}
 
 header { /* Styling for the header */
   padding: 5px 5px;
@@ -182,6 +159,10 @@ transition: opacity 250ms ease-in-out 250ms;
  border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
  padding:10px 13px;
 }
+.navigation ul li a {/* Styling for the links within list items in the 'nav' element */
+  color:#f3c705;
+  font-size: 25px;
+}
 @media screen and (max-width: 750px) {  /* Media query for responsive design */
   
   .navbarlinks {
@@ -189,10 +170,7 @@ transition: opacity 250ms ease-in-out 250ms;
   }
 }    
 
-.navigation ul li a {/* Styling for the links within list items in the 'nav' element */
-  color:#f3c705;
-  font-size: 25px;
-}
+
 
 
 
@@ -287,7 +265,37 @@ padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragra
 color: #FFD500;
 text-decoration: none;
 }
+@media (min-width: 700px) { /* Media Query 1: Applies styles when the viewport width is 700 pixels or wider */
+  .row .left .content {   
+      width: 700px;  /* Sets the width of content in the left column to 700 pixels */
+  }
+  .row {
+    width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
+    grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
+  }
+  }
+  @media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
+  .row .left  {
+      width: 150px;  /* Sets the width of images in the left column to 350 pixels */
+      height: 15%;   /* Sets the height of images to 50% of the parent element's height */
+  }
+  .row .left .Foto2{
+    font-size: 6px;
+  }
+  .row .right{
+    font-size: 7px;
+  }
+  .row .right .content p  {
+    line-height: 1;
+  }
+  .sec2{
+    font-size: 7px;
+  }
+  }
+  
 
+
+  
 
 
 
@@ -431,15 +439,6 @@ footer2 {/* Styling for the footer section */
 
 
 
-
-@media (max-width: 700px) { /* Media query for screens tighter than 800px */
-  .row .left .Foto2{
-    font-size: 6px;
-  }
-  .row .right .content p  {
-    line-height: 1;
-  }
-}
 
 
 
