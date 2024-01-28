@@ -222,7 +222,8 @@ section.sec2 h2 {
   margin-left: 100px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
 }
 section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' */
-  font-size: 1.4em;
+  font-size: 17px;
+  text-align: justify;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -254,12 +255,13 @@ align-items: center;
 padding-left: 20px;
 }
 .row .right .content p {
-font-size: 1.4em;       /* Sets the font size to 1.4 times the default font size */
+font-size: 17px;       /* Sets the font size to 1.4 times the default font size */
 line-height: 26px;      /* Defines the line height between lines of text as 26 pixels */
 padding-bottom: 15px;   /* Adds padding to the bottom of each paragraph (15 pixels) */
-text-align: left;       /* Aligns the text to the left within the paragraph */
+text-align: justify;
 margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
 padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragraph (15 pixels) */    
+line-height: 1.5;
 }
 .link-color {/* Styling for Links with Class 'link-color' */
 color: #FFD500;
@@ -335,7 +337,7 @@ footer {/* Styling for the footer */
   margin-right: 100px;  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
   margin-top: 100px;    /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
   margin-bottom: 1.5em; /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
-  font-size: 20px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
+  font-size: 17px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
 }
 .footer-column li {/* Styling for List Items within '.footer-column' */
   font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
@@ -632,7 +634,7 @@ float: left;
 margin-right:10px;
 }
 .contant_1_left p{/* Styling for paragraphs within the left content section */
-font-size:14px;
+font-size:17px;
 color:#3a3a3a;
 font-weight:normal;
 line-height:20px;
@@ -653,7 +655,7 @@ border-bottom:1px solid #C8C8C8;
 p.quoteBar {/* Styling for a quoted bar section */
 background:#F0F0F0;
 padding:5px;
-font-size:20px;
+font-size:17px;
 line-height:1.5;
 color:#3D3D3D;
 width:640px;
@@ -663,7 +665,7 @@ margin-bottom:20px;
 font-style:italic;
 }
 figcaption{/* Styling for the figure caption */
-font-size: small;
+font-size: 17px;
 }
 .col {/* Styling for elements with the class 'col' */
 flex-basis: 50%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
@@ -865,7 +867,7 @@ padding:10px 0;
 
 
 .contant_1_left .topic {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.5;
   margin-bottom: 2em;
 }    
