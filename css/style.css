@@ -16,6 +16,16 @@ header { /* Styling for the header */
   z-index: 999;
   width: 100%;    
 }
+
+
+
+
+
+
+
+
+/*Navigation bar for 1. design*/
+
 .nav-toggle {/* Styles for the navigation toggle */
   
 position: absolute !important;
@@ -114,6 +124,47 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Navigation bar for 2. design*/
+
 .navbar {/* Styling for the navigation bar 
   ith the class 'navbar' */
   margin-top: 0px;/* Sets the top margin of the navigation bar to 0 pixels */
@@ -123,21 +174,17 @@ transition: opacity 250ms ease-in-out 250ms;
   align-items: center; /* Aligns items along the cross axis (vertical centering) */
 }
 
-
-
 .navbar .menu-icon {/* Styling for a menu icon */
   width:200px;
   cursor: pointer;
   margin-left: 20px;
   margin-top: 30px;
 }
-
 .navigation {/* Styling for the 'nav' element */
   flex: 1;/* Allows the 'nav' element to grow and take available space */
   text-align: right;/* Aligns text to the right within the 'nav' element */
   margin-right: 30px;
 }
-
 .navigation ul li {/* Styling for the list items within the 'nav' element */
   list-style: none;/* Removes the default list-style (bullet points) */
   display: inline-block;/* Displays list items as inline blocks */
@@ -146,21 +193,20 @@ transition: opacity 250ms ease-in-out 250ms;
   color: #fff;
   font-size: 13px;
 }
-
 .navbarlinks{/* Styling for the 'navbarlinks' class */
   display: block;
  text-align: center;/* Centers text within elements with the 'navbarlinks' class */
- color:rgb(255, 247, 3);
- text-shadow: 0 0 15px #6a6969 ; 
+ color:rgb(0, 0, 0);
+ text-shadow: 0 0 15px #770707 ; 
  font-size: 23px;
- background-color: rgb(58, 16, 16) ;
+
  background-position: bottom;
  margin-top: 15px;
  border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
  padding:10px 13px;
 }
 .navigation ul li a {/* Styling for the links within list items in the 'nav' element */
-  color:#f3c705;
+  color:#000000;
   font-size: 25px;
 }
 @media screen and (max-width: 750px) {  /* Media query for responsive design */
@@ -179,6 +225,57 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 
+@media screen and (min-width: 700px) {/* Media query for screens wider than 700px */
+  .nav-toggle-label {
+      display: none;
+  }
+  header {/* Header layout for wider screens using grid */  
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  nav { /* Navigation menu styling for wider screens */
+      all: unset;
+      margin-top: 10px; 
+      margin-bottom: 10px;
+      position: relative;
+      text-align: left;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+  
+      grid-column: 3 / 4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  nav ul {/* Styling for the list inside the navigation menu on wider screens */   
+      display: flex;
+  }
+  nav li {/* Adjustments for list items inside the navigation menu on wider screens */    
+      margin-left: 3em;
+      margin-bottom: 15px;
+  }
+  nav a { /* Styling for links inside the navigation menu on wider screens */   
+      opacity: 1;
+      position: relative;
+  }
+  nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
+      content: "";
+      display: block;
+      height: 2px;
+      background: rgb(253, 26, 26);
+      /* position: absolute; */
+      left: 0;
+      right: 0;
+      transform: scale(0, 2);
+      transition: transform ease-in-out 250ms;
+  }
+  nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
+      transform: scale(1, 1);
+  }
+  }
 
 
 
@@ -188,6 +285,38 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1. Page design */
 
 section {/* Styling for the sections */
   width: 100%;
@@ -297,7 +426,6 @@ text-decoration: none;
   
 
 
-  
 
 
 
@@ -308,224 +436,7 @@ text-decoration: none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {/* Styling for the footer */
-  margin-top: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 3.5rem;
-  background: #401010;
-}
-.footer-column {/* Styling for elements with the class 'footer-column' */
-  border-bottom: 5px;   /* Adds a bottom border with a default color and style, but the width is missing a unit (e.g., px) */
-  margin-left: 50px;    /* Adds a left margin of 50 pixels to the elements with the class 'footer-column' */
-  margin-right: 100px;  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
-  margin-top: 100px;    /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
-  margin-bottom: 1.5em; /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
-  font-size: 17px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
-}
-.footer-column li {/* Styling for List Items within '.footer-column' */
-  font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
-  margin-bottom: 16px;  /* Adds bottom margin of 16 pixels to each list item */
-  display: block;  /* Specifies that list items should be displayed as block-level elements */
-  color: #FFD500;  /* Sets the text color of list items to a shade of yellow */
-  line-height: 1.5;  /* Sets the line height to 1.5 times the font size */
-  font-size: 17px;  /* Sets the font size to 17 pixels */
-  font-weight: 400;  /* Sets the font weight to 400 (normal) */
-  transition: all .50s ease;  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
-}
-.footer-column li:hover { /* Hover Effect for Footer Column List Items */
-  transform: translateY(-3px) translateX(-5px);
-}
-
-.h3class{/* Styling for Heading with Class 'h3class' */
-  text-align: left;
-  margin-left: 40PX;
-  margin-bottom: 60px;
-  color:rgb(141, 243, 243);
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer2 {/* Styling for the footer section */
-  margin-top: 0;/* Centers the text within h5 elements horizontally */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Creates a responsive grid layout */
-  gap: 3.5rem; /* Sets the gap between grid items to 3.5rem */
-  background: #0a4f5c; /* Sets the background color of the footer */
-  color: #fff;
-  font-family: sans-serif;
-}
-
-.footer-column {/* Styling for the footer columns */
-  border-color: rgb(255, 255, 255); /* Sets the border color for footer columns */
-  border-bottom: 5px;
-  margin-left: 50px;
-  margin-right: 200px;
-  margin-top: 100px;
-  margin-bottom: 1.5em;
-  font-size: 20px;
-}
-
-.footer-column li {/* Styling for list items within footer columns */
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
-  display: block;
-  color:#E6D9A8;
-  line-height: 1.5;
-  font-size:17px;
-  font-weight: 400;
-  transition:all .50s ease; /* Adds a smooth transition effect for all properties over 0.5 seconds */
-}
-
-
-.footer-column li:hover {/* Styling for list items within footer columns when hovered */
-  transform: translateY(-3px) translateX(-5px); /* Moves list items 3 pixels up and 5 pixels left when hovered */
-}
-
-
-
-.h3class{/* Styling for h3class elements */
-  text-align:left;
-  margin-bottom: 60px;
-  color:rgb(250, 244, 244);
-  
-}
-
-.link-color2 {/* Styling for elements with the class 'link-color' */
-  color: #ecddaa;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 700px) {/* Media query for screens wider than 700px */
-.nav-toggle-label {
-    display: none;
-}
-header {/* Header layout for wider screens using grid */  
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-}
-nav { /* Navigation menu styling for wider screens */
-    all: unset;
-    margin-top: 10px; 
-    margin-bottom: 10px;
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul {/* Styling for the list inside the navigation menu on wider screens */   
-    display: flex;
-}
-nav li {/* Adjustments for list items inside the navigation menu on wider screens */    
-    margin-left: 3em;
-    margin-bottom: 15px;
-}
-nav a { /* Styling for links inside the navigation menu on wider screens */   
-    opacity: 1;
-    position: relative;
-}
-nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
-    content: "";
-    display: block;
-    height: 2px;
-    background: rgb(253, 26, 26);
-    /* position: absolute; */
-    left: 0;
-    right: 0;
-    transform: scale(0, 2);
-    transition: transform ease-in-out 250ms;
-}
-nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
-    transform: scale(1, 1);
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*2. Pages design*/
 
 
 .container1 {/* Styling for an element with the class 'container1' */
@@ -602,56 +513,6 @@ nav a:hover::after {/* Underline effect when hovering over links on wider screen
 
 }
 
-#contant {/* Styling for the contant section */
-  width:960px;
-  margin: 25%;
-  margin-top: 1rem;
-}
-
-#contant h{/* Styling for the main heading */
-font-family:Georgia, "Times New Roman", Times, serif;
-font-size:38px;
-color:#3a3a3a;
-font-weight:normal;
-margin-bottom:20px;
-}
-#contant h span{/* Styling for the subheading within the main heading */
-display:block;
-font-size:10px;
-color:#808080;
-border-top:2px dotted #3a3a3a;
-font-family:tahoma, arial;
-padding-top:5px;
-margin-bottom: 10px;
-}
-.contant_1_left {
-/* Styling for the left contant section */
-width:710px;
-float:inline-start;
-}
-.contant_1_left img{/* Styling for images within the left content section */
-float: left;
-margin-right:10px;
-}
-.contant_1_left p{/* Styling for paragraphs within the left content section */
-font-size:17px;
-color:#3a3a3a;
-font-weight:normal;
-line-height:20px;
-margin-bottom: 5px;
-}
-.contant_1_left h3{/* Styling for subheadings within the left content section */
-font-size:24px;
-background:#757575;
-color:#FFFFFF;
-display:inline;
-padding-left:10px;
-padding-right:10px;
-font-weight:normal;
-line-height:32px;
-padding-top:4px;
-border-bottom:1px solid #C8C8C8;
-}
 p.quoteBar {/* Styling for a quoted bar section */
 background:#F0F0F0;
 padding:5px;
@@ -855,41 +716,260 @@ margin-top: 15px;
 border-radius: 20px;
 padding:10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-.contant_1_left .topic {
-  font-size: 17px;
-  line-height: 1.5;
-  margin-bottom: 2em;
-}    
-
-.figurePics{
+.figurePics{ /*Accessibility page images */
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.h2Access{
-font-size: 20px;
-color: white;
-background-color: #000000;
-text-align: center;
-padding: 20px 15px;
-margin:40px 40px;
-border-radius: 100px;
-letter-spacing: 1.5px;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer for 1. design*/
+
+footer {/* Styling for the footer */
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3.5rem;
+  background: #401010;
+}
+.footer-column {/* Styling for elements with the class 'footer-column' */
+  border-bottom: 5px;   /* Adds a bottom border with a default color and style, but the width is missing a unit (e.g., px) */
+  margin-left: 50px;    /* Adds a left margin of 50 pixels to the elements with the class 'footer-column' */
+  margin-right: 100px;  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
+  margin-top: 100px;    /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
+  margin-bottom: 1.5em; /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
+  font-size: 17px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
+}
+.footer-column li {/* Styling for List Items within '.footer-column' */
+  font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
+  margin-bottom: 16px;  /* Adds bottom margin of 16 pixels to each list item */
+  display: block;  /* Specifies that list items should be displayed as block-level elements */
+  color: #FFD500;  /* Sets the text color of list items to a shade of yellow */
+  line-height: 1.5;  /* Sets the line height to 1.5 times the font size */
+  font-size: 17px;  /* Sets the font size to 17 pixels */
+  font-weight: 400;  /* Sets the font weight to 400 (normal) */
+  transition: all .50s ease;  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
+}
+.footer-column li:hover { /* Hover Effect for Footer Column List Items */
+  transform: translateY(-3px) translateX(-5px);
 }
 
-.accesibilityBack{
-  background-image: linear-gradient(rgba(180, 233, 233, 0.7),rgba(208, 185, 217, 0.91));
+.h3class{/* Styling for Heading with Class 'h3class' */
+  text-align: left;
+  margin-left: 40PX;
+  margin-bottom: 60px;
+  color:rgb(141, 243, 243);
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer2 {/* Styling for the footer section */
+  margin-top: 0;/* Centers the text within h5 elements horizontally */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Creates a responsive grid layout */
+  gap: 3.5rem; /* Sets the gap between grid items to 3.5rem */
+  background: #0a4f5c; /* Sets the background color of the footer */
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.footer-column2 {/* Styling for the footer columns */
+  border-color: rgb(255, 255, 255); /* Sets the border color for footer columns */
+  border-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 1.5em;
+  font-size: 20px;
+}
+
+.footer-column2 li {/* Styling for list items within footer columns */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  display: block;
+  color:#E6D9A8;
+  line-height: 1.5;
+  font-size:17px;
+  font-weight: 400;
+  transition:all .50s ease; /* Adds a smooth transition effect for all properties over 0.5 seconds */
+}
+
+
+.footer-column2 li:hover {/* Styling for list items within footer columns when hovered */
+  transform: translateY(-3px) translateX(-5px); /* Moves list items 3 pixels up and 5 pixels left when hovered */
+}
+
+
+
+.h3class2{/* Styling for h3class elements */
+  text-align:left;
+  margin-left: 40PX;
+  margin-bottom: 60px;
+  color:rgb(250, 244, 244);
+  
+}
+.footer-column2 li {
+  text-align: justify;
+  color: #ffee05;
+
+}
+
+
+.link-color2 {/* Styling for elements with the class 'link-color' */
+  color: #ffee05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
