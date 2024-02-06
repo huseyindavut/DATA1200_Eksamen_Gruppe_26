@@ -114,6 +114,57 @@ transition: opacity 250ms ease-in-out 250ms;
 }
 
 
+@media screen and (min-width: 700px) {/* Media query for screens wider than 700px */
+  .nav-toggle-label {
+      display: none;
+  }
+  header {/* Header layout for wider screens using grid */  
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  nav { /* Navigation menu styling for wider screens */
+      all: unset;
+      margin-top: 10px; 
+      margin-bottom: 10px;
+      position: relative;
+      text-align: center;
+      transition: none;
+      transform: scale(1, 1);
+      background: none;
+      top: initial;
+      left: initial;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  nav ul {/* Styling for the list inside the navigation menu on wider screens */   
+      display: flex;
+  }
+  nav li {/* Adjustments for list items inside the navigation menu on wider screens */    
+      margin-left: 3em;
+      margin-bottom: 15px;
+  }
+  nav a { /* Styling for links inside the navigation menu on wider screens */   
+      opacity: 1;
+      position: relative;
+  }
+  nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
+      content: "";
+      display: block;
+      height: 2px;
+      background: rgb(253, 26, 26);
+      /* position: absolute; */
+      left: 0;
+      right: 0;
+      transform: scale(0, 2);
+      transition: transform ease-in-out 250ms;
+  }
+  nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
+      transform: scale(1, 1);
+  }
+  }
+
+
 
 
 
@@ -199,7 +250,6 @@ transition: opacity 250ms ease-in-out 250ms;
  color:rgb(0, 0, 0);
  text-shadow: 0 0 15px #770707 ; 
  font-size: 23px;
-
  background-position: bottom;
  margin-top: 15px;
  border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
@@ -211,71 +261,12 @@ transition: opacity 250ms ease-in-out 250ms;
 }
 @media screen and (max-width: 750px) {  /* Media query for responsive design */
   
-  .navbarlinks {
+  .navbar {
       display: block;
+ 
   }
+ 
 }    
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 700px) {/* Media query for screens wider than 700px */
-  .nav-toggle-label {
-      display: none;
-  }
-  header {/* Header layout for wider screens using grid */  
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-  nav { /* Navigation menu styling for wider screens */
-      all: unset;
-      margin-top: 10px; 
-      margin-bottom: 10px;
-      position: relative;
-      text-align: left;
-      transition: none;
-      transform: scale(1, 1);
-      background: none;
-      top: initial;
-      left: initial;
-  
-      grid-column: 3 / 4;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  }
-  nav ul {/* Styling for the list inside the navigation menu on wider screens */   
-      display: flex;
-  }
-  nav li {/* Adjustments for list items inside the navigation menu on wider screens */    
-      margin-left: 3em;
-      margin-bottom: 15px;
-  }
-  nav a { /* Styling for links inside the navigation menu on wider screens */   
-      opacity: 1;
-      position: relative;
-  }
-  nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
-      content: "";
-      display: block;
-      height: 2px;
-      background: rgb(253, 26, 26);
-      /* position: absolute; */
-      left: 0;
-      right: 0;
-      transform: scale(0, 2);
-      transition: transform ease-in-out 250ms;
-  }
-  nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
-      transform: scale(1, 1);
-  }
-  }
 
 
 
@@ -325,7 +316,7 @@ section {/* Styling for the sections */
 
 section.sec1 {/* Styling for a specific section with the class "sec1" */
   margin-top: -10px;
-  background: url(../Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  */  /* Background image with a URL */
+  background: url(/Images/p32_byg.webp); /*Foto: Huseyin Ozturk-2023  */  /* Background image with a URL */
   background-size: cover;/* Cover the entire background with the image */
 }
 .Foto2 {/* Styling for Element with Class 'Foto2' */
