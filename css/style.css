@@ -374,33 +374,34 @@ section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' *
   color: #fff;
   margin-bottom: 50px;
 }
- .row {/* Styling for Grid Layout with Class 'row' */
+ .sec2 .row {/* Styling for Grid Layout with Class 'row' */
 margin-top: 150px; /* Adds a top margin of 80 pixels to the 'row' class */
 margin-bottom: 80px;/* Adds a bottom margin of 80 pixels to the 'row' class */
-width: 80%; /* Sets the width of the 'row' class to 80% of its containing element */
-max-width: 1170px;/* Sets the maximum width of the 'row' class to 1170 pixels */
+width: 100%; /* Sets the width of the 'row' class to 80% of its containing element */
+max-width: 100;/* Sets the maximum width of the 'row' class to 1170 pixels */
 display: grid; /* Sets the display property to 'grid' for the 'row' class */
 grid-template-columns: repeat(2, 1fr);/* Creates a grid with two columns of equal width */
 }
-.row .left img {/* Styling for Image in Left Column of Grid */
+.sec2 .row .left img {/* Styling for Image in Left Column of Grid */
 width: 100%;
 height: 90%;
-object-fit: cover;
+
 }
-.row .left .Foto2 {/* Styling for Text in Left Column of Grid */
+.sec2 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
 color: #FFDA00;
-margin-bottom: 0px;
+margin-top: -5px;
+margin-left: 0px;
 font-size: 15px  
 }
-.row .right {/* Styling for Right Column of Grid */
+.sec2 .row .right {/* Styling for Right Column of Grid */
 display: flex;
 align-items: center;
 
 }
-.row .right .content {/* Styling for Content in Right Column of Grid */
+.sec2 .row .right .content {/* Styling for Content in Right Column of Grid */
 padding-left: 20px;
 }
-.row .right .content p {
+.sec2 .row .right .content p {
 font-size: 20px;       /* Sets the font size to 1.4 times the default font size */
 padding-bottom: 15px;   /* Adds padding to the bottom of each paragraph (15 pixels) */
 text-align: justify;
@@ -408,8 +409,9 @@ margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
 padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragraph (15 pixels) */    
 line-height: 1.5;
 }
-.link-color {/* Styling for Links with Class 'link-color' */
+.sec2 .row .right .content .link-color {/* Styling for Links with Class 'link-color' */
 color: #FFDA00;
+margin-left: 25%;
 text-decoration: none;
 }
 @media (min-width: 700px) { /* Media Query 1: Applies styles when the viewport width is 700 pixels or wider */
