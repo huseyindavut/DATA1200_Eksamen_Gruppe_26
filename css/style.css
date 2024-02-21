@@ -489,7 +489,9 @@ text-decoration: none;
   box-sizing:border-box;
   margin-bottom: 0px; 
 }
-
+.container3 .row2 .col {
+  margin-bottom: 100px;
+}
 .container4 {/* Styling for an element with the class 'container4' */
   width: 100%;
   height: 100%;
@@ -514,13 +516,7 @@ text-decoration: none;
   margin-bottom: 0px;
 }
   
-.row2 {/* Styling for the 'row' class */
-  margin-top: 0px;
-  margin-left: 100px;
-  display:flex;/* Makes the 'row' class a flex container */
-  height: 88%;
-  align-items:center; 
-}
+
 
 .container5 row2 img{/* Styling for images in the container5 */
   height: 500px;
@@ -544,6 +540,13 @@ font-weight: bold;
 }
 figcaption{/* Styling for the figure caption */
 font-size: 17px;
+}
+.row2 {/* Styling for the 'row' class */
+  margin-top: 0px;
+  margin-left: 100px;
+  display:flex;/* Makes the 'row' class a flex container */
+  height: 88%;
+  align-items:center; 
 }
 .row2 .col {/* Styling for elements with the class 'col' */
 flex-basis: 45%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
