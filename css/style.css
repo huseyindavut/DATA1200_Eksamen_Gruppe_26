@@ -2,7 +2,7 @@ body {                       /*It is the place where the rules of the body are d
   margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
   padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
   font-family: 'Montserrat', sans-serif;/*Defines the font family for the entire page, specifying a Montserrat typeface.*/
-  background: #000;      /*Sets the background color of the page to black (#000).(Black)*/
+  background: #000000;      /*Sets the background color of the page to black (#000).(Black)*/
  
 }
 
@@ -19,12 +19,17 @@ header { /* Styling for the header */
 
 
 
+header .logo{
+  
+  margin-top: 40px;
+  width:110px;
+  height:70px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
 
 
-
-
-
-/*Navigation bar for 1. design*/
+/*Navigation bar for 1. design (the index.html page)*/
 
 
 nav {/* Styles for the navigation menu */
@@ -33,7 +38,6 @@ position: absolute;
 text-align: center;
 top: 100%;
 left: 0;
-background: rgb(0, 0, 0);
 width: 100%;
 transform: scale(1, 0);
 transition: transform 500ms ease-in-out;
@@ -41,24 +45,29 @@ transition: transform 500ms ease-in-out;
 } 
 nav ul {/* Styles for the list inside the navigation menu */
 margin: 0;
+margin-left:400px;
 padding: 0;
 list-style: none;
+width: fit-content;
 } 
-nav li {/* Styles for the list items inside the navigation menu */
-margin-top: 40px;
-margin-bottom: 1em;
-margin-left: 1em;
+
+nav ul li {/* Styles for the list items inside the navigation menu */
+margin-top: 20px;
+margin-bottom:0px;
+margin-left: 5em;
 }
 nav a {/* Styles for the links inside the navigation menu */  
-color: rgb(252, 205, 18);
+color: #FFDA00;
 text-decoration: none;
-font-size: 22px;
 text-transform: uppercase;
 opacity: 0;
 transition: opacity 150ms ease-in-out;
+font-size: 32px;
+font-weight: bold;
+
 }
 nav a:hover {/* Styling for link hover effect */
-color: rgb(245, 178, 178);
+color: rgb(27, 241, 212);
 }
 .nav-toggle:checked ~ nav {/* Displaying the full navigation menu when the toggle is checked */
 transform: scale(1, 1);
@@ -95,7 +104,7 @@ transition: opacity 250ms ease-in-out 250ms;
   .nav-toggle-label span::after {
   
   display: block;
-  background: rgb(252, 205, 18);
+  background: #FFDA00;
   height: 4px;
   width: 2em;
   border-radius: 2px;
@@ -217,7 +226,15 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 /*Navigation bar for 2. design*/
+.navbar .logo {
+  font-size: 40px;
+  margin-top: 40px;
+  width:100px;
+  height:60px;
+  margin-left: 45px;
+  margin-bottom: 20px;
 
+}
 .navbar {/* Styling for the navigation bar 
   ith the class 'navbar' */
   margin-top: 0px;/* Sets the top margin of the navigation bar to 0 pixels */
@@ -238,13 +255,13 @@ transition: opacity 250ms ease-in-out 250ms;
   display: inline-block;/* Displays list items as inline blocks */
   margin-left: 60px;
   text-decoration: none;/* Removes underlines from links */
-  color: #fff;
+  color: #f20404;
   font-size: 13px;
 }
 .navbarlinks{/* Styling for the 'navbarlinks' class */
   display: block;
  text-align: center;/* Centers text within elements with the 'navbarlinks' class */
- color:rgb(0, 0, 0);
+ color:rgb(255, 212, 212);
  text-shadow: 0 0 15px #770707 ; 
  font-size: 23px;
  background-position: bottom;
@@ -253,8 +270,8 @@ transition: opacity 250ms ease-in-out 250ms;
  padding:10px 13px;
 }
 .navigation ul li a {/* Styling for the links within list items in the 'nav' element */
-  color:#000000;
-  font-size: 25px;
+  color:#ffffff;
+  font-size: 30px;
 }
 @media screen and (max-width: 750px) {  /* Media query for responsive design */
   
@@ -317,7 +334,7 @@ section.sec1 {/* Styling for a specific section with the class "sec1" */
   background-size: cover;/* Cover the entire background with the image */
 }
 .Foto2 {/* Styling for Element with Class 'Foto2' */
-color: #FFD500;
+color: #FFDA00;
 text-align: right;
 margin-right: 20px;
 margin-bottom: 0px;
@@ -335,21 +352,22 @@ section.sec2 h2 {
   font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
   margin: 0;           /* Resets the margin to zero to remove any default margin */
   padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
-  color: #FFD500;         /* Sets the text color of 'h2' elements to white (#fff) */
-  margin-left: 100px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
+  color: #FFDA00;         /* Sets the text color of 'h2' elements to white (#fff) */
+  margin-left: 100px;
+  margin-bottom: 50px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
 }
 section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' */
-  font-size: 17px;
+  font-size: 20px;
   text-align: justify;
-  line-height: 22px; 
+  line-height:1.5; 
   text-indent: 30px;
-  margin: 0;
+  margin:50px;
   padding: 0;
   color: #fff;
   margin-bottom: 50px;
 }
-.row {/* Styling for Grid Layout with Class 'row' */
-margin-top: 80px;/* Adds a top margin of 80 pixels to the 'row' class */
+ .row {/* Styling for Grid Layout with Class 'row' */
+margin-top: 150px; /* Adds a top margin of 80 pixels to the 'row' class */
 margin-bottom: 80px;/* Adds a bottom margin of 80 pixels to the 'row' class */
 width: 80%; /* Sets the width of the 'row' class to 80% of its containing element */
 max-width: 1170px;/* Sets the maximum width of the 'row' class to 1170 pixels */
@@ -362,20 +380,20 @@ height: 90%;
 object-fit: cover;
 }
 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
-color: #FFD500;
+color: #FFDA00;
 margin-bottom: 0px;
 font-size: 15px  
 }
 .row .right {/* Styling for Right Column of Grid */
 display: flex;
 align-items: center;
+
 }
 .row .right .content {/* Styling for Content in Right Column of Grid */
 padding-left: 20px;
 }
 .row .right .content p {
-font-size: 17px;       /* Sets the font size to 1.4 times the default font size */
-line-height: 26px;      /* Defines the line height between lines of text as 26 pixels */
+font-size: 20px;       /* Sets the font size to 1.4 times the default font size */
 padding-bottom: 15px;   /* Adds padding to the bottom of each paragraph (15 pixels) */
 text-align: justify;
 margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
@@ -383,7 +401,7 @@ padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragra
 line-height: 1.5;
 }
 .link-color {/* Styling for Links with Class 'link-color' */
-color: #FFD500;
+color: #FFDA00;
 text-decoration: none;
 }
 @media (min-width: 700px) { /* Media Query 1: Applies styles when the viewport width is 700 pixels or wider */
@@ -432,7 +450,7 @@ text-decoration: none;
 .container1 {/* Styling for an element with the class 'container1' */
   width: 100%;  /* Sets the width of the container to 100% of its parent element's width */
   height: 100%; /* Sets the height of the container to 100% of its parent element's height */
-  background-image: linear-gradient(rgba(145, 220, 15, 0.91), rgba(138, 239, 242, 0.7)); /* Applies a linear gradient background with two colors and opacity */
+  background-image: linear-gradient(rgb(16, 159, 181), rgba(138, 239, 242, 0.7)); /* Applies a linear gradient background with two colors and opacity */
   background-position: center;  /* Sets the position of the background image to the center */
   background-size: cover;       /* Ensures that the background image covers the entire container */
   padding-left: 0;              /* Sets the left padding of the container to zero */
@@ -566,7 +584,7 @@ color: #000000;
 text-align:center;
 border-radius: 10px;
 display:inline-flexbox;
-background-color: #ffdc52;  
+background-color: #FFDA00;  
 }
 
 .accessFotos{
@@ -674,21 +692,26 @@ footer {/* Styling for the footer */
   font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
   margin-bottom: 16px;  /* Adds bottom margin of 16 pixels to each list item */
   display: block;  /* Specifies that list items should be displayed as block-level elements */
-  color: #FFD500;  /* Sets the text color of list items to a shade of yellow */
+  color:#ffffff;  /* Sets the text color of list items to a shade of yellow */
   line-height: 1.5;  /* Sets the line height to 1.5 times the font size */
-  font-size: 17px;  /* Sets the font size to 17 pixels */
+  font-size: 20px;  /* Sets the font size to 17 pixels */
   font-weight: 400;  /* Sets the font weight to 400 (normal) */
   transition: all .50s ease;  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
 }
 .footer-column li:hover { /* Hover Effect for Footer Column List Items */
   transform: translateY(-5px) translateX(-9px);
 }
+.footer-column li a {
+  color: #fff;
+}
+
 
 .h3class{/* Styling for Heading with Class 'h3class' */
   text-align: left;
+  font-size: 25px;
   margin-left: 40PX;
   margin-bottom: 60px;
-  color:rgb(141, 243, 243);
+  color:rgb(42, 180, 127);
   
 }
 
@@ -748,7 +771,7 @@ footer2 {/* Styling for the footer section */
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   display: block;
-  color:#E6D9A8;
+  color:#FFDA00;
   line-height: 1.5;
   font-size:17px;
   font-weight: 400;
@@ -771,13 +794,13 @@ footer2 {/* Styling for the footer section */
 }
 .footer-column2 li {
   text-align: justify;
-  color: #ffee05;
+  color:#FFDA00;
 
 }
 
 
 .link-color2 {/* Styling for elements with the class 'link-color' */
-  color: #ffee05;
+  color: #FFDA00;
 }
 
 
