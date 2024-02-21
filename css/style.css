@@ -243,8 +243,8 @@ transition: opacity 250ms ease-in-out 250ms;
 
 }
 .navbar {/* Styling for the navigation bar with the class 'navbar' */
+  background-color: #ad5719;
   margin-top: 0px;/* Sets the top margin of the navigation bar to 0 pixels */
-  margin-right: 30px;/* Sets the right margin of the navigation bar to 30 pixels */
   height: 20%;/* Sets the height of the navigation bar to 20% of its containing element's height */
   display: flex; /* Turns the navigation bar into a flex container */
   align-items: center; /* Aligns items along the cross axis (vertical centering) */
@@ -252,6 +252,7 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 .navigation {/* Styling for the 'nav' element */
+
   flex: 1;/* Allows the 'nav' element to grow and take available space */
   text-align: right;/* Aligns text to the right within the 'nav' element */
   margin-right: 30px;
@@ -263,6 +264,8 @@ transition: opacity 250ms ease-in-out 250ms;
   text-decoration: none;/* Removes underlines from links */
   color: #f20404;
   font-size: 13px;
+  
+
 }
 .navbarlinks{/* Styling for the 'navbarlinks' class */
  display: block;
@@ -273,7 +276,6 @@ transition: opacity 250ms ease-in-out 250ms;
  background-position: bottom;
  margin-top: 15px;
  border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
- padding:10px 13px;
 }
 .navigation ul li a {/* Styling for the links within list items in the 'nav' element */
   color:#ffffff;
