@@ -182,6 +182,8 @@ nav a:hover {
     all: unset;
     position: relative;
     text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
     transition: none;
     transform: scale(1, 1);
     background: none;
@@ -242,7 +244,9 @@ nav a:hover {
 .navbar {
   /* Styling for the navigation bar with the class 'navbar' */
   background-color: #e7e6e6;
+  /* navigation bars color*/
   border-radius: 50px;
+  /* border radius for navbar*/
   margin-left: 30px;
   /* Sets the left margin of the navigation bar to 30 pixels */
   margin-right: 30px;
@@ -286,14 +290,15 @@ nav a:hover {
   color: rgb(252, 250, 250);
 }
 
-/* Appearance of the navigation bar when the resolution is below 700px */
+
 @media (max-width: 700px) {
 
+  /* Appearance of the navigation bar when the resolution is below 700px */
   .row,
   .navbar {
     flex-direction: column;
   }
-  
+
   .navbar .logo {
     margin-left: 0px;
   }
@@ -422,47 +427,57 @@ section.sec2 p {
   text-decoration: none;
 }
 
-@media (max-width: 700px) { /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
-  
-  .sec2 .row { /*This line selects elements with the class "row" that are descendants of elements with the class "sec2" for styling*/
+@media (max-width: 700px) {
+  /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
+
+  .sec2 .row {
+    /*This line selects elements with the class "row" that are descendants of elements with the class "sec2" for styling*/
     display: flex;
     flex-direction: column;
   }
 
-  .sec2 .row .col { /*This line selects elements with the class "col" that are descendants of elements with the class "row" within elements with the class "sec2" for styling*/
+  .sec2 .row .col {
+    /*This line selects elements with the class "col" that are descendants of elements with the class "row" within elements with the class "sec2" for styling*/
     margin-bottom: 20px;
   }
 
-  .row .left { /*selects elements with the class "left" that are descendants of elements with the class "row" for styling./
+  .row .left {
+    /*selects elements with the class "left" that are descendants of elements with the class "row" for styling./
     width: 150px;
     /* Sets the width of images in the left column to 350 pixels */
     height: 15%;
     /* Sets the height of images to 50% of the parent element's height */
   }
 
-  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
+  .sec2 .row .left img {
+    /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     margin-left: 50px;
   }
 
-  .sec2 .row .left .Foto2 { /*selects elements with the class "Foto2" that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
+  .sec2 .row .left .Foto2 {
+    /*selects elements with the class "Foto2" that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     margin-top: 20px;
     margin-left: 50px;
     font-size: 8px;
   }
 
-  .row .right { /*selects elements with the class "right" that are descendants of elements with the class "row" for styling*/
+  .row .right {
+    /*selects elements with the class "right" that are descendants of elements with the class "row" for styling*/
     font-size: 7px;
   }
 
-  .row .right .content p { /*selects <p> elements that are descendants of elements with the class "content" within elements with the class "right" within elements with the class "row" for styling.*/
+  .row .right .content p {
+    /*selects <p> elements that are descendants of elements with the class "content" within elements with the class "right" within elements with the class "row" for styling.*/
     line-height: 1;
   }
 
-  .sec2 { /*selects elements with the class "sec2" for styling*/
+  .sec2 {
+    /*selects elements with the class "sec2" for styling*/
     font-size: 7px;
   }
 
-  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
+  .sec2 .row .left img {
+    /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     width: 120px;
     height: 150px;
   }
@@ -554,7 +569,7 @@ section.sec2 p {
 
 .container5 .row2 .col .referencers {
   /* Styling for an element with the class 'container5 row2 col references' */
- 
+
   font-size: 20px;
   width: 2000px;
   text-align: left;
@@ -684,7 +699,7 @@ figcaption {
 }
 
 @media screen and (max-width: 700px) {
-   .row2 {
+  .row2 {
     display: flex;
     flex-direction: column;
   }
@@ -700,8 +715,8 @@ figcaption {
     text-align: left;
   }
 
-  
-  
+
+
 }
 
 /*Footer for 1. design*/
