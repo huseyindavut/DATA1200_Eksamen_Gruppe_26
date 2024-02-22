@@ -639,12 +639,14 @@ figcaption {
   /* Sets the background size to cover the entire container */
   transition: transform 0.2s;
   /* Adds a smooth transition effect for the 'transform' property over 0.2 seconds */
+  margin-left: 0px;
 }
 
 .col .card {
   /*Styling for the first card with the class 'card */
   background-color: rgb(118, 115, 104);
   margin-top: 300px;
+  margin-left: 200px;
 }
 
 .row2 .col .card .Foto {
@@ -714,8 +716,6 @@ figcaption {
     width: 200px;
     text-align: left;
   }
-
-
 
 }
 
@@ -789,6 +789,13 @@ footer {
 }
 
 /*Footer for 2. design (Pilestredet 35, accessibility,topical)*/
+
+.div-footer2 { /* Styling for the div-footer section */
+ margin-top: 200px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  margin-right: 300px;
+}
 footer2 {
   /* Styling for the footer section */
   margin-top: 0;
