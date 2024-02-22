@@ -8,56 +8,79 @@ body {
   /*Defines the font family for the entire page, specifying a Montserrat typeface.*/
   background: #000000;
   /*Sets the background color of the page to black (#000).(Black)*/
-
 }
 
 header {
   /* Styling for the header */
   padding: 5px 5px;
+  /*padding of the header to 5 pixels on the top and bottom, and 5 pixels on the left and right.*/
   box-sizing: border-box;
+  /*This line ensures that the padding is included in the width and height of the header, preventing it from affecting the overall layout.*/
   background: rgb(0, 0, 0);
+  /*sets the background color of the header to black using the RGB color notation*/
   text-align: center;
+  /*aligns the text content of the header to the center.*/
   position: fixed;
+  /*sets the positioning of the header to be fixed, so it remains in a fixed position relative to the viewport while scrolling*/
   z-index: 999;
+  /*sets the stacking order of the header, ensuring it appears above other elements on the page with a lower z-index.*/
   width: 100%;
+  /*sets the width of the header to 100% of its containing element, ensuring it spans the entire width of the viewport.*/
 }
 
 /*Navigation bar for 1. design (the index.html page)*/
 .nav-toggle {
+  /* This line selects elements with the class "nav-toggle" for styling*/
   position: absolute !important;
+  /*sets the position of the element to absolute, overriding any other positioning rules due to the !important declaration.*/
   top: -9999px !important;
+  /*positions the element off-screen vertically by setting its top position to a large negative value, ensuring it remains hidden from view*/
   left: -9999px !important;
+  /*positions the element off-screen horizontally by setting its left position to a large negative value, ensuring it remains hidden from view*/
 }
 
 .nav-toggle:focus~.nav-toggle-label {
+  /*This line selects the sibling element with the class "nav-toggle-label" that follows the focused ".nav-toggle" element for styling*/
   outline: 3px solid rgba(rgb(237, 251, 255), 0.75);
+  /*ets a 3-pixel solid outline around the ".nav-toggle-label" element with a semi-transparent color defined in RGBA format.*/
 }
 
 .nav-toggle-label {
+  /*This line selects elements with the class "nav-toggle-label" for styling*/
   position: absolute;
+  /*sets the position of the element to absolute, allowing precise placement within its containing element*/
   top: 0;
+  /*positions the element at the top of its containing element*/
   left: 0;
+  /*positions the element at the left edge of its containing element*/
   margin-left: 1em;
+  /*dds a left margin of 1em to the element, creating space between the element and its adjacent content*/
   height: 100%;
+  /*sets the height of the element to 100%*/
   display: flex;
+  /*nables flexbox layout for the element's children, allowing for easy alignment and distribution of content*/
   align-items: center;
+  /*vertically aligns the content of the element to the center*/
 }
 
 .nav-toggle-label span,
+/*This line selects the <span> elements within elements with the class "nav-toggle-label" for styling*/
 .nav-toggle-label span::before,
+/*This line selects the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for additional styling*/
 .nav-toggle-label span::after {
-  display: block;
+  /* This line selects the pseudo-element ::after of the <span> elements within elements with the class "nav-toggle-label" for further styling*/
+  display: block; /*sets the display property of the selected elements to block, making them render as block-level elements*/
   background: white;
   height: 1px;
   width: 2em;
-  border-radius: 2px;
-  position: relative;
+  border-radius: 2px; /*sets the border radius of the selected elements to 2 pixels*/
+  position: relative; /*sets the position of the selected elements to relative*/
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute;
+.nav-toggle-label span::before, /*selects the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for styling*/
+.nav-toggle-label span::after { /*selects the pseudo-element ::after of the <span> elements within elements with the class "nav-toggle-label" for styling.*/
+  content: ""; /*sets an empty content for the selected pseudo-elements, ensuring they are rendered on the page*/
+  position: absolute; /*sets the position of the selected pseudo-elements to absolute*/
 }
 
 .nav-toggle-label span::before {
@@ -88,7 +111,6 @@ nav ul {
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
-
 }
 
 nav a {
@@ -130,10 +152,6 @@ nav a:hover {
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-
-  .logo {
-    grid-column: 2 / 3;
   }
 
   nav {
@@ -191,7 +209,6 @@ nav a:hover {
   height: 70px;
   margin-left: 60px;
   margin-bottom: 30px;
-
 }
 
 .navbar {
@@ -332,7 +349,6 @@ section.sec2 p {
   width: 600px;
   height: 500px;
   margin-left: 50px;
-
 }
 
 .sec2 .row .left .Foto2 {
@@ -347,7 +363,6 @@ section.sec2 p {
   /* Styling for Right Column of Grid */
   display: flex;
   align-items: center;
-
 }
 
 .sec2 .row .right .content {
@@ -386,7 +401,7 @@ section.sec2 p {
   .sec2 .row .col {
     margin-bottom: 20px;
   }
- 
+
   .row .left {
     width: 150px;
     /* Sets the width of images in the left column to 350 pixels */
@@ -420,7 +435,7 @@ section.sec2 p {
     width: 120px;
     height: 150px;
   }
- 
+
 }
 
 /*2. Pages design (Pilestredet 35, accessibility,topical)*/
@@ -507,7 +522,6 @@ section.sec2 p {
   font-size: 20px;
   width: 2000px;
   text-align: left;
-
 }
 
 .quoteBar {
@@ -611,7 +625,6 @@ figcaption {
   height: 90%;
   width: 80%;
   border-radius: 20px;
-
 }
 
 figcaption {
@@ -627,7 +640,6 @@ figcaption {
   /* Styling for card hover effect */
   transform: translateY(-10px);
   /* Moves the card 10 pixels upward when hovered */
-
 }
 
 .row2 .col h5 {
@@ -738,7 +750,6 @@ footer {
   margin-left: 40PX;
   margin-bottom: 60px;
   color: #FFDA00;
-
 }
 
 /*Footer for 2. design*/
@@ -794,13 +805,11 @@ footer2 {
   margin-left: 40PX;
   margin-bottom: 60px;
   color: rgb(250, 244, 244);
-
 }
 
 .footer-column2 li {
   text-align: justify;
   color: #FFDA00;
-
 }
 
 .link-color2 {
