@@ -423,8 +423,8 @@ section.sec2 p {
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
-  /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
+@media (max-width: 700px) { /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
+  
   .sec2 .row { /*This line selects elements with the class "row" that are descendants of elements with the class "sec2" for styling*/
     display: flex;
     flex-direction: column;
@@ -463,7 +463,7 @@ section.sec2 p {
     font-size: 7px;
   }
 
-  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling/
+  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     width: 120px;
     height: 150px;
   }
