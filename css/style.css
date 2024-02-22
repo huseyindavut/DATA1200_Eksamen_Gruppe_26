@@ -254,10 +254,8 @@ transition: opacity 250ms ease-in-out 250ms;
 }
 
 .navbarlinks{/* Styling for the 'navbarlinks' class */
- 
- display: block;
- text-align: center;/* Centers text within elements with the 'navbarlinks' class */
 
+ text-align: center;/* Centers text within elements with the 'navbarlinks' class */
  font-size: 23px;
  background-position: bottom;
  margin-top: 15px;
@@ -272,6 +270,7 @@ transition: opacity 250ms ease-in-out 250ms;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+  margin-left: 30px;
   
 }
 .navbar a:hover {
@@ -355,7 +354,7 @@ section.sec2 {
 }
 /* Styling for 'h2' elements within '.sec2' section */
 section.sec2 h2 {
-  font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
+  font-size: 40px;      /* Sets the font size of 'h2' elements to 3 times the default font size */
   margin: 0;           /* Resets the margin to zero to remove any default margin */
   padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
   color: #FFDA00;         /* Sets the text color of 'h2' elements to white (#fff) */
