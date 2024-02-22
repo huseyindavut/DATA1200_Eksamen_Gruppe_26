@@ -19,15 +19,7 @@ header { /* Styling for the header */
 
 
 
-.main-logo{
-  
-  margin-top: 40px;
-  width:125px;
-  height:75px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  
-}
+
 
 
 /*Navigation bar for 1. design (the index.html page)*/
@@ -87,18 +79,23 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transition: transform 400ms ease-in-out;
-  /* transform-origin: top;*/
+   
+ 
 }
+
 
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style:none;
+  
+  
 }
 
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
+ 
 }
 
 nav a {
@@ -109,6 +106,8 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
   font-weight: bold;
+  
+
 }
 
 nav a:hover {
@@ -123,7 +122,15 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-
+.main-logo{
+  
+  margin-top: 40px;
+  width:125px;
+  height:75px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  
+}
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -375,14 +382,15 @@ display: grid; /* Sets the display property to 'grid' for the 'row' class */
 grid-template-columns: repeat(2, 1fr);/* Creates a grid with two columns of equal width */
 }
 .sec2 .row .left img {/* Styling for Image in Left Column of Grid */
-width: 100%;
-height: 90%;
+width: 600px;
+height: 500px;
+margin-left: 50px;
 
 }
 .sec2 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
 color: #FFDA00;
 margin-top: -5px;
-margin-left: 0px;
+margin-left: 20px;
 font-size: 15px  
 }
 .sec2 .row .right {/* Styling for Right Column of Grid */
@@ -407,24 +415,25 @@ margin-left: 25%;
 text-decoration: none;
 }
 
-@media (min-width: 700px) { /* Media Query 1: Applies styles when the viewport width is 700 pixels or wider */
- 
-  .row .left .content {   
-      width: 700px;  /* Sets the width of content in the left column to 700 pixels */
-  }
-  .row {
-    width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
-    grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
-  }
-  }
   @media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
-  .row .left  {
+    .sec2 .row {
+      display: flex;
+      flex-direction: column;
+      }
+      .sec2 .row .col {
+      margin-bottom: 20px;
+      }
+    .row .left  {
       width: 150px;  /* Sets the width of images in the left column to 350 pixels */
       height: 15%;   /* Sets the height of images to 50% of the parent element's height */
   }
-  
-  .row .left .Foto2{
-    font-size: 6px;
+  .sec2 .row .left img {
+    margin-left: 50px;
+  }
+  .sec2 .row .left .Foto2{
+ margin-top: 20px;
+ margin-left: 50px;
+    font-size: 8px;
   }
   .row .right{
     font-size: 7px;
@@ -434,6 +443,10 @@ text-decoration: none;
   }
   .sec2{
     font-size: 7px;
+  }
+  .sec2 .row .left img {
+    width: 120px;
+    height: 150px;
   }
   }
   
@@ -634,40 +647,26 @@ padding:10px 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    @media screen and (max-width: 700px) {
-        .row2 {
-            display: flex;
-            flex-direction: column;
-        }
-        .col {
-            margin-bottom: 20px;
-        }
-        .container5 .row2 .col .referencers{
-          display: block;
-          font-size: 20px;
-          width: 200px;
-          text-align: left;
-          }
+@media screen and (max-width: 700px) {
+  .row2 {
+  display: flex;
+  flex-direction: column;
+  }
+  .col {
+  margin-bottom: 20px;
+  }
+  .container5 .row2 .col .referencers{
+  display: block;
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
+  }
           
-          .container2 .row2 .col figure{
-            display: flex;
-            flex-direction: column
-            }
-    }
+  .container2 .row2 .col figure{
+  display: flex;
+  flex-direction: column
+  }
+}
 
 
 
