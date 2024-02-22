@@ -560,22 +560,6 @@ section.sec2 p {
   text-align: left;
 }
 
-.container2 .row2 .col .quoteBar {
-  /* Styling for an element with the class 'container2 row2 col quoteBar' */
-  background: #c9d33a;
-  padding: 50px;
-  font-size: 17px;
-  line-height: 1.5;
-  color: #000000;
-  width: 640px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-style: italic;
-  font-weight: bold;
-  border-radius: 20px;
-}
-
 figcaption {
   /* Styling for the figure caption */
   font-size: 17px;
@@ -610,11 +594,12 @@ figcaption {
   font-size: 30px;
 }
 
+
 .row2 .col p {
   /* Styling for 'p' elements within elements with the class 'col' */
   font-size: 20px;
   text-align: justify;
-  margin-top: 0px;
+  margin-top: 30px;
   margin-left: 30px;
   margin-right: 40px;
   margin-bottom: 50px;
