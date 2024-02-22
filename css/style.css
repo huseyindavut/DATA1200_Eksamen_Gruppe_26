@@ -69,29 +69,40 @@ header {
 /*This line selects the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for additional styling*/
 .nav-toggle-label span::after {
   /* This line selects the pseudo-element ::after of the <span> elements within elements with the class "nav-toggle-label" for further styling*/
-  display: block; /*sets the display property of the selected elements to block, making them render as block-level elements*/
+  display: block;
+  /*sets the display property of the selected elements to block, making them render as block-level elements*/
   background: white;
   height: 1px;
   width: 2em;
-  border-radius: 2px; /*sets the border radius of the selected elements to 2 pixels*/
-  position: relative; /*sets the position of the selected elements to relative*/
+  border-radius: 2px;
+  /*sets the border radius of the selected elements to 2 pixels*/
+  position: relative;
+  /*sets the position of the selected elements to relative*/
 }
 
-.nav-toggle-label span::before, /*selects the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for styling*/
-.nav-toggle-label span::after { /*selects the pseudo-element ::after of the <span> elements within elements with the class "nav-toggle-label" for styling.*/
-  content: ""; /*sets an empty content for the selected pseudo-elements, ensuring they are rendered on the page*/
-  position: absolute; /*sets the position of the selected pseudo-elements to absolute*/
+.nav-toggle-label span::before,
+/*selects the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for styling*/
+.nav-toggle-label span::after {
+  /*selects the pseudo-element ::after of the <span> elements within elements with the class "nav-toggle-label" for styling.*/
+  content: "";
+  /*sets an empty content for the selected pseudo-elements, ensuring they are rendered on the page*/
+  position: absolute;
+  /*sets the position of the selected pseudo-elements to absolute*/
+
 }
 
 .nav-toggle-label span::before {
+  /*This line targets the pseudo-element ::before of the <span> elements within elements with the class "nav-toggle-label" for styling*/
   bottom: 7px;
 }
 
 .nav-toggle-label span::after {
+  /*This line targets the pseudo-element ::sfter of the <span> elements within elements with the class "nav-toggle-label" for styling*/
   top: 7px;
 }
 
 nav {
+  /* Navigation bar properties*/
   position: absolute;
   text-align: left;
   top: 100%;
@@ -103,17 +114,20 @@ nav {
 }
 
 nav ul {
+  /*This line selects <ul> elements that are descendants of <nav> elements for styling.*/
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 nav li {
+  /*selects <li> elements that are descendants of <nav> elements for styling*/
   margin-bottom: 1em;
   margin-left: 1em;
 }
 
 nav a {
+  /*This line selects <a> elements that are descendants of <nav> elements for styling.*/
   color: #FFD900;
   text-decoration: none;
   font-size: 30px;
@@ -124,19 +138,26 @@ nav a {
 }
 
 nav a:hover {
+  /*This line selects <a> elements within <nav> elements when they are hovered over by the mouse for styling*/
   color: rgb(255, 0, 0);
 }
 
 .nav-toggle:checked~nav {
+  /* This line selects the <nav> element that is a sibling following the .nav-toggle checkbox when it is checked for styling*/
   transform: scale(1, 1);
+  /*scales the size of the selected <nav> element to its original size (1x), making it visible, when the .nav-toggle checkbox is checked.*/
 }
 
 .nav-toggle:checked~nav a {
+  /*This line selects <a> elements within <nav> elements that are siblings following a checked .nav-toggle checkbox for styling*/
   opacity: 1;
+  /* sets the opacity of the selected <a> elements to fully opaque when the .nav-toggle checkbox is checked*/
   transition: opacity 250ms ease-in-out 250ms;
+  /*ets a transition effect on the opacity property of the selected <a> elements with 250ms*/
 }
 
 .main-logo {
+  /*This line selects elements with the class "main-logo" for styling*/
   margin-top: 40px;
   width: 125px;
   height: 75px;
@@ -144,7 +165,9 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+
+  /*This line starts a media query targeting screens with a minimum width of 700 pixels.*/
   .nav-toggle-label {
     display: none;
   }
@@ -155,8 +178,9 @@ nav a:hover {
   }
 
   nav {
+    /* Navigation bar properties after 
+    700px solution*/
     all: unset;
-
     position: relative;
     text-align: left;
     transition: none;
@@ -164,7 +188,6 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -172,20 +195,24 @@ nav a:hover {
   }
 
   nav ul {
+    /*This line selects <ul> elements that are descendants of <nav> elements for styling after 700px solution*/
     display: flex;
   }
 
   nav li {
+    /*selects <li> elements that are descendants of <nav> elements for styling after 700px solution*/
     margin-left: 3em;
     margin-bottom: 0;
   }
 
   nav a {
+    /*This line selects <a> elements within <nav> elements for styling after 700px*/
     opacity: 1;
     position: relative;
   }
 
   nav a::after {
+    /*This line selects pseudo-elements ::after of <a> elements within <nav> elements for styling*/
     content: "";
     display: block;
     height: 2px;
@@ -198,12 +225,14 @@ nav a:hover {
   }
 
   nav a:hover::after {
+    /*This line selects pseudo-elements ::after of <a> elements within <nav> elements for styling when they are hovered over.*/
     transform: scale(1, 1);
   }
 }
 
-/*Navigation bar for 2. design*/
+/*Navigation bar for 2. design (Pilestredet 35, accessibility,topical)*/
 .navbar .logo {
+  /*This line selects elements with the class "logo" that are descendants of elements with the class "navbar" for styling*/
   margin-top: 30px;
   width: 110px;
   height: 70px;
@@ -216,7 +245,9 @@ nav a:hover {
   background-color: #e7e6e6;
   border-radius: 50px;
   margin-left: 30px;
+  /* Sets the left margin of the navigation bar to 30 pixels */
   margin-right: 30px;
+  /* Sets the right margin of the navigation bar to 30 pixels */
   margin-top: 40px;
   /* Sets the top margin of the navigation bar to 0 pixels */
   height: 20%;
@@ -240,6 +271,7 @@ nav a:hover {
 
 /* Style the navigation bar links */
 .navbar a {
+  /* This line selects elements with the class "navbarlinks" for styling*/
   color: #a24a0b;
   font-size: 25px;
   padding: 14px 20px;
@@ -250,6 +282,7 @@ nav a:hover {
 }
 
 .navbar a:hover {
+  /*This line selects anchor (<a>) elements within elements with the class "navbar" for styling when they are hovered over*/
   background-color: #1f8291;
   color: rgb(252, 250, 250);
 }
@@ -391,54 +424,54 @@ section.sec2 p {
 }
 
 @media (max-width: 700px) {
-
   /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
-  .sec2 .row {
+  .sec2 .row { /*This line selects elements with the class "row" that are descendants of elements with the class "sec2" for styling*/
     display: flex;
     flex-direction: column;
   }
 
-  .sec2 .row .col {
+  .sec2 .row .col { /*This line selects elements with the class "col" that are descendants of elements with the class "row" within elements with the class "sec2" for styling*/
     margin-bottom: 20px;
   }
 
-  .row .left {
+  .row .left { /*selects elements with the class "left" that are descendants of elements with the class "row" for styling./
     width: 150px;
     /* Sets the width of images in the left column to 350 pixels */
     height: 15%;
     /* Sets the height of images to 50% of the parent element's height */
   }
 
-  .sec2 .row .left img {
+  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     margin-left: 50px;
   }
 
-  .sec2 .row .left .Foto2 {
+  .sec2 .row .left .Foto2 { /*selects elements with the class "Foto2" that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling*/
     margin-top: 20px;
     margin-left: 50px;
     font-size: 8px;
   }
 
-  .row .right {
+  .row .right { /*selects elements with the class "right" that are descendants of elements with the class "row" for styling*/
     font-size: 7px;
   }
 
-  .row .right .content p {
+  .row .right .content p { /*selects <p> elements that are descendants of elements with the class "content" within elements with the class "right" within elements with the class "row" for styling.*/
     line-height: 1;
   }
 
-  .sec2 {
+  .sec2 { /*selects elements with the class "sec2" for styling*/
     font-size: 7px;
   }
 
-  .sec2 .row .left img {
+  .sec2 .row .left img { /*selects <img> elements that are descendants of elements with the class "left" within elements with the class "row" within elements with the class "sec2" for styling/
     width: 120px;
     height: 150px;
   }
 
 }
 
-/*2. Pages design (Pilestredet 35, accessibility,topical)*/
+/*2. Page design (Pilestredet 35, accessibility,topical)*/
+
 .container1 {
   /* Styling for an element with the class 'container1' */
   width: 100%;
@@ -488,6 +521,7 @@ section.sec2 p {
 }
 
 .container3 .row2 .col {
+  /* Styling for an element with the class 'container3 ro2 col' */
   margin-bottom: 200px;
   font-size: 20px;
 }
@@ -507,33 +541,36 @@ section.sec2 p {
 }
 
 .container5 .row2 {
+  /* Styling for an element with the class 'container5 row2' */
   background-image: linear-gradient(rgba(40, 126, 163, 0.91), rgba(151, 218, 49, 0.7));
   margin-left: 0px;
   margin-bottom: 0px;
 }
 
 .container5 .row2 .col {
+  /* Styling for an element with the class 'container5 row2 col' */
   margin-top: 0px;
   margin-bottom: 100px;
 }
 
-.row2 .col .referencers {
-  /* Styling for 'references' elements within elements with the class 'references' */
+.container5 .row2 .col .referencers {
+  /* Styling for an element with the class 'container5 row2 col references' */
+ 
   font-size: 20px;
   width: 2000px;
   text-align: left;
 }
 
-.quoteBar {
-  /* Styling for a quoted bar section */
-  background: #dee940;
+.container2 .row2 .col .quoteBar {
+  /* Styling for an element with the class 'container2 row2 col quoteBar' */
+  background: #c9d33a;
   padding: 50px;
   font-size: 17px;
   line-height: 1.5;
   color: #000000;
   width: 640px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-style: italic;
   font-weight: bold;
@@ -643,7 +680,7 @@ figcaption {
 }
 
 .row2 .col h5 {
-  /* Styling for h5 elements */
+  /* Styling for 'row2 col h5' elements */
   text-align: center;
   color: rgb(0, 0, 0);
   text-shadow: 0 0 15px #6a6969;
@@ -752,7 +789,7 @@ footer {
   color: #FFDA00;
 }
 
-/*Footer for 2. design*/
+/*Footer for 2. design (Pilestredet 35, accessibility,topical)*/
 footer2 {
   /* Styling for the footer section */
   margin-top: 0;
