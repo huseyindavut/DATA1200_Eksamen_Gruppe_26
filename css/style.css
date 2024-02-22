@@ -40,7 +40,7 @@ header { /* Styling for the header */
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
+  outline: 3px solid rgba(rgb(237, 251, 255), 0.75);
 }
 
 .nav-toggle-label {
@@ -112,7 +112,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(54, 40, 40);
+  color: rgb(255, 0, 0);
 }
 
 .nav-toggle:checked ~ nav {
