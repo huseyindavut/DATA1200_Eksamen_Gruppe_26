@@ -19,169 +19,167 @@ header { /* Styling for the header */
 
 
 
-header .logo{
+.main-logo{
   
   margin-top: 40px;
-  width:110px;
-  height:70px;
-  margin-left: 60px;
+  width:125px;
+  height:75px;
+  margin-left: 50px;
   margin-bottom: 20px;
+  
 }
 
 
 /*Navigation bar for 1. design (the index.html page)*/
 
 
-nav {/* Styles for the navigation menu */
-margin-top: 50px;
-position: absolute;
-text-align: center;
-top: 100%;
-left: 0;
-width: 100%;
-transform: scale(1, 0);
-transition: transform 500ms ease-in-out;
-
-
-} 
-nav ul {/* Styles for the list inside the navigation menu */
-margin: 0;
-margin-left:400px;
-padding: 0;
-list-style: none;
-width: fit-content;
-
-} 
-
-nav ul li {/* Styles for the list items inside the navigation menu */
-margin-top: 20px;
-margin-bottom:0px;
-margin-left: 5em;
-
-}
-nav a {/* Styles for the links inside the navigation menu */  
-color: #FFDA00;
-text-decoration: none;
-text-transform: uppercase;
-opacity: 0;
-transition: opacity 150ms ease-in-out;
-font-size: 32px;
-font-weight: bold;
-
-.nonBreakName { /* We used it for Pilestredet 35. Prevents interruption and keeps the text on the same line */
-  white-space: nowrap; 
-}
-
-
-}
-nav a:hover {/* Styling for link hover effect */
-color: rgb(27, 241, 212);
-}
-.nav-toggle:checked ~ nav {/* Displaying the full navigation menu when the toggle is checked */
-transform: scale(1, 1);
-}
-.nav-toggle:checked ~ nav a {/* Adjusting opacity for navigation links when the toggle is checked */
-opacity: 1;
-transition: opacity 250ms ease-in-out 250ms;
-}
-
-.nav-toggle {/* Styles for the navigation toggle */
-  
+.nav-toggle {
   position: absolute !important;
-  top: -999px !important;
+  top: -9999px !important;
   left: -9999px !important;
-  
-  }  
-  .nav-toggle:focus ~ .nav-toggle-label {/* Highlighting the label when the navigation toggle is focused */
-  outline: 3px solid rgba(rgb(239, 140, 65), 0.75);
-  
-  } 
-  .nav-toggle-label {/* Styles for the navigation toggle label */
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
+}
+
+.nav-toggle-label {
   position: absolute;
-  margin-top: 50px;
   top: 0;
   left: 0;
   margin-left: 1em;
   height: 100%;
   display: flex;
   align-items: center;
-  }
-  /* Styles for the lines in the navigation toggle icon */
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-  
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
   display: block;
-  background: #FFDA00;
-  height: 4px;
+  background: white;
+  height: 1px;
   width: 2em;
   border-radius: 2px;
   position: relative;
-  }
-  /* Positions of the lines in the navigation toggle icon */
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
   content: "";
   position: absolute;
-  }  
-  .nav-toggle-label span::before {/* Position of the first line in the navigation toggle icon */
-  bottom: 9px;
-  } 
-  .nav-toggle-label span::after {/* Position of the second line in the navigation toggle icon */
-  
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
   top: 7px;
-  } 
+}
 
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  transform: scale(1, 0);
+  transition: transform 400ms ease-in-out;
+  /* transform-origin: top;*/
+}
 
-@media screen and (min-width: 700px) {/* Media query for screens wider than 700px */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #FFD900;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(54, 40, 40);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
   .nav-toggle-label {
-      display: none;
+    display: none;
   }
-  header {/* Header layout for wider screens using grid */  
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  nav { /* Navigation menu styling for wider screens */
-      all: unset;
-      margin-top: 10px; 
-      margin-bottom: 10px;
-      position: relative;
-      text-align: center;
-      transition: none;
-      transform: scale(1, 1);
-      background: none;
-      top: initial;
-      left: initial;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+  .logo {
+    grid-column: 2 / 3;
   }
-  nav ul {/* Styling for the list inside the navigation menu on wider screens */   
-      display: flex;
+  nav {
+    all: unset;
+
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  nav li {/* Adjustments for list items inside the navigation menu on wider screens */    
-      margin-left: 3em;
-      margin-bottom: 15px;
+  nav ul {
+    display: flex;
   }
-  nav a { /* Styling for links inside the navigation menu on wider screens */   
-      opacity: 1;
-      position: relative;
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
   }
-  nav a::after {  /* Styling for the underline effect after hovering over links on wider screens */ 
-      content: "";
-      display: block;
-      height: 2px;
-      background: rgb(0, 0, 0);
-      /* position: absolute; */
-      left: 0;
-      right: 0;
-      transform: scale(0, 2);
-      transition: transform ease-in-out 250ms;
+  nav a {
+    opacity: 1;
+    position: relative;
   }
-  nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
-      transform: scale(1, 1);
+  nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: black;
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    transform: scale(0, 2);
+    transition: transform ease-in-out 250ms;
   }
+  nav a:hover::after {
+    transform: scale(1, 1);
   }
+}
+
+
+
 
 
 
