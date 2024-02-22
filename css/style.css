@@ -178,8 +178,7 @@ nav a:hover {
   }
 
   nav {
-    /* Navigation bar properties after 
-    700px solution*/
+    /* Navigation bar properties after 700px solution*/
     all: unset;
     position: relative;
     text-align: left;
@@ -294,7 +293,7 @@ nav a:hover {
   .navbar {
     flex-direction: column;
   }
-
+  
   .navbar .logo {
     margin-left: 0px;
   }
@@ -574,6 +573,7 @@ section.sec2 p {
   margin-bottom: 20px;
   font-style: italic;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 figcaption {
@@ -659,6 +659,7 @@ figcaption {
 
 .accessFotos {
   margin-top: 60px;
+  margin-bottom: px;
   height: 90%;
   width: 80%;
   border-radius: 20px;
@@ -698,7 +699,7 @@ figcaption {
 }
 
 @media screen and (max-width: 700px) {
-  .row2 {
+   .row2 {
     display: flex;
     flex-direction: column;
   }
@@ -714,10 +715,8 @@ figcaption {
     text-align: left;
   }
 
-  .container2 .row2 .col figure {
-    display: flex;
-    flex-direction: column
-  }
+  
+  
 }
 
 /*Footer for 1. design*/
