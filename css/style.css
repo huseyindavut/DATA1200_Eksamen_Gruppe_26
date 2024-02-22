@@ -1,37 +1,35 @@
-body {                       /*It is the place where the rules of the body are determined.*/
-  margin: 0;               /*  Sets the margin of the page to zero, removing any default margin.*/
-  padding: 0;              /* Sets the padding of the page to zero, eliminating any default padding.*/
-  font-family: 'Montserrat', sans-serif;/*Defines the font family for the entire page, specifying a Montserrat typeface.*/
-  background: #000000;      /*Sets the background color of the page to black (#000).(Black)*/
- 
+body {
+  /*It is the place where the rules of the body are determined.*/
+  margin: 0;
+  /*  Sets the margin of the page to zero, removing any default margin.*/
+  padding: 0;
+  /* Sets the padding of the page to zero, eliminating any default padding.*/
+  font-family: 'Montserrat', sans-serif;
+  /*Defines the font family for the entire page, specifying a Montserrat typeface.*/
+  background: #000000;
+  /*Sets the background color of the page to black (#000).(Black)*/
+
 }
 
-
-header { /* Styling for the header */
+header {
+  /* Styling for the header */
   padding: 5px 5px;
   box-sizing: border-box;
   background: rgb(0, 0, 0);
   text-align: center;
   position: fixed;
   z-index: 999;
-  width: 100%;    
+  width: 100%;
 }
 
-
-
-
-
-
 /*Navigation bar for 1. design (the index.html page)*/
-
-
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
-.nav-toggle:focus ~ .nav-toggle-label {
+.nav-toggle:focus~.nav-toggle-label {
   outline: 3px solid rgba(rgb(237, 251, 255), 0.75);
 }
 
@@ -79,23 +77,18 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transition: transform 400ms ease-in-out;
-   
- 
 }
-
 
 nav ul {
   margin: 0;
   padding: 0;
-  list-style:none;
-  
-  
+  list-style: none;
 }
 
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
- 
+
 }
 
 nav a {
@@ -106,42 +99,43 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
   font-weight: bold;
-  
-
 }
 
 nav a:hover {
   color: rgb(255, 0, 0);
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-.main-logo{
-  
+
+.main-logo {
   margin-top: 40px;
-  width:125px;
-  height:75px;
+  width: 125px;
+  height: 75px;
   margin-left: 50px;
   margin-bottom: 20px;
-  
 }
+
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
+
   header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
+
   .logo {
     grid-column: 2 / 3;
   }
+
   nav {
     all: unset;
 
@@ -158,17 +152,21 @@ nav a:hover {
     justify-content: flex-end;
     align-items: center;
   }
+
   nav ul {
     display: flex;
   }
+
   nav li {
     margin-left: 3em;
     margin-bottom: 0;
   }
+
   nav a {
     opacity: 1;
     position: relative;
   }
+
   nav a::after {
     content: "";
     display: block;
@@ -180,276 +178,253 @@ nav a:hover {
     transform: scale(0, 2);
     transition: transform ease-in-out 250ms;
   }
+
   nav a:hover::after {
     transform: scale(1, 1);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Navigation bar for 2. design*/
 .navbar .logo {
   margin-top: 30px;
-  width:110px;
-  height:70px;
+  width: 110px;
+  height: 70px;
   margin-left: 60px;
   margin-bottom: 30px;
 
 }
-.navbar {/* Styling for the navigation bar with the class 'navbar' */
+
+.navbar {
+  /* Styling for the navigation bar with the class 'navbar' */
   background-color: #e7e6e6;
   border-radius: 50px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 40px;/* Sets the top margin of the navigation bar to 0 pixels */
-  height: 20%;/* Sets the height of the navigation bar to 20% of its containing element's height */
-  display: flex; /* Turns the navigation bar into a flex container */
-  align-items: center; /* Aligns items along the cross axis (vertical centering) */
+  margin-top: 40px;
+  /* Sets the top margin of the navigation bar to 0 pixels */
+  height: 20%;
+  /* Sets the height of the navigation bar to 20% of its containing element's height */
+  display: flex;
+  /* Turns the navigation bar into a flex container */
+  align-items: center;
+  /* Aligns items along the cross axis (vertical centering) */
 }
 
-.navbarlinks{/* Styling for the 'navbarlinks' class */
-
- text-align: center;/* Centers text within elements with the 'navbarlinks' class */
- font-size: 23px;
- background-position: bottom;
- margin-top: 15px;
- border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
+/* Styling for the 'navbarlinks' class */
+.navbarlinks {
+  text-align: center;  /* Centers text within elements with the 'navbarlinks' class */
+  font-size: 23px;
+  background-position: bottom;
+  margin-top: 15px;
+  border-radius: 20px; /* Adds rounded corners with a radius of 20 pixels */
+  
 }
 
 /* Style the navigation bar links */
-.navbar a{
-  color:#a24a0b;
+.navbar a {
+  color: #a24a0b;
   font-size: 25px;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
   font-weight: bold;
   margin-left: 30px;
-  
+
 }
+
 .navbar a:hover {
-  background-color:#1f8291;
+  background-color: #1f8291;
   color: rgb(252, 250, 250);
 }
- 
+
+/* Appearance of the navigation bar when the resolution is below 700px */
 @media (max-width: 700px) {
-  .row, .navbar {   
+
+  .row,
+  .navbar {
     flex-direction: column;
   }
-  .navbar .logo{
+
+  .navbar .logo {
     margin-left: 0px;
   }
 }
 
+/*1. Page design (index.html) */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*1. Page design */
-
-section {/* Styling for the sections */
+/* Styling for the sections */
+section {
   width: 100%;
-  height:100vh ; /* 100% of the viewport height */
+  height: 100vh;  /* 100% of the viewport height */
 }
 
-section.sec1 {/* Styling for a specific section with the class "sec1" */
+section.sec1 {
+  /* Styling for a specific section with the class "sec1" */
   margin-top: -10px;
-  background: url(/Images/p32-byg.webp); /*Foto: Huseyin Ozturk-2023  */  /* Background image with a URL */
-  background-size: cover;/* Cover the entire background with the image */
+  background: url(/Images/p32-byg.webp);
+  /*Foto: Huseyin Ozturk-2023  */
+  /* Background image with a URL */
+  background-size: cover;
+  /* Cover the entire background with the image */
 }
-.Foto2 {/* Styling for Element with Class 'Foto2' */
-color: #FFDA00;
-text-align: right;
-margin-right: 20px;
-margin-bottom: 0px;
-font-size: 15px;  
+
+.Foto2 {
+  /* Styling for Element with Class 'Foto2' */
+  color: #FFDA00;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  font-size: 15px;
 }
 
 /* Styling for elements with the class 'sec2' within the 'section' */
 section.sec2 {
-  padding: 100px;       /* Adds padding of 100 pixels to all sides of elements with the class 'sec2' */
-  box-sizing: border-box; /* Applies the border-box sizing model, including padding and border in the element's total width and height */
-  height: auto;         /* Sets the height of elements with the class 'sec2' to be automatically determined by their content */
+  padding: 100px;
+  /* Adds padding of 100 pixels to all sides of elements with the class 'sec2' */
+  box-sizing: border-box;
+  /* Applies the border-box sizing model, including padding and border in the element's total width and height */
+  height: auto;
+  /* Sets the height of elements with the class 'sec2' to be automatically determined by their content */
 }
+
 /* Styling for 'h2' elements within '.sec2' section */
 section.sec2 h2 {
-  font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
-  margin: 0;           /* Resets the margin to zero to remove any default margin */
-  padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
-  color: #FFDA00;         /* Sets the text color of 'h2' elements to white (#fff) */
+  font-size: 3em;
+  /* Sets the font size of 'h2' elements to 3 times the default font size */
+  margin: 0;
+  /* Resets the margin to zero to remove any default margin */
+  padding: 0 0 20px;
+  /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
+  color: #FFDA00;
+  /* Sets the text color of 'h2' elements to white (#fff) */
   margin-left: 100px;
-  margin-bottom: 50px;  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
+  margin-bottom: 50px;
+  /* Adds a left margin of 100 pixels to create space on the left side of 'h2' elements */
 }
-section.sec2 p{/* Styling for paragraphs within elements with the class 'sec2' */
+
+section.sec2 p {
+  /* Styling for paragraphs within elements with the class 'sec2' */
   font-size: 20px;
   text-align: justify;
-  line-height:1.5; 
+  line-height: 1.5;
   text-indent: 30px;
-  margin:50px;
+  margin: 50px;
   padding: 0;
   color: #fff;
   margin-bottom: 50px;
 }
- .sec2 .row {/* Styling for Grid Layout with Class 'row' */
-margin-top: 150px; /* Adds a top margin of 80 pixels to the 'row' class */
-margin-bottom: 80px;/* Adds a bottom margin of 80 pixels to the 'row' class */
-width: 100%; /* Sets the width of the 'row' class to 80% of its containing element */
-max-width: 100;/* Sets the maximum width of the 'row' class to 1170 pixels */
-display: grid; /* Sets the display property to 'grid' for the 'row' class */
-grid-template-columns: repeat(2, 1fr);/* Creates a grid with two columns of equal width */
+
+.sec2 .row {
+  /* Styling for Grid Layout with Class 'row' */
+  margin-top: 150px;
+  /* Adds a top margin of 80 pixels to the 'row' class */
+  margin-bottom: 80px;
+  /* Adds a bottom margin of 80 pixels to the 'row' class */
+  width: 100%;
+  /* Sets the width of the 'row' class to 80% of its containing element */
+  max-width: 100;
+  /* Sets the maximum width of the 'row' class to 1170 pixels */
+  display: grid;
+  /* Sets the display property to 'grid' for the 'row' class */
+  grid-template-columns: repeat(2, 1fr);
+  /* Creates a grid with two columns of equal width */
 }
-.sec2 .row .left img {/* Styling for Image in Left Column of Grid */
-width: 600px;
-height: 500px;
-margin-left: 50px;
+
+.sec2 .row .left img {
+  /* Styling for Image in Left Column of Grid */
+  width: 600px;
+  height: 500px;
+  margin-left: 50px;
 
 }
-.sec2 .row .left .Foto2 {/* Styling for Text in Left Column of Grid */
-color: #FFDA00;
-margin-top: -5px;
-margin-left: 20px;
-font-size: 15px  
+
+.sec2 .row .left .Foto2 {
+  /* Styling for Text in Left Column of Grid */
+  color: #FFDA00;
+  margin-top: -5px;
+  margin-left: 20px;
+  font-size: 15px
 }
-.sec2 .row .right {/* Styling for Right Column of Grid */
-display: flex;
-align-items: center;
+
+.sec2 .row .right {
+  /* Styling for Right Column of Grid */
+  display: flex;
+  align-items: center;
 
 }
-.sec2 .row .right .content {/* Styling for Content in Right Column of Grid */
-padding-left: 20px;
+
+.sec2 .row .right .content {
+  /* Styling for Content in Right Column of Grid */
+  padding-left: 20px;
 }
+
 .sec2 .row .right .content p {
-font-size: 20px;       /* Sets the font size to 1.4 times the default font size */
-padding-bottom: 15px;   /* Adds padding to the bottom of each paragraph (15 pixels) */
-text-align: justify;
-margin-left: 50px;      /* Adds a left margin of 50 pixels to the paragraphs */
-padding-bottom: 15px;   /* Adds additional padding to the bottom of each paragraph (15 pixels) */    
-line-height: 1.5;
-}
-.sec2 .row .right .content .link-color {/* Styling for Links with Class 'link-color' */
-color: #FFDA00;
-margin-left: 25%;
-text-decoration: none;
+  font-size: 20px;
+  /* Sets the font size to 1.4 times the default font size */
+  padding-bottom: 15px;
+  /* Adds padding to the bottom of each paragraph (15 pixels) */
+  text-align: justify;
+  margin-left: 50px;
+  /* Adds a left margin of 50 pixels to the paragraphs */
+  padding-bottom: 15px;
+  /* Adds additional padding to the bottom of each paragraph (15 pixels) */
+  line-height: 1.5;
 }
 
-  @media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
-    .sec2 .row {
-      display: flex;
-      flex-direction: column;
-      }
-      .sec2 .row .col {
-      margin-bottom: 20px;
-      }
-    .row .left  {
-      width: 150px;  /* Sets the width of images in the left column to 350 pixels */
-      height: 15%;   /* Sets the height of images to 50% of the parent element's height */
+.sec2 .row .right .content .link-color {
+  /* Styling for Links with Class 'link-color' */
+  color: #FFDA00;
+  margin-left: 25%;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+
+  /* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
+  .sec2 .row {
+    display: flex;
+    flex-direction: column;
   }
+
+  .sec2 .row .col {
+    margin-bottom: 20px;
+  }
+
+  .row .left {
+    width: 150px;
+    /* Sets the width of images in the left column to 350 pixels */
+    height: 15%;
+    /* Sets the height of images to 50% of the parent element's height */
+  }
+
   .sec2 .row .left img {
     margin-left: 50px;
   }
-  .sec2 .row .left .Foto2{
- margin-top: 20px;
- margin-left: 50px;
+
+  .sec2 .row .left .Foto2 {
+    margin-top: 20px;
+    margin-left: 50px;
     font-size: 8px;
   }
-  .row .right{
+
+  .row .right {
     font-size: 7px;
   }
-  .row .right .content p  {
+
+  .row .right .content p {
     line-height: 1;
   }
-  .sec2{
+
+  .sec2 {
     font-size: 7px;
   }
+
   .sec2 .row .left img {
     width: 120px;
     height: 150px;
   }
-  }
-  
+}
+
 
 
 
@@ -465,157 +440,201 @@ text-decoration: none;
 /*2. Pages design*/
 
 
-.container1 {/* Styling for an element with the class 'container1' */
-  width: 100%;  /* Sets the width of the container to 100% of its parent element's width */
-  height: 100%; /* Sets the height of the container to 100% of its parent element's height */
-  background-image: linear-gradient(rgb(16, 159, 181), rgba(138, 239, 242, 0.7)); /* Applies a linear gradient background with two colors and opacity */
-  background-position: center;  /* Sets the position of the background image to the center */
-  background-size: cover;       /* Ensures that the background image covers the entire container */
-  padding-left: 0;              /* Sets the left padding of the container to zero */
-  padding-right: 0;             /* Sets the right padding of the container to zero */
-  box-sizing: border-box;       /* Includes padding and border in the total width and height of the container */
-  margin-bottom: 0;             /* Sets the bottom margin of the container to zero */
+.container1 {
+  /* Styling for an element with the class 'container1' */
+  width: 100%;
+  /* Sets the width of the container to 100% of its parent element's width */
+  height: 100%;
+  /* Sets the height of the container to 100% of its parent element's height */
+  background-image: linear-gradient(rgb(16, 159, 181), rgba(138, 239, 242, 0.7));
+  /* Applies a linear gradient background with two colors and opacity */
+  background-position: center;
+  /* Sets the position of the background image to the center */
+  background-size: cover;
+  /* Ensures that the background image covers the entire container */
+  padding-left: 0;
+  /* Sets the left padding of the container to zero */
+  padding-right: 0;
+  /* Sets the right padding of the container to zero */
+  box-sizing: border-box;
+  /* Includes padding and border in the total width and height of the container */
+  margin-bottom: 0;
+  /* Sets the bottom margin of the container to zero */
 }
 
 
-.container2 {/* Styling for an element with the class 'container2' */
+.container2 {
+  /* Styling for an element with the class 'container2' */
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(239, 116, 241, 0.7),rgba(244, 171, 171, 0.91));
+  background-image: linear-gradient(rgba(239, 116, 241, 0.7), rgba(244, 171, 171, 0.91));
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   padding-left: 0;
   padding-right: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin-bottom: 0px;
 }
 
-.container3 {/* Styling for an element with the class 'container3' */
+.container3 {
+  /* Styling for an element with the class 'container3' */
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(40, 126, 163, 0.91),rgba(151, 218, 49, 0.7));
+  background-image: linear-gradient(rgba(40, 126, 163, 0.91), rgba(151, 218, 49, 0.7));
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   padding-left: 0;
   padding-right: 0;
-  box-sizing:border-box;
-  margin-bottom: 0px; 
+  box-sizing: border-box;
+  margin-bottom: 0px;
 }
+
 .container3 .row2 .col {
   margin-bottom: 200px;
   font-size: 20px;
 }
-.container4 {/* Styling for an element with the class 'container4' */
+
+.container4 {
+  /* Styling for an element with the class 'container4' */
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(147, 237, 183, 0.7),rgba(228, 200, 239, 0.91));
+  background-image: linear-gradient(rgba(147, 237, 183, 0.7), rgba(228, 200, 239, 0.91));
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   padding-left: 0;
   padding-right: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin-bottom: 0px;
   margin-left: 0;
 }
+
 .container5 .row2 {
-  background-image: linear-gradient(rgba(40, 126, 163, 0.91),rgba(151, 218, 49, 0.7));
+  background-image: linear-gradient(rgba(40, 126, 163, 0.91), rgba(151, 218, 49, 0.7));
   margin-left: 0px;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
-.container5 .row2 .col{
-margin-top: 0px;
-margin-bottom: 100px;
+
+.container5 .row2 .col {
+  margin-top: 0px;
+  margin-bottom: 100px;
 }
-.row2 .col .referencers {/* Styling for 'references' elements within elements with the class 'references' */
+
+.row2 .col .referencers {
+  /* Styling for 'references' elements within elements with the class 'references' */
   font-size: 20px;
   width: 2000px;
   text-align: left;
-  
-  }
+
+}
 
 
-.quoteBar {/* Styling for a quoted bar section */
-background:#dee940;
-padding:50px;
-font-size:17px;
-line-height:1.5;
-color:#000000;
-width:640px;
-margin:auto;
-margin-top:20px;
-margin-bottom:20px;
-font-style:italic;
-font-weight: bold;
+.quoteBar {
+  /* Styling for a quoted bar section */
+  background: #dee940;
+  padding: 50px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #000000;
+  width: 640px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
-figcaption{/* Styling for the figure caption */
-font-size: 17px;
+
+figcaption {
+  /* Styling for the figure caption */
+  font-size: 17px;
 }
-.row2 {/* Styling for the 'row' class */
+
+.row2 {
+  /* Styling for the 'row' class */
   margin-top: 0px;
   margin-left: 100px;
-  display:flex;/* Makes the 'row' class a flex container */
+  display: flex;
+  /* Makes the 'row' class a flex container */
   height: 88%;
-  align-items:center; 
-}
-.row2 .col {/* Styling for elements with the class 'col' */
-flex-basis: 45%; /* Sets the flex basis (initial size) of the 'col' class to 50% */
-}
-.row2 .col h1 {/* Styling for 'h1' elements */
-margin-top: 15%;/* Sets the top margin of 'h1' elements to 15% */
-margin-bottom: 50px;/* Sets the bottom margin of 'h1' elements to 50 pixels */
-margin-left: 30px;/* Sets the left margin of 'h1' elements to 30 pixels */
-color: #060000;/* Sets the text color of 'h1' elements to a dark shade of green */
-font-size:30px;
+  align-items: center;
 }
 
-.row2 .col p {/* Styling for 'p' elements within elements with the class 'col' */
-font-size: 20px;
-text-align: justify;
-margin-top: 0px;
-margin-left: 30px;
-margin-right: 40px;
-margin-bottom: 50px;
-line-height: 1.5;
+.row2 .col {
+  /* Styling for elements with the class 'col' */
+  flex-basis: 45%;
+  /* Sets the flex basis (initial size) of the 'col' class to 50% */
 }
 
+.row2 .col h1 {
+  /* Styling for 'h1' elements */
+  margin-top: 15%;
+  /* Sets the top margin of 'h1' elements to 15% */
+  margin-bottom: 50px;
+  /* Sets the bottom margin of 'h1' elements to 50 pixels */
+  margin-left: 30px;
+  /* Sets the left margin of 'h1' elements to 30 pixels */
+  color: #060000;
+  /* Sets the text color of 'h1' elements to a dark shade of green */
+  font-size: 30px;
+}
 
-.row2 .card { /* Styling for the common styles of all cards with the class 'card' */
-width: 400px;
-height: 300px;
-display:inline-block;
-border-radius: 10px;
-padding: 15px 25px;
-box-sizing: border-box;/* Includes padding and border in the element's total width and height */
-cursor: pointer; /* Changes the cursor to a pointer, indicating interactivity */
-margin: 50px 45px;
-background-position:center ; /* Sets the background position to the center */
-background-size:cover;/* Sets the background size to cover the entire container */
-transition: transform 0.2s;/* Adds a smooth transition effect for the 'transform' property over 0.2 seconds */
+.row2 .col p {
+  /* Styling for 'p' elements within elements with the class 'col' */
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  line-height: 1.5;
 }
 
 
-.col .card {       /*Styling for the first card with the class 'card */
-background-color: rgb(118, 115, 104) ;
-margin-top: 300px;
+.row2 .card {
+  /* Styling for the common styles of all cards with the class 'card' */
+  width: 400px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  /* Includes padding and border in the element's total width and height */
+  cursor: pointer;
+  /* Changes the cursor to a pointer, indicating interactivity */
+  margin: 50px 45px;
+  background-position: center;
+  /* Sets the background position to the center */
+  background-size: cover;
+  /* Sets the background size to cover the entire container */
+  transition: transform 0.2s;
+  /* Adds a smooth transition effect for the 'transform' property over 0.2 seconds */
 }
 
-.row2 .col .card .Foto {  /* Styling for the content within the card with the class 'Foto' */
-margin-top: 310px;
-color: #000000;
-text-align:center;
-border-radius: 10px;
-display:inline-flexbox;
-background-color: #FFDA00;  
+
+.col .card {
+  /*Styling for the first card with the class 'card */
+  background-color: rgb(118, 115, 104);
+  margin-top: 300px;
 }
 
-.accessFotos{
-margin-top: 60px;
-height:90%;
-width: 80%;
-border-radius: 20px;
+.row2 .col .card .Foto {
+  /* Styling for the content within the card with the class 'Foto' */
+  margin-top: 310px;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-flexbox;
+  background-color: #FFDA00;
+}
+
+.accessFotos {
+  margin-top: 60px;
+  height: 90%;
+  width: 80%;
+  border-radius: 20px;
 
 }
-figcaption{
+
+figcaption {
   margin-bottom: 40px;
   padding: 10px;
   color: #000000;
@@ -625,22 +644,27 @@ figcaption{
 }
 
 
-.col .card:hover{/* Styling for card hover effect */
-transform: translateY(-10px); /* Moves the card 10 pixels upward when hovered */
+.col .card:hover {
+  /* Styling for card hover effect */
+  transform: translateY(-10px);
+  /* Moves the card 10 pixels upward when hovered */
 
 }
 
-.row2 .col h5 {/* Styling for h5 elements */
-text-align: center;
-color:rgb(0, 0, 0);
-text-shadow: 0 0 15px #6a6969 ; 
-font-size: 25px;
-background-color: rgb(255, 255, 255) ;
-margin-top: -70px;
-border-radius: 20px;
-padding:10px 0;
+.row2 .col h5 {
+  /* Styling for h5 elements */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 15px #6a6969;
+  font-size: 25px;
+  background-color: rgb(255, 255, 255);
+  margin-top: -70px;
+  border-radius: 20px;
+  padding: 10px 0;
 }
-.figurePics{ /*Accessibility page images */
+
+.figurePics {
+  /*Accessibility page images */
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -649,22 +673,24 @@ padding:10px 0;
 
 @media screen and (max-width: 700px) {
   .row2 {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
+
   .col {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
-  .container5 .row2 .col .referencers{
-  display: block;
-  font-size: 20px;
-  width: 200px;
-  text-align: left;
+
+  .container5 .row2 .col .referencers {
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    text-align: left;
   }
-          
-  .container2 .row2 .col figure{
-  display: flex;
-  flex-direction: column
+
+  .container2 .row2 .col figure {
+    display: flex;
+    flex-direction: column
   }
 }
 
@@ -673,7 +699,7 @@ padding:10px 0;
 
 
 
-  
+
 
 
 
@@ -711,7 +737,8 @@ padding:10px 0;
 
 /*Footer for 1. design*/
 
-footer {/* Styling for the footer */
+footer {
+  /* Styling for the footer */
   margin-top: 0;
   margin-bottom: 40px;
   margin-left: 100px;
@@ -721,43 +748,64 @@ footer {/* Styling for the footer */
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 3.5rem;
   background: #401010;
- 
+
 }
 
-.footer-column {/* Styling for elements with the class 'footer-column' */
-  border-bottom: 5px;   /* Adds a bottom border with a default color and style, but the width is missing a unit (e.g., px) */
-  margin-left: 50px;    /* Adds a left margin of 50 pixels to the elements with the class 'footer-column' */
-  margin-right: 100px;  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
-  margin-top: 100px;    /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
-  margin-bottom: 1.5em; /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
-  font-size: 17px;      /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
+.footer-column {
+  /* Styling for elements with the class 'footer-column' */
+  border-bottom: 5px;
+  /* Adds a bottom border with a default color and style, but the width is missing a unit (e.g., px) */
+  margin-left: 50px;
+  /* Adds a left margin of 50 pixels to the elements with the class 'footer-column' */
+  margin-right: 100px;
+  /* Adds a right margin of 100 pixels to the elements with the class 'footer-column' */
+  margin-top: 100px;
+  /* Adds a top margin of 100 pixels to the elements with the class 'footer-column' */
+  margin-bottom: 1.5em;
+  /* Adds a bottom margin of 1.5 times the font size to the elements with the class 'footer-column' */
+  font-size: 17px;
+  /* Sets the font size of the text within elements with the class 'footer-column' to 20 pixels */
 }
-.footer-column li {/* Styling for List Items within '.footer-column' */
-  font-family: Arial, Helvetica, sans-serif;  /* Sets the font family for list items */
-  margin-bottom: 16px;  /* Adds bottom margin of 16 pixels to each list item */
-  display: block;  /* Specifies that list items should be displayed as block-level elements */
-  color:#ffffff;  /* Sets the text color of list items to a shade of yellow */
-  line-height: 1.5;  /* Sets the line height to 1.5 times the font size */
-  font-size: 20px;  /* Sets the font size to 17 pixels */
-  font-weight: 400;  /* Sets the font weight to 400 (normal) */
-  transition: all .50s ease;  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
+
+.footer-column li {
+  /* Styling for List Items within '.footer-column' */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Sets the font family for list items */
+  margin-bottom: 16px;
+  /* Adds bottom margin of 16 pixels to each list item */
+  display: block;
+  /* Specifies that list items should be displayed as block-level elements */
+  color: #ffffff;
+  /* Sets the text color of list items to a shade of yellow */
+  line-height: 1.5;
+  /* Sets the line height to 1.5 times the font size */
+  font-size: 20px;
+  /* Sets the font size to 17 pixels */
+  font-weight: 400;
+  /* Sets the font weight to 400 (normal) */
+  transition: all .50s ease;
+  /* Adds a smooth transition effect for all properties over 0.5 seconds with an ease timing function */
 }
-.footer-column li:hover { /* Hover Effect for Footer Column List Items */
+
+.footer-column li:hover {
+  /* Hover Effect for Footer Column List Items */
   transform: translateY(-5px) translateX(-9px);
 }
+
 .footer-column li a {
   color: #fff;
   text-decoration: none;
 }
 
 
-.h3class{/* Styling for Heading with Class 'h3class' */
+.h3class {
+  /* Styling for Heading with Class 'h3class' */
   text-align: left;
   font-size: 25px;
   margin-left: 40PX;
   margin-bottom: 60px;
-  color:#FFDA00;
-  
+  color: #FFDA00;
+
 }
 
 
@@ -792,18 +840,25 @@ footer {/* Styling for the footer */
 
 
 
-footer2 {/* Styling for the footer section */
-  margin-top: 0;/* Centers the text within h5 elements horizontally */
+footer2 {
+  /* Styling for the footer section */
+  margin-top: 0;
+  /* Centers the text within h5 elements horizontally */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Creates a responsive grid layout */
-  gap: 3.5rem; /* Sets the gap between grid items to 3.5rem */
-  background: #0a4f5c; /* Sets the background color of the footer */
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  /* Creates a responsive grid layout */
+  gap: 3.5rem;
+  /* Sets the gap between grid items to 3.5rem */
+  background: #0a4f5c;
+  /* Sets the background color of the footer */
   color: #fff;
   font-family: sans-serif;
 }
 
-.footer-column2 {/* Styling for the footer columns */
-  border-color: rgb(255, 255, 255); /* Sets the border color for footer columns */
+.footer-column2 {
+  /* Styling for the footer columns */
+  border-color: rgb(255, 255, 255);
+  /* Sets the border color for footer columns */
   border-bottom: 5px;
   margin-left: 50px;
   margin-right: 200px;
@@ -812,127 +867,46 @@ footer2 {/* Styling for the footer section */
   font-size: 20px;
 }
 
-.footer-column2 li {/* Styling for list items within footer columns */
+.footer-column2 li {
+  /* Styling for list items within footer columns */
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   display: block;
-  color:#FFDA00;
+  color: #FFDA00;
   line-height: 1.5;
-  font-size:17px;
+  font-size: 17px;
   font-weight: 400;
-  transition:all .50s ease; /* Adds a smooth transition effect for all properties over 0.5 seconds */
+  transition: all .50s ease;
+  /* Adds a smooth transition effect for all properties over 0.5 seconds */
 }
 
 
-.footer-column2 li:hover {/* Styling for list items within footer columns when hovered */
-  transform: translateY(-3px) translateX(-5px); /* Moves list items 3 pixels up and 5 pixels left when hovered */
+.footer-column2 li:hover {
+  /* Styling for list items within footer columns when hovered */
+  transform: translateY(-3px) translateX(-5px);
+  /* Moves list items 3 pixels up and 5 pixels left when hovered */
 }
 
 
 
-.h3class2{/* Styling for h3class elements */
-  text-align:left;
+.h3class2 {
+  /* Styling for h3class elements */
+  text-align: left;
   margin-left: 40PX;
   margin-bottom: 60px;
-  color:rgb(250, 244, 244);
-  
+  color: rgb(250, 244, 244);
+
 }
+
 .footer-column2 li {
   text-align: justify;
-  color:#FFDA00;
+  color: #FFDA00;
 
 }
 
 
-.link-color2 {/* Styling for elements with the class 'link-color' */
+.link-color2 {
+  /* Styling for elements with the class 'link-color' */
   color: #FFDA00;
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
