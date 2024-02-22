@@ -212,12 +212,13 @@ nav a:hover {
 
 /* Styling for the 'navbarlinks' class */
 .navbarlinks {
-  text-align: center;  /* Centers text within elements with the 'navbarlinks' class */
+  text-align: center;
+  /* Centers text within elements with the 'navbarlinks' class */
   font-size: 23px;
   background-position: bottom;
   margin-top: 15px;
-  border-radius: 20px; /* Adds rounded corners with a radius of 20 pixels */
-  
+  border-radius: 20px;
+  /* Adds rounded corners with a radius of 20 pixels */
 }
 
 /* Style the navigation bar links */
@@ -229,7 +230,6 @@ nav a:hover {
   text-align: center;
   font-weight: bold;
   margin-left: 30px;
-
 }
 
 .navbar a:hover {
@@ -255,17 +255,20 @@ nav a:hover {
 /* Styling for the sections */
 section {
   width: 100%;
-  height: 100vh;  /* 100% of the viewport height */
+  height: 100vh;
+  /* 100% of the viewport height */
 }
 
+/* Styling for a specific section with the class "sec1" */
 section.sec1 {
-  /* Styling for a specific section with the class "sec1" */
   margin-top: -10px;
   background: url(/Images/p32-byg.webp);
   /*Foto: Huseyin Ozturk-2023  */
   /* Background image with a URL */
+
   background-size: cover;
   /* Cover the entire background with the image */
+
 }
 
 .Foto2 {
@@ -425,21 +428,7 @@ section.sec2 p {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*2. Pages design*/
-
-
+/*2. Pages design (Pilestredet 35, accessibility,topical)*/
 .container1 {
   /* Styling for an element with the class 'container1' */
   width: 100%;
@@ -461,7 +450,6 @@ section.sec2 p {
   margin-bottom: 0;
   /* Sets the bottom margin of the container to zero */
 }
-
 
 .container2 {
   /* Styling for an element with the class 'container2' */
@@ -527,7 +515,6 @@ section.sec2 p {
 
 }
 
-
 .quoteBar {
   /* Styling for a quoted bar section */
   background: #dee940;
@@ -588,7 +575,6 @@ figcaption {
   line-height: 1.5;
 }
 
-
 .row2 .card {
   /* Styling for the common styles of all cards with the class 'card' */
   width: 400px;
@@ -608,7 +594,6 @@ figcaption {
   transition: transform 0.2s;
   /* Adds a smooth transition effect for the 'transform' property over 0.2 seconds */
 }
-
 
 .col .card {
   /*Styling for the first card with the class 'card */
@@ -643,7 +628,6 @@ figcaption {
 
 }
 
-
 .col .card:hover {
   /* Styling for card hover effect */
   transform: translateY(-10px);
@@ -669,8 +653,6 @@ figcaption {
   margin-bottom: 50px;
 }
 
-
-
 @media screen and (max-width: 700px) {
   .row2 {
     display: flex;
@@ -694,49 +676,7 @@ figcaption {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Footer for 1. design*/
-
 footer {
   /* Styling for the footer */
   margin-top: 0;
@@ -748,7 +688,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 3.5rem;
   background: #401010;
-
 }
 
 .footer-column {
@@ -797,7 +736,6 @@ footer {
   text-decoration: none;
 }
 
-
 .h3class {
   /* Styling for Heading with Class 'h3class' */
   text-align: left;
@@ -808,38 +746,7 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Footer for 2. design*/
 footer2 {
   /* Styling for the footer section */
   margin-top: 0;
@@ -880,14 +787,11 @@ footer2 {
   /* Adds a smooth transition effect for all properties over 0.5 seconds */
 }
 
-
 .footer-column2 li:hover {
   /* Styling for list items within footer columns when hovered */
   transform: translateY(-3px) translateX(-5px);
   /* Moves list items 3 pixels up and 5 pixels left when hovered */
 }
-
-
 
 .h3class2 {
   /* Styling for h3class elements */
@@ -903,7 +807,6 @@ footer2 {
   color: #FFDA00;
 
 }
-
 
 .link-color2 {
   /* Styling for elements with the class 'link-color' */
