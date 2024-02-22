@@ -110,6 +110,7 @@ transition: opacity 250ms ease-in-out 250ms;
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
+  
   display: block;
   background: #FFDA00;
   height: 4px;
@@ -138,7 +139,7 @@ transition: opacity 250ms ease-in-out 250ms;
   }
   header {/* Header layout for wider screens using grid */  
       display: grid;
-      grid-template-columns: 1fr auto minmax(700px, 3fr) 1fr;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
   nav { /* Navigation menu styling for wider screens */
       all: unset;
@@ -154,7 +155,6 @@ transition: opacity 250ms ease-in-out 250ms;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      
   }
   nav ul {/* Styling for the list inside the navigation menu on wider screens */   
       display: flex;
@@ -181,9 +181,7 @@ transition: opacity 250ms ease-in-out 250ms;
   nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
       transform: scale(1, 1);
   }
-}
-
-
+  }
 
 
 
@@ -325,7 +323,6 @@ transition: opacity 250ms ease-in-out 250ms;
 
 
 
-
 /*1. Page design */
 
 section {/* Styling for the sections */
@@ -354,7 +351,7 @@ section.sec2 {
 }
 /* Styling for 'h2' elements within '.sec2' section */
 section.sec2 h2 {
-  font-size: 40px;      /* Sets the font size of 'h2' elements to 3 times the default font size */
+  font-size: 3em;      /* Sets the font size of 'h2' elements to 3 times the default font size */
   margin: 0;           /* Resets the margin to zero to remove any default margin */
   padding: 0 0 20px;    /* Adds padding to the bottom of 'h2' elements (0 on top, 0 on right, 20 pixels on bottom) */
   color: #FFDA00;         /* Sets the text color of 'h2' elements to white (#fff) */
@@ -421,6 +418,8 @@ text-decoration: none;
     width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
     grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
   }
+  }
+  @media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
   .row .left  {
       width: 150px;  /* Sets the width of images in the left column to 350 pixels */
       height: 15%;   /* Sets the height of images to 50% of the parent element's height */
@@ -438,7 +437,7 @@ text-decoration: none;
   .sec2{
     font-size: 7px;
   }
-}
+  }
   
 
 
@@ -635,20 +634,6 @@ padding:10px 0;
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 700px) {
-  .row2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .col {
-    margin-bottom: 20px;
-  }
-  .container5 .row2 .col .referencers{
-    display: block;
-    font-size:80%;
-    max-width: 200px;
-  }
-}  
 
 
 
@@ -665,8 +650,26 @@ padding:10px 0;
 
 
 
-    
-        
+    @media screen and (max-width: 700px) {
+        .row2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .col {
+            margin-bottom: 20px;
+        }
+        .container5 .row2 .col .referencers{
+          display: block;
+          font-size: 20px;
+          width: 200px;
+          text-align: left;
+          }
+          
+          .container2 .row2 .col figure{
+            display: flex;
+            flex-direction: column
+            }
+    }
 
 
 
@@ -713,10 +716,15 @@ padding:10px 0;
 
 footer {/* Styling for the footer */
   margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   gap: 3.5rem;
   background: #401010;
+ 
 }
 
 .footer-column {/* Styling for elements with the class 'footer-column' */
@@ -742,6 +750,7 @@ footer {/* Styling for the footer */
 }
 .footer-column li a {
   color: #fff;
+  text-decoration: none;
 }
 
 
@@ -842,7 +851,6 @@ footer2 {/* Styling for the footer section */
   color: #FFDA00;
   text-decoration: none;
 }
-
 
 
 
