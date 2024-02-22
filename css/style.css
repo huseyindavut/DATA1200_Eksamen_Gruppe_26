@@ -262,13 +262,6 @@ section {
 /* Styling for a specific section with the class "sec1" */
 section.sec1 {
   margin-top: -10px;
-  background: url(/Images/p32-byg.webp);
-  /*Foto: Huseyin Ozturk-2023  */
-  /* Background image with a URL */
-
-  background-size: cover;
-  /* Cover the entire background with the image */
-
 }
 
 .Foto2 {
@@ -392,7 +385,7 @@ section.sec2 p {
   .sec2 .row .col {
     margin-bottom: 20px;
   }
-
+ 
   .row .left {
     width: 150px;
     /* Sets the width of images in the left column to 350 pixels */
@@ -426,6 +419,7 @@ section.sec2 p {
     width: 120px;
     height: 150px;
   }
+ 
 }
 
 /*2. Pages design (Pilestredet 35, accessibility,topical)*/
