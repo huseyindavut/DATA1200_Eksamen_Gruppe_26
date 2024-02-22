@@ -262,6 +262,7 @@ section {
 /* Styling for a specific section with the class "sec1" */
 section.sec1 {
   margin-top: -10px;
+  background-repeat: no-repeat;
 }
 
 .Foto2 {
