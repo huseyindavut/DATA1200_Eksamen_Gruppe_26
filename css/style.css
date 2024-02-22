@@ -110,7 +110,6 @@ transition: opacity 250ms ease-in-out 250ms;
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
-  
   display: block;
   background: #FFDA00;
   height: 4px;
@@ -139,7 +138,7 @@ transition: opacity 250ms ease-in-out 250ms;
   }
   header {/* Header layout for wider screens using grid */  
       display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      grid-template-columns: 1fr auto minmax(700px, 3fr) 1fr;
   }
   nav { /* Navigation menu styling for wider screens */
       all: unset;
@@ -155,6 +154,7 @@ transition: opacity 250ms ease-in-out 250ms;
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      
   }
   nav ul {/* Styling for the list inside the navigation menu on wider screens */   
       display: flex;
@@ -181,7 +181,7 @@ transition: opacity 250ms ease-in-out 250ms;
   nav a:hover::after {/* Underline effect when hovering over links on wider screens */    
       transform: scale(1, 1);
   }
-  }
+}
 
 
 
@@ -253,46 +253,40 @@ transition: opacity 250ms ease-in-out 250ms;
   align-items: center; /* Aligns items along the cross axis (vertical centering) */
 }
 
-
-.navigation {/* Styling for the 'nav' element */
-  flex: 1;/* Allows the 'nav' element to grow and take available space */
-  text-align: right;/* Aligns text to the right within the 'nav' element */
-  margin-right: 100px;
-  margin-top: -20px;
-}
-.navigation ul li {/* Styling for the list items within the 'nav' element */
-  list-style: none;/* Removes the default list-style (bullet points) */
-  display: inline-block;/* Displays list items as inline blocks */
-  margin-left: 60px;
-  text-decoration: none;/* Removes underlines from links */
-  color: #ff9898;
-  font-size: 13px;
-  
-
-}
 .navbarlinks{/* Styling for the 'navbarlinks' class */
  
  display: block;
  text-align: center;/* Centers text within elements with the 'navbarlinks' class */
- color:rgb(255, 212, 212);
 
  font-size: 23px;
  background-position: bottom;
  margin-top: 15px;
  border-radius: 20px;/* Adds rounded corners with a radius of 20 pixels */
 }
-.navigation ul li a {/* Styling for the links within list items in the 'nav' element */
+
+/* Style the navigation bar links */
+.navbar a{
   color:#a24a0b;
-  font-size: 30px;
-}
-@media screen and (max-width: 750px) {  /* Media query for responsive design */
+  font-size: 25px;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
   
-  .navbar {
-      display: block;
+}
+.navbar a:hover {
+  background-color:#1f8291;
+  color: rgb(252, 250, 250);
+}
  
+@media (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
   }
- 
-}    
+  .navbar .logo{
+    margin-left: 0px;
+  }
+}
 
 
 
@@ -418,6 +412,7 @@ color: #FFDA00;
 margin-left: 25%;
 text-decoration: none;
 }
+
 @media (min-width: 700px) { /* Media Query 1: Applies styles when the viewport width is 700 pixels or wider */
  
   .row .left .content {   
@@ -427,8 +422,6 @@ text-decoration: none;
     width: 90%;/* Sets the width of elements with the class 'row' to 90% of the container's width */
     grid-template-columns: repeat(2,1fr);/* Changes the grid template columns to have two equal-width columns */
   }
-  }
-  @media (max-width: 700px){/* Media Query 2: Applies styles when the viewport width is 700 pixels or narrower */
   .row .left  {
       width: 150px;  /* Sets the width of images in the left column to 350 pixels */
       height: 15%;   /* Sets the height of images to 50% of the parent element's height */
@@ -446,7 +439,7 @@ text-decoration: none;
   .sec2{
     font-size: 7px;
   }
-  }
+}
   
 
 
@@ -643,6 +636,20 @@ padding:10px 0;
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 700px) {
+  .row2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    margin-bottom: 20px;
+  }
+  .container5 .row2 .col .referencers{
+    display: block;
+    font-size:80%;
+    max-width: 200px;
+  }
+}  
 
 
 
@@ -659,26 +666,8 @@ padding:10px 0;
 
 
 
-    @media screen and (max-width: 700px) {
-        .row2 {
-            display: flex;
-            flex-direction: column;
-        }
-        .col {
-            margin-bottom: 20px;
-        }
-        .container5 .row2 .col .referencers{
-          display: block;
-          font-size: 20px;
-          width: 200px;
-          text-align: left;
-          }
-          
-          .container2 .row2 .col figure{
-            display: flex;
-            flex-direction: column
-            }
-    }
+    
+        
 
 
 
